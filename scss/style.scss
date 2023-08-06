@@ -1,0 +1,42 @@
+:root {
+   --padding-left-and-right: 5.55555555555556vw; /*   var(--padding-left-and-right)   */
+}
+
+header {
+   padding: 10px 10px 10px 10px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 10;
+   background-color: transparent;
+   height: 90px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   margin: 25px 0 28px 0;
+   display: flex;
+
+   &_first-word {
+      display: flex;
+      color: #006ceb;
+      font-family: Unbounded;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+   }
+
+   &_second-word {
+      display: flex;
+      color: #1c1c1c;
+      font-family: Unbounded;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+   }
+}
