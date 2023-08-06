@@ -2,22 +2,24 @@
    --padding-left-and-right: 5.55555555555556vw; /*   var(--padding-left-and-right)   */
 }
 
-header {
-   padding: 10px 10px 10px 10px;
+header {   
    position: fixed;
    top: 0;
-   left: 0;
+   left: 0;   
+   display: flex;
    width: 100%;
    z-index: 10;
    background-color: transparent;
    height: 90px;
-   display: flex;
    justify-content: space-between;
    align-items: center;
+   flex-direction: row;
 }
 
 .logo {
-   margin: 25px 0 28px 0;
+   width: 223px;
+   position: relative;
+   padding: 0 0 0 80px;
    display: flex;
 
    &_first-word {
@@ -39,4 +41,31 @@ header {
       font-weight: 500;
       line-height: normal;
    }
+}
+
+.header-menu {
+   position: relative;
+   display: flex;
+   align-items: center;
+
+		&_ol {
+         position: relative;
+         display: flex;
+         gap: 24px;
+		}
+
+		&_li {
+		}
+
+		&_a {
+		}
+
+		&_p {
+         color: #1C1C1C;
+         font-family: Montserrat;
+         font-size: 18px;
+         font-style: normal;
+         font-weight: 500;
+         line-height: 24px; /* 133.333% */
+		}
 }
