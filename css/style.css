@@ -38,7 +38,7 @@ header {
 }
 
 .header-menu {
-  padding: 0 0 0 343px;
+  padding: 0 0 0 0;
   position: relative;
   display: flex;
   align-items: center;
