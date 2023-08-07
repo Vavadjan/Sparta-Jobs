@@ -99,9 +99,6 @@ header {
   font-weight: 700;
   line-height: normal;
 }
-.button_a {
-  border-radius: 60px;
-}
 
 .button:hover {
   border-radius: 60px;
