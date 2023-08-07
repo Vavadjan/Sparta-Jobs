@@ -11,22 +11,28 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: #fff; /* Задайте цвет фона заголовка */
-	backdrop-filter: blur(10px); /* Применение размытия */
+	background-color: transparent; /* Задайте цвет фона заголовка */
+	backdrop-filter: blur(4px); /* Применение размытия */
 	z-index: 1000; /* Уровень отображения над остальным контентом */
 	transition: background-color 0.5s; /* Плавное изменение цвета фона при прокрутке */
 }
 
 .header-container {
-	height: 90px;
+	position: relative;
+	padding: 16px 0 16px 0;
+	min-height: 90px;
+	max-height: 138px;
 	padding: 0 var(--padding-left-and-right);
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-between;
+	align-items: center;
+	gap: 19.5px;
 }
 
 .logo {
 	margin: 0;
-	padding: 25px 0 0 0;
+	padding: 0 0 0 0;
 	display: flex;
 
 	&_first-word {
@@ -51,13 +57,15 @@ header {
 }
 
 .header-menu {
-	padding: 0 0 0 0;
+	margin: 0 auto 0 auto;
+	padding: 0;
 	display: flex;
+	order: 1;
 
 	&_ol {
 		list-style: none;
 		display: flex;
-		gap: 24px;		
+		gap: 24px;
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: row;
@@ -76,22 +84,45 @@ header {
 		line-height: 24px;
 	}
 
-		&_a:hover {
-		color: var(--blue, #006CEB);
+	&_a:hover {
+		color: var(--blue, #006ceb);
 		transition: 0.4s;
 	}
 }
 
+.burger {
+	display: flex;
+	position: fixed;
+}
+
+.nav {
+	display: none;
+	flex-direction: column;
+	position: fixed;
+	height: 300px;
+	width: 100%;
+	top: 80px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+	overflow-y: auto;
+	padding: 20px;
+	background-color: #121212;
+	animation: burgerAnimation 0.4s;
+}
+
 .button {
 	display: flex;
+	order: 3;
 	margin: 18px 0;
 	padding: 16px 32px;
 	width: 195px;
 	height: 22px;
 	border-radius: 60px;
-	background: #1C1C1C;
-	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.20);
-	color: #FFF;
+	background: #1c1c1c;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+	color: #fff;
 	font-family: Unbounded;
 	font-size: 18px;
 	font-style: normal;
@@ -101,7 +132,43 @@ header {
 
 .button:hover {
 	border-radius: 60px;
-	background: var(--blue, #006CEB);
-	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.30);
+	background: var(--blue, #006ceb);
+	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
 	transition: 0.4s;
+}
+
+/* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
+@media (max-width: 1365px) {
+	.header-menu {
+		order: 2; /* При максимальной ширине 1365px и ниже второй элемент меняется на третий место */
+		margin: -15.5px auto 20px auto;
+		padding-right: calc(-30px + 70 * (100vw / 1365));
+	}
+
+	.button {
+		order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
+	}
+}
+
+/* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
+@media (max-width: 800px) {
+	.header-menu {
+		&_a {
+			font-size: calc(-0.5px + 18 * (100vw / 800));
+		}
+	}
+}
+
+/* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
+@media (max-width: 639px) {
+	.header-menu {
+		&_a {
+			font-size: calc(-0.5px + 18 * (100vw / 640));
+		}
+	}
+
+	.button {
+		display: none;
+	}
+
 }
