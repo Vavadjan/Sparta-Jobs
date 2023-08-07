@@ -3,21 +3,30 @@
 }
 
 body {
+	margin: 0;
+	padding: 0;
 }
 
 header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.9); /* Задайте цвет фона заголовка */
+	background-color: #fff; /* Задайте цвет фона заголовка */
 	backdrop-filter: blur(10px); /* Применение размытия */
 	z-index: 1000; /* Уровень отображения над остальным контентом */
-	transition: background-color 0.3s; /* Плавное изменение цвета фона при прокрутке */
+	transition: background-color 0.5s; /* Плавное изменение цвета фона при прокрутке */
+}
+
+.header-container {
+	height: 90px;
+	padding: 0 var(--padding-left-and-right);
+	display: flex;
+	justify-content: space-between;
 }
 
 .logo {
-	position: relative;
-	padding: 25px 0 0 80px;
+	margin: 0;
+	padding: 25px 0 0 0;
 	display: flex;
 
 	&_first-word {
@@ -42,24 +51,23 @@ header {
 }
 
 .header-menu {
-	padding: 0 0 0 343px;
-	position: relative;
+	padding: 0 0 0 0;
 	display: flex;
-	align-items: center;
 
 	&_ol {
-		position: relative;
+		list-style: none;
 		display: flex;
-		gap: 24px;
+		gap: 24px;		
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
 	}
 
-	&_li {
-	}
+	// &_li {
+	// 	display: flex;
+	// }
 
 	&_a {
-	}
-
-	&_p {
 		color: #1c1c1c;
 		font-family: Montserrat;
 		font-size: 18px;
@@ -67,4 +75,21 @@ header {
 		font-weight: 500;
 		line-height: 24px;
 	}
+}
+
+.button {
+	display: flex;
+	margin: 18px 0;
+	padding: 16px 32px;
+	width: 195px;
+	height: 22px;
+	border-radius: 60px;
+	background: #1C1C1C;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.20);
+	color: var(--white, #FFF);
+	font-family: Unbounded;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 }
