@@ -115,6 +115,7 @@ header {
   position: relative;
   z-index: 2;
   overflow: hidden;
+  display: none;
 }
 
 .menu-btn span {
@@ -154,14 +155,32 @@ header {
 /* Меню, которое будет появляться */
 .menu {
   position: fixed;
-  top: 0;
+  top: 90px;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 15px;
   background: transparent;
-  transform: translateX(-100%);
+  backdrop-filter: blur(4px); /* Применение размытия */
+  transform: translateY(-100%);
   transition: transform 0.5s;
+}
+.menu nav {
+  margin: 0 var(--padding-left-and-right);
+}
+.menu li {
+  margin: 0 auto;
+}
+.menu a {
+  color: #1c1c1c;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+}
+.menu a:hover {
+  color: var(--blue, #006ceb);
+  transition: 0.4s;
 }
 
 .menu.active {
@@ -191,10 +210,13 @@ header {
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
 @media (max-width: 639px) {
-  .header-menu_a {
-    font-size: calc(-0.5px + 2.8125vw);
+  .header-menu {
+    display: none;
   }
   .button {
     display: none;
+  }
+  .menu-btn {
+    display: flex;
   }
 }
