@@ -1,74 +1,71 @@
 :root {
-   --padding-left-and-right: 5.55555555555556vw; /*   var(--padding-left-and-right)   */
+	--padding-left-and-right: 5.55555555555556vw; /*   var(--padding-left-and-right)   */
 }
 
 body {
-   position: relative;
-   display: flex;
 }
 
 header {
-   width: 100%;
-   height: 90px;
-   position: fixed;
-   top: 0;
-   left: 0;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9); /* Задайте цвет фона заголовка */
+	backdrop-filter: blur(10px); /* Применение размытия */
+	z-index: 1000; /* Уровень отображения над остальным контентом */
+	transition: background-color 0.3s; /* Плавное изменение цвета фона при прокрутке */
 }
 
 .logo {
-   position: relative;
-   padding: 25px 0 0 80px;
-   display: flex;
+	position: relative;
+	padding: 25px 0 0 80px;
+	display: flex;
 
-   &_first-word {
-      display: flex;
-      color: #006ceb;
-      font-family: Unbounded;
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-   }
+	&_first-word {
+		display: flex;
+		color: #006ceb;
+		font-family: Unbounded;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
 
-   &_second-word {
-      display: flex;
-      color: #1c1c1c;
-      font-family: Unbounded;
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-   }
+	&_second-word {
+		display: flex;
+		color: #1c1c1c;
+		font-family: Unbounded;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
 }
 
 .header-menu {
-   padding: 0 0 0 343px;
-   position: relative;
-   display: flex;
-   align-items: center;
+	padding: 0 0 0 343px;
+	position: relative;
+	display: flex;
+	align-items: center;
 
-		&_ol {
-         position: relative;
-         display: flex;
-         gap: 24px;
-		}
+	&_ul {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		gap: 24px;
+	}
 
-		&_li {
-		}
+	&_li {
+	}
 
-		&_a {
-		}
+	&_a {
+	}
 
-		&_p {
-         color: #1C1C1C;
-         font-family: Montserrat;
-         font-size: 18px;
-         font-style: normal;
-         font-weight: 500;
-         line-height: 24px; /* 133.333% */
-		}
+	&_p {
+		color: #1c1c1c;
+		font-family: Montserrat;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 24px;
+	}
 }
