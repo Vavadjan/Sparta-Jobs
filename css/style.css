@@ -82,28 +82,6 @@ header {
   transition: 0.4s;
 }
 
-.burger {
-  display: flex;
-  position: fixed;
-}
-
-.nav {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  height: 300px;
-  width: 100%;
-  top: 80px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-  overflow-y: auto;
-  padding: 20px;
-  background-color: #121212;
-  animation: burgerAnimation 0.4s;
-}
-
 .button {
   display: flex;
   order: 3;
@@ -120,6 +98,9 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.button_a {
+  border-radius: 60px;
 }
 
 .button:hover {
