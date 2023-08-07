@@ -42,16 +42,16 @@ header {
 }
 
 .header-menu {
-   padding: 0 0 0 343px;
-   position: relative;
-   display: flex;
-   align-items: center;
+	padding: 0 0 0 343px;
+	position: relative;
+	display: flex;
+	align-items: center;
 
-		&_ol {
-         position: relative;
-         display: flex;
-         gap: 24px;
-		}
+	&_ol {
+		position: relative;
+		display: flex;
+		gap: 24px;
+	}
 
 	&_li {
 	}
