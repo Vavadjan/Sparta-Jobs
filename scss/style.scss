@@ -75,6 +75,11 @@ header {
 		font-weight: 500;
 		line-height: 24px;
 	}
+
+		&_a:hover {
+		color: var(--blue, #006CEB);
+		transition: 0.4s;
+	}
 }
 
 .button {
@@ -86,10 +91,17 @@ header {
 	border-radius: 60px;
 	background: #1C1C1C;
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.20);
-	color: var(--white, #FFF);
+	color: #FFF;
 	font-family: Unbounded;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+}
+
+.button:hover {
+	border-radius: 60px;
+	background: var(--blue, #006CEB);
+	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.30);
+	transition: 0.4s;
 }
