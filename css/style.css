@@ -79,7 +79,7 @@ header {
   line-height: 24px;
 }
 .header-menu_a:hover {
-  color: var(--blue, #006ceb);
+  color: #006ceb;
   transition: 0.4s;
 }
 
@@ -103,7 +103,7 @@ header {
 
 .header-button:hover {
   border-radius: 60px;
-  background: var(--blue, #006ceb);
+  background: #006ceb;
   box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
   transition: 0.4s;
 }
@@ -242,21 +242,12 @@ header {
 }
 
 .advantages {
-  width: 100%;
   margin: 90px 0 0 0;
   padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
-  background: url(../img/SVG/rocket.svg), url(../img/SVG/advantages_bg2.svg), url(../img/SVG/advantages_bg1.svg);
-  background-repeat: no-repeat;
-  background-size: contain cover;
-  background-position: 73.9% 78%, 0 38%, 0 0;
+  background: #EAEAEA;
   gap: 30px;
-  display: flex;
-}
-.advantages .advantages-left-container {
-  width: 686px;
   display: flex;
   flex-flow: row wrap;
-  gap: 30px;
 }
 .advantages .left-container-small-black-box {
   width: 268px;
@@ -286,18 +277,32 @@ header {
   font-weight: 400;
   line-height: 150%; /* 30px */
 }
-.advantages .advantages-right-container {
-  display: flex;
-  width: 564px;
+.advantages .left-container-big-black-box {
+  width: 504px;
+  padding: 30px;
   border-radius: 30px;
   background: #1C1C1C;
-}
-.advantages .right-container-big-black-box {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  justify-content: space-between;
 }
 
+/* Медиа-запрос для изменения порядка отображения на ширине 1800px и выше */
+@media (min-width: 1800px) {
+  .left-container-big-black-box {
+    order: 5;
+  }
+}
+/* Медиа-запрос для изменения порядка отображения на ширине 1439px и ниже */
+@media (max-width: 1439px) {
+  .advantages {
+    justify-content: center;
+  }
+  .advantages .left-container-big-black-box {
+    order: 5;
+    width: 627px;
+  }
+}
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
 @media (max-width: 1365px) {
   .header-menu {
@@ -334,6 +339,15 @@ header {
 @media (max-width: 800px) {
   .header-menu_a {
     font-size: calc(-0.5px + 2.25vw);
+  }
+}
+/* Медиа-запрос для изменения порядка отображения на ширине 771px и ниже */
+@media (max-width: 771px) {
+  .advantages {
+    justify-content: center;
+  }
+  .advantages .left-container-small-black-box {
+    width: 627px;
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
