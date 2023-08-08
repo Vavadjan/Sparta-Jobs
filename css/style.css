@@ -287,6 +287,15 @@ header {
   justify-content: space-between;
 }
 
+/* Медиа-запрос для изменения порядка отображения на ширине 2246px и выше */
+@media (min-width: 2246px) {
+  .advantages {
+    justify-content: center;
+  }
+  .advantages .left-container-big-black-box {
+    order: 5;
+  }
+}
 /* Медиа-запрос для изменения порядка отображения на ширине 1800px и выше */
 @media (min-width: 1800px) {
   .left-container-big-black-box {
