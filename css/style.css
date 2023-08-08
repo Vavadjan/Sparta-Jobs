@@ -241,6 +241,63 @@ header {
   background-position: 100% 20%;
 }
 
+.advantages {
+  width: 100%;
+  margin: 90px 0 0 0;
+  padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
+  background: url(../img/SVG/rocket.svg), url(../img/SVG/advantages_bg2.svg), url(../img/SVG/advantages_bg1.svg);
+  background-repeat: no-repeat;
+  background-size: contain cover;
+  background-position: 73.9% 78%, 0 38%, 0 0;
+  gap: 30px;
+  display: flex;
+}
+.advantages .advantages-left-container {
+  width: 686px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+.advantages .left-container-small-black-box {
+  width: 268px;
+  padding: 30px;
+  border-radius: 30px;
+  background: #1C1C1C;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.advantages .advantages-h2 {
+  display: flex;
+  color: #FFF;
+  font-family: Unbounded;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 45px */
+}
+.advantages .advantages-p {
+  padding-top: 20px;
+  display: flex;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+.advantages .advantages-right-container {
+  display: flex;
+  width: 564px;
+  border-radius: 30px;
+  background: #1C1C1C;
+}
+.advantages .right-container-big-black-box {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
 @media (max-width: 1365px) {
   .header-menu {
