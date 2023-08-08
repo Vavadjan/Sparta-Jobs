@@ -234,11 +234,11 @@ header {
 .h1-container .img-container {
   display: flex;
   width: 54.1666666667vw;
-  height: 34.7222222222vw;
+  height: 500px;
   background-image: url(../img/SVG/h1-illustration.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 100% 100%;
+  background-position: 100% 20%;
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */

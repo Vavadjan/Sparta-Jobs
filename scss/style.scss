@@ -242,11 +242,11 @@ header {
 	.img-container {
 		display: flex;
 		width: calc(780 / 1440 * 100vw);
-		height: calc(500 / 1440 * 100vw);
+		height: 500px;
 		background-image: url(../img/SVG/h1-illustration.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position: 100% 100%;
+		background-position: 100% 20%;
 	}
 }
 
