@@ -247,9 +247,22 @@ header {
   background: #eaeaea;
 }
 .advantages .advantages-inner {
+  position: relative;
   gap: 30px;
   display: flex;
   flex-flow: row wrap;
+  z-index: 1;
+}
+.advantages .advantages-inner:before {
+  content: "";
+  position: absolute;
+  width: 53.6%;
+  height: 80%;
+  top: 10%;
+  left: -5.5555555556vw;
+  display: flex;
+  background: #FFBF1C;
+  z-index: -1;
 }
 .advantages .container-small-black-box {
   width: 268px;
@@ -306,10 +319,31 @@ header {
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 1439px и ниже */
 @media (max-width: 1439px) {
-  .advantages-inner {
+  .advantages {
+    margin: 90px 0 0 0;
+    padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
+    background: #eaeaea;
+  }
+  .advantages .advantages-inner {
+    position: relative;
+    gap: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    z-index: 1;
     justify-content: center;
   }
-  .advantages-inner .container-big-black-box {
+  .advantages .advantages-inner:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: -5.5555555556vw;
+    display: flex;
+    background: #FFBF1C;
+    z-index: -1;
+  }
+  .advantages .container-big-black-box {
     order: 5;
     width: 627px;
   }
