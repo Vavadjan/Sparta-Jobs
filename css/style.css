@@ -265,6 +265,18 @@ header {
   background: #ffbf1c;
   z-index: -1;
 }
+.advantages .advantages-inner:after {
+  content: "";
+  position: absolute;
+  background: url(../img/SVG/rocket.svg);
+  transform: scaleX(-1); /* Отразить по горизонтали */
+  background-repeat: no-repeat;
+  width: 390px;
+  height: 290px;
+  bottom: -20px;
+  right: 0;
+  z-index: -1;
+}
 .advantages .container-small-black-box {
   width: 268px;
   padding: 30px;
@@ -340,6 +352,10 @@ header {
     background: #ffbf1c;
     z-index: -1;
   }
+  .advantages .advantages-inner:after {
+    content: "";
+    display: none;
+  }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 1439px и ниже */
 @media (max-width: 1439px) {
@@ -366,6 +382,10 @@ header {
     display: flex;
     background: #ffbf1c;
     z-index: -1;
+  }
+  .advantages .advantages-inner:after {
+    content: "";
+    display: none;
   }
   .advantages .container-big-black-box {
     order: 5;
