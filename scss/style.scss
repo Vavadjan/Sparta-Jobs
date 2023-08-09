@@ -255,7 +255,6 @@ header {
 	padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
 	background: #eaeaea;
 
-
 	.advantages-inner {
 		position: relative;
 		gap: 30px;
@@ -272,9 +271,9 @@ header {
 		top: 10%;
 		left: calc(-80 / 1440 * 100vw);
 		display: flex;
-		background: #FFBF1C;	
-		z-index: -1;	
-		}
+		background: #ffbf1c;
+		z-index: -1;
+	}
 
 	.container-small-black-box {
 		width: 268px;
@@ -318,10 +317,31 @@ header {
 	}
 }
 
+/* Медиа-запрос для изменения порядка отображения на ширине 1500px и выше */
+@media (min-width: 1500px) {
+	.advantages {
+		.advantages-inner:before {
+			content: "";
+			position: absolute;
+			width: 715px;
+		}
+	}
+}
+
+/* Медиа-запрос для изменения порядка отображения на ширине 1800px и выше */
+@media (min-width: 1800px) {
+	.advantages {
+		.container-big-black-box {
+			order: 5;
+			width: 627px;
+		}
+	}
+}
+
 /* Медиа-запрос для изменения порядка отображения на ширине 2246px и выше */
 @media (min-width: 2246px) {
 	.advantages-inner {
-		justify-content: center;
+		justify-content: start;
 
 		.container-big-black-box {
 			order: 5;
@@ -329,41 +349,50 @@ header {
 	}
 }
 
-/* Медиа-запрос для изменения порядка отображения на ширине 1800px и выше */
-@media (min-width: 1800px) {
-	.container-big-black-box {
-		order: 5;
+/* Медиа-запрос для изменения порядка отображения на ширине 2384px и выше */
+@media (min-width: 2384px) {
+	.advantages {
+		.advantages-inner:before {
+			content: "";
+			position: absolute;
+			width: 80%;
+			height: 80%;
+			top: 10%;
+			left: calc(-80 / 1440 * 100vw);
+			display: flex;
+			background: #ffbf1c;
+			z-index: -1;
+		}
 	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1439px и ниже */
 @media (max-width: 1439px) {
-.advantages {
-	margin: 90px 0 0 0;
-	padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
-	background: #eaeaea;
+	.advantages {
+		margin: 90px 0 0 0;
+		padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
+		background: #eaeaea;
 
+		.advantages-inner {
+			position: relative;
+			gap: 30px;
+			display: flex;
+			flex-flow: row wrap;
+			z-index: 1;
+			justify-content: center;
+		}
 
-	.advantages-inner {
-		position: relative;
-		gap: 30px;
-		display: flex;
-		flex-flow: row wrap;
-		z-index: 1;
-		justify-content: center;
-	}
-
-	.advantages-inner:before {
-		content: "";
-		position: absolute;
-		width: 80%;
-		height: 80%;
-		top: 10%;
-		left: calc(-80 / 1440 * 100vw);
-		display: flex;
-		background: #FFBF1C;	
-		z-index: -1;	
-		}		
+		.advantages-inner:before {
+			content: "";
+			position: absolute;
+			width: 80%;
+			height: 80%;
+			top: 10%;
+			left: calc(-80 / 1440 * 100vw);
+			display: flex;
+			background: #ffbf1c;
+			z-index: -1;
+		}
 
 		.container-big-black-box {
 			order: 5;

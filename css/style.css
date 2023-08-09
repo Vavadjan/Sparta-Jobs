@@ -261,7 +261,7 @@ header {
   top: 10%;
   left: -5.5555555556vw;
   display: flex;
-  background: #FFBF1C;
+  background: #ffbf1c;
   z-index: -1;
 }
 .advantages .container-small-black-box {
@@ -302,19 +302,42 @@ header {
   justify-content: space-between;
 }
 
+/* Медиа-запрос для изменения порядка отображения на ширине 1500px и выше */
+@media (min-width: 1500px) {
+  .advantages .advantages-inner:before {
+    content: "";
+    position: absolute;
+    width: 715px;
+  }
+}
+/* Медиа-запрос для изменения порядка отображения на ширине 1800px и выше */
+@media (min-width: 1800px) {
+  .advantages .container-big-black-box {
+    order: 5;
+    width: 627px;
+  }
+}
 /* Медиа-запрос для изменения порядка отображения на ширине 2246px и выше */
 @media (min-width: 2246px) {
   .advantages-inner {
-    justify-content: center;
+    justify-content: start;
   }
   .advantages-inner .container-big-black-box {
     order: 5;
   }
 }
-/* Медиа-запрос для изменения порядка отображения на ширине 1800px и выше */
-@media (min-width: 1800px) {
-  .container-big-black-box {
-    order: 5;
+/* Медиа-запрос для изменения порядка отображения на ширине 2384px и выше */
+@media (min-width: 2384px) {
+  .advantages .advantages-inner:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: -5.5555555556vw;
+    display: flex;
+    background: #ffbf1c;
+    z-index: -1;
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 1439px и ниже */
@@ -340,7 +363,7 @@ header {
     top: 10%;
     left: -5.5555555556vw;
     display: flex;
-    background: #FFBF1C;
+    background: #ffbf1c;
     z-index: -1;
   }
   .advantages .container-big-black-box {
