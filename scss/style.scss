@@ -306,7 +306,7 @@ header {
 
 /* Медиа-запрос для изменения порядка отображения на ширине 2246px и выше */
 @media (min-width: 2246px) {
-	.advantages {
+	.advantages-inner {
 		justify-content: center;
 
 		.container-big-black-box {
@@ -324,7 +324,7 @@ header {
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1439px и ниже */
 @media (max-width: 1439px) {
-	.advantages {
+	.advantages-inner {
 		justify-content: center;
 
 		.container-big-black-box {
@@ -382,7 +382,7 @@ header {
 
 /* Медиа-запрос для изменения порядка отображения на ширине 771px и ниже */
 @media (max-width: 771px) {
-	.advantages {
+	.advantages-inner {
 		justify-content: center;
 
 		.container-small-black-box {
