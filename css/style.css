@@ -18,7 +18,7 @@ header {
   transition: background-color 0.5s; /* Плавное изменение цвета фона при прокрутке */
 }
 
-.header-wrap {
+.header__inner {
   position: relative;
   padding: 16px 0 16px 0;
   min-height: 90px;
@@ -31,13 +31,13 @@ header {
   gap: 19.5px;
 }
 
-.header-wrap__logo {
+.header__logo-wrap {
   margin: 0;
   padding: 0 0 0 0;
   display: flex;
   z-index: 10000;
 }
-.header-wrap__logo .logo__first-word {
+.header__logo-wrap .header__logo-first-word {
   display: flex;
   color: #006ceb;
   font-family: Unbounded;
@@ -46,7 +46,7 @@ header {
   font-weight: 500;
   line-height: normal;
 }
-.header-wrap__logo .logo__second-word {
+.header__logo-wrap .header__logo-second-word {
   display: flex;
   color: #1c1c1c;
   font-family: Unbounded;
