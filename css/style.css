@@ -249,7 +249,7 @@ header {
   background-image: url(../img/SVG/h1-illustration.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 180% 20%;
+  background-position: 100% 20%;
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1500px и выше */
