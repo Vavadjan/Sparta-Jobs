@@ -62,7 +62,7 @@ header {
   display: flex;
   order: 1;
 }
-.header-menu .header-menu__ol {
+.header-menu .header-menu__list {
   list-style: none;
   display: flex;
   gap: 24px;
@@ -70,7 +70,7 @@ header {
   justify-content: space-between;
   flex-direction: row;
 }
-.header-menu .header-menu__a {
+.header-menu .header-menu__link {
   color: #1c1c1c;
   font-family: Montserrat;
   font-size: 18px;
@@ -78,7 +78,7 @@ header {
   font-weight: 500;
   line-height: 24px;
 }
-.header-menu .header-menu__a:hover {
+.header-menu .header-menu__link:hover {
   color: #006ceb;
   transition: 0.4s;
 }
