@@ -17,7 +17,7 @@ header {
 	transition: background-color 0.5s; /* Плавное изменение цвета фона при прокрутке */
 }
 
-.header-container {
+.header-wrap {
 	position: relative;
 	padding: 16px 0 16px 0;
 	min-height: 90px;
@@ -30,13 +30,13 @@ header {
 	gap: 19.5px;
 }
 
-.logo {
+.header-wrap__logo {
 	margin: 0;
 	padding: 0 0 0 0;
 	display: flex;
 	z-index: 10000;
 
-	&_first-word {
+	.logo__first-word {
 		display: flex;
 		color: #006ceb;
 		font-family: Unbounded;
@@ -46,7 +46,7 @@ header {
 		line-height: normal;
 	}
 
-	&_second-word {
+	.logo__second-word {
 		display: flex;
 		color: #1c1c1c;
 		font-family: Unbounded;
@@ -63,7 +63,7 @@ header {
 	display: flex;
 	order: 1;
 
-	&_ol {
+	.header-menu__ol {
 		list-style: none;
 		display: flex;
 		gap: 24px;
@@ -72,7 +72,7 @@ header {
 		flex-direction: row;
 	}
 
-	&_a {
+	.header-menu__a {
 		color: #1c1c1c;
 		font-family: Montserrat;
 		font-size: 18px;
@@ -81,7 +81,7 @@ header {
 		line-height: 24px;
 	}
 
-	&_a:hover {
+	.header-menu__a:hover {
 		color: #006ceb;
 		transition: 0.4s;
 	}
@@ -99,7 +99,7 @@ header {
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
 	cursor: pointer; /* Изменение вида курсора на палец при наведении */
 
-	a {
+	.header-button__a {
 		color: #FFF;
 		font-family: Unbounded;
 		font-size: 18px;
@@ -202,20 +202,20 @@ header {
 	list-style-type: none;
 }
 
-.h1-container {
+.h1-wrap {
 	padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
 	display: flex;
 	justify-content: space-between;
 	margin: 90px 0 0 0;
 
-	.text-container {
+	.h1-wrap__text-wrap {
 		margin: calc(94 / 1440 * 100vw) 0 0 0;
 		width: calc(630 / 1440 * 100vw);
 		display: flex;
 		flex-direction: column;
 
 		h1 {
-			padding: 23px 0 0 0;
+			padding: calc(23 / 1440 * 100vw) 0 0 0;
 			color: #1c1c1c;
 			font-family: Unbounded;
 			font-size: 40px;
@@ -224,11 +224,11 @@ header {
 			line-height: 150%; /* 66px */
 		}
 
-		.h1-button-wrap {
+		.text-wrap__button-wrap {
 			display: flex;
 		}
 
-		.h1-button {		
+		.button-wrap__button {		
 			display: inline-block;
 			margin: 40px 0 0 0;
 			padding: 16px 32px;
@@ -240,7 +240,7 @@ header {
 			cursor: pointer; /* Изменение вида курсора на палец при наведении */
 		}
 
-		a {			
+		.button-wrap__a {			
 			color: #fff;
 			font-family: Unbounded;
 			font-size: 18px;
@@ -250,13 +250,13 @@ header {
 			white-space: nowrap; /* Отменяет перенос слов */
 			}		
 
-		.h1-button:hover {
+		.button-wrap__button:hover {
 			background: #1c1c1c;
 			transition: 0.4s;
 		}
 
 	}
-	.img-container {
+	.h1-wrap__img-wrap {
 		display: flex;
 		width: calc(630 / 1440 * 100vw);
 		height: 500px;
@@ -304,26 +304,26 @@ header {
 		order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
 	}
 
-	.h1-container {
+	.h1-wrap {
 		margin: 138px 0 0 0;
 	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 838px и ниже */
 @media (max-width: 838px) {
-	.h1-container {
+	.h1-wrap {
 		padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
 		display: flex;
 		justify-content: space-between;
 		margin: 138px 0 0 0;
 
-		.text-container {
+		.h1-wrap__text-wrap {
 			margin: calc(94 / 1440 * 100vw) 0 0 0;
 			width: 100%;
 			display: flex;
 			flex-direction: column;
 		}
-		.img-container {
+		.h1-wrap__img-wrap {
 			display: none;
 		}
 	}
@@ -332,7 +332,7 @@ header {
 /* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
 @media (max-width: 800px) {
 	.header-menu {
-		&_a {
+		.header-menu__a {
 			font-size: calc(-0.5px + 18 * (100vw / 800));
 		}
 	}
@@ -356,19 +356,20 @@ header {
 		display: flex;
 	}
 
-	.h1-container {
+	.h1-wrap {
 		padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
 		display: flex;
 		justify-content: space-between;
-		margin: 90px 0 0 0;
+		margin: 90px 0 0 0;		
+		align-items: flex-start;    
 
-		.text-container {
-			margin: calc(94 / 1440 * 100vw) 0 0 0;
-			width: 454px;
+		.h1-wrap__text-wrap {
 			display: flex;
 			flex-direction: column;
+			align-items: flex-start;                                                                                                                                                                                                 ;
 
-			h1 {
+			h1 {				
+				margin: calc(23 / 1440 * 100vw) 0 0 0;
 				color: #1c1c1c;
 				font-family: Unbounded;
 				font-size: calc(20px + 24 * (100vw / 639));
@@ -377,7 +378,7 @@ header {
 				line-height: 150%; /* 66px */
 			}
 
-			.h1-container-button {
+			.button-wrap__button {
 				margin: calc(60 / 639 * 100vw) 0 0 0;
 				padding: 16px 32px;
 				width: 178px;

@@ -18,7 +18,7 @@ header {
   transition: background-color 0.5s; /* Плавное изменение цвета фона при прокрутке */
 }
 
-.header-container {
+.header-wrap {
   position: relative;
   padding: 16px 0 16px 0;
   min-height: 90px;
@@ -31,13 +31,13 @@ header {
   gap: 19.5px;
 }
 
-.logo {
+.header-wrap__logo {
   margin: 0;
   padding: 0 0 0 0;
   display: flex;
   z-index: 10000;
 }
-.logo_first-word {
+.header-wrap__logo .logo__first-word {
   display: flex;
   color: #006ceb;
   font-family: Unbounded;
@@ -46,7 +46,7 @@ header {
   font-weight: 500;
   line-height: normal;
 }
-.logo_second-word {
+.header-wrap__logo .logo__second-word {
   display: flex;
   color: #1c1c1c;
   font-family: Unbounded;
@@ -62,7 +62,7 @@ header {
   display: flex;
   order: 1;
 }
-.header-menu_ol {
+.header-menu .header-menu__ol {
   list-style: none;
   display: flex;
   gap: 24px;
@@ -70,7 +70,7 @@ header {
   justify-content: space-between;
   flex-direction: row;
 }
-.header-menu_a {
+.header-menu .header-menu__a {
   color: #1c1c1c;
   font-family: Montserrat;
   font-size: 18px;
@@ -78,7 +78,7 @@ header {
   font-weight: 500;
   line-height: 24px;
 }
-.header-menu_a:hover {
+.header-menu .header-menu__a:hover {
   color: #006ceb;
   transition: 0.4s;
 }
@@ -94,7 +94,7 @@ header {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
-.header-button a {
+.header-button .header-button__a {
   color: #FFF;
   font-family: Unbounded;
   font-size: 18px;
@@ -195,20 +195,20 @@ header {
   list-style-type: none;
 }
 
-.h1-container {
+.h1-wrap {
   padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
   display: flex;
   justify-content: space-between;
   margin: 90px 0 0 0;
 }
-.h1-container .text-container {
+.h1-wrap .h1-wrap__text-wrap {
   margin: 6.5277777778vw 0 0 0;
   width: 43.75vw;
   display: flex;
   flex-direction: column;
 }
-.h1-container .text-container h1 {
-  padding: 23px 0 0 0;
+.h1-wrap .h1-wrap__text-wrap h1 {
+  padding: 1.5972222222vw 0 0 0;
   color: #1c1c1c;
   font-family: Unbounded;
   font-size: 40px;
@@ -216,10 +216,10 @@ header {
   font-weight: 500;
   line-height: 150%; /* 66px */
 }
-.h1-container .text-container .h1-button-wrap {
+.h1-wrap .h1-wrap__text-wrap .text-wrap__button-wrap {
   display: flex;
 }
-.h1-container .text-container .h1-button {
+.h1-wrap .h1-wrap__text-wrap .button-wrap__button {
   display: inline-block;
   margin: 40px 0 0 0;
   padding: 16px 32px;
@@ -229,7 +229,7 @@ header {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
-.h1-container .text-container a {
+.h1-wrap .h1-wrap__text-wrap .button-wrap__a {
   color: #fff;
   font-family: Unbounded;
   font-size: 18px;
@@ -238,11 +238,11 @@ header {
   line-height: normal;
   white-space: nowrap; /* Отменяет перенос слов */
 }
-.h1-container .text-container .h1-button:hover {
+.h1-wrap .h1-wrap__text-wrap .button-wrap__button:hover {
   background: #1c1c1c;
   transition: 0.4s;
 }
-.h1-container .img-container {
+.h1-wrap .h1-wrap__img-wrap {
   display: flex;
   width: 43.75vw;
   height: 500px;
@@ -268,31 +268,31 @@ header {
   .header-button {
     order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
   }
-  .h1-container {
+  .h1-wrap {
     margin: 138px 0 0 0;
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 838px и ниже */
 @media (max-width: 838px) {
-  .h1-container {
+  .h1-wrap {
     padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
     display: flex;
     justify-content: space-between;
     margin: 138px 0 0 0;
   }
-  .h1-container .text-container {
+  .h1-wrap .h1-wrap__text-wrap {
     margin: 6.5277777778vw 0 0 0;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .h1-container .img-container {
+  .h1-wrap .h1-wrap__img-wrap {
     display: none;
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
 @media (max-width: 800px) {
-  .header-menu_a {
+  .header-menu .header-menu__a {
     font-size: calc(-0.5px + 2.25vw);
   }
 }
@@ -308,19 +308,20 @@ header {
   .menu-btn {
     display: flex;
   }
-  .h1-container {
+  .h1-wrap {
     padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
     display: flex;
     justify-content: space-between;
     margin: 90px 0 0 0;
+    align-items: flex-start;
   }
-  .h1-container .text-container {
-    margin: 6.5277777778vw 0 0 0;
-    width: 454px;
+  .h1-wrap .h1-wrap__text-wrap {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
-  .h1-container .text-container h1 {
+  .h1-wrap .h1-wrap__text-wrap h1 {
+    margin: 1.5972222222vw 0 0 0;
     color: #1c1c1c;
     font-family: Unbounded;
     font-size: calc(20px + 3.7558685446vw);
@@ -328,7 +329,7 @@ header {
     font-weight: 500;
     line-height: 150%; /* 66px */
   }
-  .h1-container .text-container .h1-container-button {
+  .h1-wrap .h1-wrap__text-wrap .button-wrap__button {
     margin: 9.3896713615vw 0 0 0;
     padding: 16px 32px;
     width: 178px;
