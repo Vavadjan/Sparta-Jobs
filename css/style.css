@@ -94,7 +94,7 @@ header {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
-.header-button .header-button__a {
+.header-button .header-button__link {
   color: #fff;
   font-family: Unbounded;
   font-size: 18px;
