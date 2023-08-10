@@ -88,21 +88,25 @@ header {
 }
 
 .header-button {
-	display: flex;
+	display: inline-block;
 	order: 3;
 	margin: 18px 0;
 	padding: 16px 32px;
-	width: 195px;
+	// width: 195px;
 	height: 22px;
 	border-radius: 60px;
 	background: #1c1c1c;
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
-	color: #fff;
-	font-family: Unbounded;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
+	cursor: pointer; /* Изменение вида курсора на палец при наведении */
+
+	a {
+		color: #FFF;
+		font-family: Unbounded;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
 }
 
 .header-button:hover {
@@ -206,223 +210,86 @@ header {
 
 	.text-container {
 		margin: calc(94 / 1440 * 100vw) 0 0 0;
-		width: 454px;
+		width: calc(630 / 1440 * 100vw);
 		display: flex;
 		flex-direction: column;
 
 		h1 {
+			padding: 23px 0 0 0;
 			color: #1c1c1c;
 			font-family: Unbounded;
-			font-size: 44px;
+			font-size: 40px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 150%; /* 66px */
 		}
 
-		.h1-container-button {
-			margin: 60px 0 0 0;
+		.h1-button-wrap {
+			display: flex;
+		}
+
+		.h1-button {		
+			display: inline-block;
+			margin: 40px 0 0 0;
 			padding: 16px 32px;
-			width: 178px;
+			// width: auto;
 			border-radius: 60px;
 			background: #006ceb;
 			/* btn shadow 1 */
 			box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+			cursor: pointer; /* Изменение вида курсора на палец при наведении */
+		}
+
+		a {			
 			color: #fff;
 			font-family: Unbounded;
 			font-size: 18px;
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
-		}
+			white-space: nowrap; /* Отменяет перенос слов */
+			}		
 
-		.h1-container-button:hover {
+		.h1-button:hover {
 			background: #1c1c1c;
 			transition: 0.4s;
 		}
+
 	}
 	.img-container {
 		display: flex;
-		width: calc(780 / 1440 * 100vw);
+		width: calc(630 / 1440 * 100vw);
 		height: 500px;
 		background-image: url(../img/SVG/h1-illustration.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position: 100% 20%;
-	}
-}
-
-.advantages {
-	margin: 90px 0 0 0;
-	padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
-	background: #eaeaea;
-
-	.advantages-inner {
-		position: relative;
-		gap: 30px;
-		display: flex;
-		flex-flow: row wrap;
-		z-index: 1;
-	}
-
-	.advantages-inner:before {
-		content: "";
-		position: absolute;
-		width: 53.6%;
-		height: 80%;
-		top: 10%;
-		left: calc(-80 / 1440 * 100vw);
-		display: flex;
-		background: #ffbf1c;
-		z-index: -1;
-	}
-
-		.advantages-inner:after {
-		content: "";
-		position: absolute;
-		background: url(../img/SVG/rocket.svg);
-		transform: scaleX(-1); /* Отразить по горизонтали */
-		background-repeat: no-repeat;
-		width: 390px;
-		height: 290px;
-		bottom: -20px;
-		right: 0;
-		z-index: -1;
-	}
-
-	.container-small-black-box {
-		width: 268px;
-		padding: 30px;
-		border-radius: 30px;
-		background: #1c1c1c;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	.advantages-h2 {
-		display: flex;
-		color: #fff;
-		font-family: Unbounded;
-		font-size: 30px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: 150%; /* 45px */
-	}
-
-	.advantages-p {
-		padding-top: 20px;
-		display: flex;
-		color: #fff;
-		font-family: Montserrat;
-		font-size: 20px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 150%; /* 30px */
-	}
-
-	.container-big-black-box {
-		width: 504px;
-		padding: 30px;
-		border-radius: 30px;
-		background: #1c1c1c;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		background-position: 180% 20%;
 	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1500px и выше */
 @media (min-width: 1500px) {
-	.advantages {
-		.advantages-inner:before {
-			content: "";
-			position: absolute;
-			width: 715px;
-		}
-	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1800px и выше */
 @media (min-width: 1800px) {
-	.advantages {
-		.container-big-black-box {
-			order: 5;
-			width: 627px;
-		}
-	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 2246px и выше */
 @media (min-width: 2246px) {
-	.advantages-inner {
-		justify-content: start;
-
-		.container-big-black-box {
-			order: 5;
-		}
-	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 2384px и выше */
 @media (min-width: 2384px) {
-	.advantages {
-		.advantages-inner:before {
-			content: "";
-			position: absolute;
-			width: 80%;
-			height: 80%;
-			top: 10%;
-			left: calc(-80 / 1440 * 100vw);
-			display: flex;
-			background: #ffbf1c;
-			z-index: -1;
-		}
+}
 
-	.advantages-inner:after {
-		content: "";
-		display: none;
-	}
-	}
+/* Медиа-запрос для изменения порядка отображения на ширине 2860px и выше */
+@media (min-width: 2860px) {
+	
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1439px и ниже */
 @media (max-width: 1439px) {
-	.advantages {
-		margin: 90px 0 0 0;
-		padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
-		background: #eaeaea;
-
-		.advantages-inner {
-			position: relative;
-			gap: 30px;
-			display: flex;
-			flex-flow: row wrap;
-			z-index: 1;
-			justify-content: center;
-		}
-
-		.advantages-inner:before {
-			content: "";
-			position: absolute;
-			width: 80%;
-			height: 80%;
-			top: 10%;
-			left: calc(-80 / 1440 * 100vw);
-			display: flex;
-			background: #ffbf1c;
-			z-index: -1;
-		}
-
-	.advantages-inner:after {
-		content: "";
-		display: none;
-	}
-
-		.container-big-black-box {
-			order: 5;
-			width: 627px;
-		}
-	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
@@ -473,13 +340,6 @@ header {
 
 /* Медиа-запрос для изменения порядка отображения на ширине 771px и ниже */
 @media (max-width: 771px) {
-	.advantages-inner {
-		justify-content: center;
-
-		.container-small-black-box {
-			width: 627px;
-		}
-	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */

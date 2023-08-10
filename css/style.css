@@ -84,16 +84,18 @@ header {
 }
 
 .header-button {
-  display: flex;
+  display: inline-block;
   order: 3;
   margin: 18px 0;
   padding: 16px 32px;
-  width: 195px;
   height: 22px;
   border-radius: 60px;
   background: #1c1c1c;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+.header-button a {
+  color: #FFF;
   font-family: Unbounded;
   font-size: 18px;
   font-style: normal;
@@ -201,197 +203,61 @@ header {
 }
 .h1-container .text-container {
   margin: 6.5277777778vw 0 0 0;
-  width: 454px;
+  width: 43.75vw;
   display: flex;
   flex-direction: column;
 }
 .h1-container .text-container h1 {
+  padding: 23px 0 0 0;
   color: #1c1c1c;
   font-family: Unbounded;
-  font-size: 44px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 66px */
 }
-.h1-container .text-container .h1-container-button {
-  margin: 60px 0 0 0;
+.h1-container .text-container .h1-button-wrap {
+  display: flex;
+}
+.h1-container .text-container .h1-button {
+  display: inline-block;
+  margin: 40px 0 0 0;
   padding: 16px 32px;
-  width: 178px;
   border-radius: 60px;
   background: #006ceb;
   /* btn shadow 1 */
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+.h1-container .text-container a {
   color: #fff;
   font-family: Unbounded;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  white-space: nowrap; /* Отменяет перенос слов */
 }
-.h1-container .text-container .h1-container-button:hover {
+.h1-container .text-container .h1-button:hover {
   background: #1c1c1c;
   transition: 0.4s;
 }
 .h1-container .img-container {
   display: flex;
-  width: 54.1666666667vw;
+  width: 43.75vw;
   height: 500px;
   background-image: url(../img/SVG/h1-illustration.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 100% 20%;
-}
-
-.advantages {
-  margin: 90px 0 0 0;
-  padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
-  background: #eaeaea;
-}
-.advantages .advantages-inner {
-  position: relative;
-  gap: 30px;
-  display: flex;
-  flex-flow: row wrap;
-  z-index: 1;
-}
-.advantages .advantages-inner:before {
-  content: "";
-  position: absolute;
-  width: 53.6%;
-  height: 80%;
-  top: 10%;
-  left: -5.5555555556vw;
-  display: flex;
-  background: #ffbf1c;
-  z-index: -1;
-}
-.advantages .advantages-inner:after {
-  content: "";
-  position: absolute;
-  background: url(../img/SVG/rocket.svg);
-  transform: scaleX(-1); /* Отразить по горизонтали */
-  background-repeat: no-repeat;
-  width: 390px;
-  height: 290px;
-  bottom: -20px;
-  right: 0;
-  z-index: -1;
-}
-.advantages .container-small-black-box {
-  width: 268px;
-  padding: 30px;
-  border-radius: 30px;
-  background: #1c1c1c;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.advantages .advantages-h2 {
-  display: flex;
-  color: #fff;
-  font-family: Unbounded;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 45px */
-}
-.advantages .advantages-p {
-  padding-top: 20px;
-  display: flex;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 30px */
-}
-.advantages .container-big-black-box {
-  width: 504px;
-  padding: 30px;
-  border-radius: 30px;
-  background: #1c1c1c;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-position: 180% 20%;
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1500px и выше */
-@media (min-width: 1500px) {
-  .advantages .advantages-inner:before {
-    content: "";
-    position: absolute;
-    width: 715px;
-  }
-}
 /* Медиа-запрос для изменения порядка отображения на ширине 1800px и выше */
-@media (min-width: 1800px) {
-  .advantages .container-big-black-box {
-    order: 5;
-    width: 627px;
-  }
-}
 /* Медиа-запрос для изменения порядка отображения на ширине 2246px и выше */
-@media (min-width: 2246px) {
-  .advantages-inner {
-    justify-content: start;
-  }
-  .advantages-inner .container-big-black-box {
-    order: 5;
-  }
-}
 /* Медиа-запрос для изменения порядка отображения на ширине 2384px и выше */
-@media (min-width: 2384px) {
-  .advantages .advantages-inner:before {
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    top: 10%;
-    left: -5.5555555556vw;
-    display: flex;
-    background: #ffbf1c;
-    z-index: -1;
-  }
-  .advantages .advantages-inner:after {
-    content: "";
-    display: none;
-  }
-}
+/* Медиа-запрос для изменения порядка отображения на ширине 2860px и выше */
 /* Медиа-запрос для изменения порядка отображения на ширине 1439px и ниже */
-@media (max-width: 1439px) {
-  .advantages {
-    margin: 90px 0 0 0;
-    padding: 40px var(--padding-left-and-right) 40px var(--padding-left-and-right);
-    background: #eaeaea;
-  }
-  .advantages .advantages-inner {
-    position: relative;
-    gap: 30px;
-    display: flex;
-    flex-flow: row wrap;
-    z-index: 1;
-    justify-content: center;
-  }
-  .advantages .advantages-inner:before {
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    top: 10%;
-    left: -5.5555555556vw;
-    display: flex;
-    background: #ffbf1c;
-    z-index: -1;
-  }
-  .advantages .advantages-inner:after {
-    content: "";
-    display: none;
-  }
-  .advantages .container-big-black-box {
-    order: 5;
-    width: 627px;
-  }
-}
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
 @media (max-width: 1365px) {
   .header-menu {
@@ -431,14 +297,6 @@ header {
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 771px и ниже */
-@media (max-width: 771px) {
-  .advantages-inner {
-    justify-content: center;
-  }
-  .advantages-inner .container-small-black-box {
-    width: 627px;
-  }
-}
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
 @media (max-width: 639px) {
   .header-menu {
