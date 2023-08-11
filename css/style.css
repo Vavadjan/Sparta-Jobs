@@ -245,8 +245,94 @@ header {
 .h1-wrap .h1-wrap__img-wrap {
   display: flex;
   width: 43.75vw;
-  height: 500px;
+  height: 440px;
   background-image: url(../img/SVG/h1-illustration.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 82%;
+}
+
+.h2-wrap {
+  padding: 80px var(--padding-left-and-right) 0 var(--padding-left-and-right);
+  display: flex;
+  justify-content: space-between;
+}
+.h2-wrap__text-block {
+  width: 43.9583333333vw;
+  display: flex;
+  flex-direction: column;
+}
+.h2-wrap__h2 {
+  display: flex;
+  color: #006CEB;
+  font-family: Unbounded;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 45px */
+}
+.h2-wrap__span {
+  padding: 0 5px 0 0;
+  display: block;
+  color: #1C1C1C;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.h2-wrap__strong {
+  padding: 20px 0 0 0;
+  display: block;
+  color: #1C1C1C;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+}
+.h2-wrap__span-whith-link-wrap {
+  padding: 20px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.h2-wrap__link {
+  color: #006CEB;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.h2-wrap .h2-wrap__button-wrap {
+  display: flex;
+}
+.h2-wrap .h2-wrap__button-body {
+  display: inline-block;
+  margin: 30px 0 0 0;
+  padding: 16px 32px;
+  border-radius: 60px;
+  background: #006ceb;
+  /* btn shadow 1 */
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+.h2-wrap .h2-wrap__button-link {
+  color: #fff;
+  font-family: Unbounded;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap; /* Отменяет перенос слов */
+}
+.h2-wrap .h2-wrap__button-body:hover {
+  background: #1c1c1c;
+  transition: 0.4s;
+}
+.h2-wrap__img-block {
+  width: 42.1527777778vw;
+  background: url(../img/SVG/h2-illustration.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 100% 20%;

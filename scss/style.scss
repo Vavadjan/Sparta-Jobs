@@ -258,13 +258,112 @@ header {
 	.h1-wrap__img-wrap {
 		display: flex;
 		width: calc(630 / 1440 * 100vw);
-		height: 500px;
+		height: 440px;
 		background-image: url(../img/SVG/h1-illustration.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position: 100% 20%;
+		background-position: 100% 82%;
 	}
 }
+
+.h2-wrap {
+	padding: 80px var(--padding-left-and-right) 0 var(--padding-left-and-right);
+	display: flex;
+	justify-content: space-between;
+
+		&__text-block {
+			width: calc(633 / 1440 * 100vw);
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__h2 {
+			display: flex;
+			color:  #006CEB;
+			font-family: Unbounded;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 150%; /* 45px */
+		}
+
+		&__span {
+			padding: 0 5px 0 0;
+			display: block;
+			color: #1C1C1C;
+			font-family: Montserrat;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 150%;
+		}
+
+		&__strong {
+			padding: 20px 0 0 0;
+			display: block;
+			color: #1C1C1C;
+			font-family: Montserrat;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 150%; /* 30px */
+		}
+
+		&__span-whith-link-wrap {
+			padding: 20px 0 0 0;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&__link {
+			color: #006CEB;
+			font-family: Montserrat;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 150%;
+		}
+
+		.h2-wrap__button-wrap {
+			display: flex;
+		}
+
+		.h2-wrap__button-body {
+			display: inline-block;
+			margin: 30px 0 0 0;
+			padding: 16px 32px;
+			// width: auto;
+			border-radius: 60px;
+			background: #006ceb;
+			/* btn shadow 1 */
+			box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+			cursor: pointer; /* Изменение вида курсора на палец при наведении */
+		}
+
+		.h2-wrap__button-link {
+			color: #fff;
+			font-family: Unbounded;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			white-space: nowrap; /* Отменяет перенос слов */
+		}
+
+		.h2-wrap__button-body:hover {
+			background: #1c1c1c;
+			transition: 0.4s;
+		}
+
+		&__img-block {
+			width: calc(607 / 1440 * 100vw);
+			background: url(../img/SVG/h2-illustration.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 100% 20%;
+		}
+}
+
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1500px и выше */
 @media (min-width: 1500px) {
