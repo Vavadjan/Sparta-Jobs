@@ -253,7 +253,7 @@ header {
 }
 
 .h2-wrap {
-  padding: 80px var(--padding-left-and-right) 0 var(--padding-left-and-right);
+  padding: 5.5555555556vw var(--padding-left-and-right) 0 var(--padding-left-and-right);
   display: flex;
   justify-content: space-between;
 }
@@ -338,12 +338,6 @@ header {
   background-position: 100% 20%;
 }
 
-/* Медиа-запрос для изменения порядка отображения на ширине 1500px и выше */
-/* Медиа-запрос для изменения порядка отображения на ширине 1800px и выше */
-/* Медиа-запрос для изменения порядка отображения на ширине 2246px и выше */
-/* Медиа-запрос для изменения порядка отображения на ширине 2384px и выше */
-/* Медиа-запрос для изменения порядка отображения на ширине 2860px и выше */
-/* Медиа-запрос для изменения порядка отображения на ширине 1439px и ниже */
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
 @media (max-width: 1365px) {
   .header-menu {
@@ -375,6 +369,18 @@ header {
   .h1-wrap .h1-wrap__img-wrap {
     display: none;
   }
+  .h2-wrap {
+    flex-direction: column;
+    align-items: end;
+  }
+  .h2-wrap__text-block {
+    order: 2;
+    width: 100%;
+  }
+  .h2-wrap__img-block {
+    height: 29.4444444444vw;
+    order: 1;
+  }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
 @media (max-width: 800px) {
@@ -382,7 +388,6 @@ header {
     font-size: calc(-0.5px + 2.25vw);
   }
 }
-/* Медиа-запрос для изменения порядка отображения на ширине 771px и ниже */
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
 @media (max-width: 639px) {
   .header-menu {
