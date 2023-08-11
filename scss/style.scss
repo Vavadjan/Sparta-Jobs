@@ -224,11 +224,11 @@ header {
 			line-height: 150%; /* 66px */
 		}
 
-		.text-wrap__button-wrap {
+		.h1-wrap__button-wrap {
 			display: flex;
 		}
 
-		.button-wrap__button {
+		.h1-wrap__button-body {
 			display: inline-block;
 			margin: 40px 0 0 0;
 			padding: 16px 32px;
@@ -240,7 +240,7 @@ header {
 			cursor: pointer; /* Изменение вида курсора на палец при наведении */
 		}
 
-		.button-wrap__a {
+		.h1-wrap__button-link {
 			color: #fff;
 			font-family: Unbounded;
 			font-size: 18px;
@@ -250,7 +250,7 @@ header {
 			white-space: nowrap; /* Отменяет перенос слов */
 		}
 
-		.button-wrap__button:hover {
+		.h1-wrap__button-body:hover {
 			background: #1c1c1c;
 			transition: 0.4s;
 		}
@@ -376,7 +376,7 @@ header {
 				line-height: 150%; /* 66px */
 			}
 
-			.button-wrap__button {
+			.h1-wrap__button-body {
 				margin: calc(60 / 639 * 100vw) 0 0 0;
 				padding: 16px 32px;
 				width: 178px;
