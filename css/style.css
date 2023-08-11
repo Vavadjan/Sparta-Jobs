@@ -296,7 +296,7 @@ header {
 .h2-wrap__span-whith-link-wrap {
   padding: 20px 0 0 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .h2-wrap__link {
   color: #006ceb;
@@ -373,15 +373,18 @@ header {
   }
   .h2-wrap {
     flex-direction: column;
-    align-items: end;
+    align-items: center;
   }
   .h2-wrap__text-block {
+    padding: 20px 0 0 0;
     order: 2;
     width: 100%;
   }
   .h2-wrap__img-block {
-    height: calc(320px + 12.4105011933vw);
+    width: 100%;
+    height: calc(120px + 36.276849642vw);
     order: 1;
+    background-position: 100% 100%;
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
@@ -437,15 +440,15 @@ header {
     line-height: normal;
   }
 }
-/* Медиа-запрос для изменения порядка отображения на ширине 374px и ниже */
-@media (max-width: 374px) {
+/* Медиа-запрос для изменения порядка отображения на ширине 400px и ниже */
+@media (max-width: 400px) {
   .h2-wrap {
     display: flex;
   }
   .h2-wrap__span {
-    font-size: 10px;
+    font-size: 5vw;
   }
-  .h2-wrap .h2-wrap__strong {
-    font-size: -50vw;
+  .h2-wrap .h2-wrap__link {
+    font-size: 5.3475935829vw;
   }
 }
