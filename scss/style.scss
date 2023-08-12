@@ -364,6 +364,79 @@ header {
 	}
 }
 
+.block-whith-social-links {
+	margin: calc(80 / 1440 * 100vw) 0 0 0;
+	position: relative;
+	display: flex;
+	gap: 60px;
+	// width: 100%;
+	background-color: light rgb(139, 14, 14);
+	padding: calc(40 / 1440 * 100vw) var(--padding-left-and-right) calc(250 / 1440 * 100vw) var(--padding-left-and-right);
+
+	&__imgs-and-links {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: url(../img/SVG/block-whith-social-links_\ illustration.svg);		
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 100% 100%;
+		z-index: 10;
+	}
+
+	&__outer {
+		width: 482px;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	&__small-block {	
+		width: calc(422 / 1440 * 100vw);	
+		display: flex;
+		flex-direction: column;	
+		gap: 20px;
+		padding: 30px;
+		border-radius: 30px;
+		background: #FFF;
+		/* card shadow bg */
+		box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
+	}
+
+	&__title {
+		display: flex;
+		color: #1C1C1C;
+		font-family: Unbounded;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 45px */
+	}
+
+	&__text {
+		display: flex;
+		color: #1C1C1C;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%; /* 30px */
+	}
+
+	&__big-block {	
+		width: 738px;
+		display: flex;
+		flex-direction: column;	
+		gap: 20px;
+		padding: 30px;
+		border-radius: 30px;
+		background: #FFF;
+		/* card shadow bg */
+		box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
+	}
+}
+
+
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
 @media (max-width: 1365px) {
 	.header-menu {
