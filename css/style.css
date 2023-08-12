@@ -344,22 +344,12 @@ header {
   margin: 5.5555555556vw 0 0 0;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  gap: 4.1666666667vw;
   background-color: #EAEAEA;
   padding: 2.7777777778vw var(--padding-left-and-right) 17.3611111111vw var(--padding-left-and-right);
 }
-.block-whith-social-links__imgs-and-links {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: url(../img/SVG/block-whith-social-links_\ illustration.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 100%;
-  z-index: 10;
-}
 .block-whith-social-links__outer {
-  width: 29.3055555556vw;
+  width: 482px;
   display: flex;
   flex-direction: column;
   gap: 40px;
