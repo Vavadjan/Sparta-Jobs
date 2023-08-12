@@ -490,6 +490,18 @@ header {
 		background-position: 100% 100%;
 		
 	}
+
+	.block-whith-social-links {
+		flex-direction: column;
+
+		&__outer {		
+		width: 100%;
+	}
+
+		&__big-block {	
+		width: auto;
+	}
+}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */

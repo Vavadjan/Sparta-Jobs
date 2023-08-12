@@ -440,6 +440,15 @@ header {
     order: 1;
     background-position: 100% 100%;
   }
+  .block-whith-social-links {
+    flex-direction: column;
+  }
+  .block-whith-social-links__outer {
+    width: 100%;
+  }
+  .block-whith-social-links__big-block {
+    width: auto;
+  }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
 @media (max-width: 800px) {
