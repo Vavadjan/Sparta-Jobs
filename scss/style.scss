@@ -368,9 +368,8 @@ header {
 	margin: calc(80 / 1440 * 100vw) 0 0 0;
 	position: relative;
 	display: flex;
-	gap: 60px;
-	// width: 100%;
-	background-color: light rgb(139, 14, 14);
+	justify-content: space-between;
+	background-color: #EAEAEA;
 	padding: calc(40 / 1440 * 100vw) var(--padding-left-and-right) calc(250 / 1440 * 100vw) var(--padding-left-and-right);
 
 	&__imgs-and-links {
@@ -384,15 +383,14 @@ header {
 		z-index: 10;
 	}
 
-	&__outer {
-		width: 482px;
+	&__outer {		
+		width: calc(422 / 1440 * 100vw);	
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
 	}
 
 	&__small-block {	
-		width: calc(422 / 1440 * 100vw);	
 		display: flex;
 		flex-direction: column;	
 		gap: 20px;
@@ -424,7 +422,7 @@ header {
 	}
 
 	&__big-block {	
-		width: 738px;
+		width: calc(738 / 1440 * 100vw);
 		display: flex;
 		flex-direction: column;	
 		gap: 20px;
