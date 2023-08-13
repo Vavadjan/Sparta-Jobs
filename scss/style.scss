@@ -373,19 +373,22 @@ header {
 	background-color: #EAEAEA;
 	padding: calc(40 / 1440 * 100vw) var(--padding-left-and-right) calc(250 / 1440 * 100vw) var(--padding-left-and-right);
 
-	// &__imgs-and-links {
-	// 	position: absolute;
-	// 	bottom: 0;
-	// 	right: 0;
-	// 	background: url(../img/SVG/block-whith-social-links_\ illustration.svg);		
-	// 	background-repeat: no-repeat;
-	// 	background-size: contain;
-	// 	background-position: 100% 100%;
-	// 	z-index: 10;
-	// }
+	&__imgs-and-links {
+		margin: 0 var(--padding-left-and-right) 30px 0;
+		position: absolute;
+		width: calc(472 / 1440 * 100vw);
+		height: calc(362 / 1440 * 100vw);
+		bottom: 0;
+		right: 0;
+		background: url(../img/SVG/funnel-whith-money-and-arrow.svg);		
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 100% 100%;
+		z-index: 10;
+	}
 
 	&__outer {		
-		width: 482px;	
+		width: 482px;
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
@@ -423,7 +426,7 @@ header {
 	}
 
 	&__big-block {	
-		width: calc(738 / 1440 * 100vw);
+		// width: calc(738 / 1440 * 100vw);
 		display: flex;
 		flex-direction: column;	
 		gap: 20px;
