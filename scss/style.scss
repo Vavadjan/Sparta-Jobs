@@ -387,14 +387,14 @@ header {
 		z-index: 10;
 	}
 
-	&__outer {		
-		width: 482px;
+	&__outer {	
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
 	}
 
-	&__small-block {	
+	&__small-block {			
+		width: 422px;	
 		display: flex;
 		flex-direction: column;	
 		gap: 20px;
