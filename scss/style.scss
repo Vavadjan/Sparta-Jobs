@@ -562,6 +562,11 @@ header {
 		z-index: 1;
 		background-color: #ffbf1c;
 	}
+
+	.block-whith-social-links__outer::before {
+		content: "";
+		display: none;
+	}
 }
 
 

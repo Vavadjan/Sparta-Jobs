@@ -624,6 +624,10 @@ header {
     z-index: 1;
     background-color: #ffbf1c;
   }
+  .block-whith-social-links__outer::before {
+    content: "";
+    display: none;
+  }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 838px и ниже */
 @media (max-width: 838px) {
