@@ -377,8 +377,8 @@ header {
 		position: absolute;
 		width: calc(300 / 1440 * 100vw);
 		height: calc(276 / 1440 * 100vw);
-		top: calc(75 / 1440 * 100vw);
-		right: calc(516 / 1440 * 100vw);
+		bottom: calc(-176 / 1440 * 100vw);
+		right: calc(546 / 1440 * 100vw);
 		background: url(../img/SVG/stack-of-coins.svg);		
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -390,8 +390,8 @@ header {
 		position: absolute;
 		width: calc(472 / 1440 * 100vw);
 		height: calc(362 / 1440 * 100vw);
-		top: calc(32 / 1440 * 100vw);
-		right: calc(-30 / 1440 * 100vw);
+		bottom: calc(-219 / 1440 * 100vw);
+		right: 0;
 		background: url(../img/SVG/funnel-whith-money-and-arrow.svg);		
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -438,7 +438,7 @@ header {
 	}
 
 	&__big-block {	
-		// width: calc(738 / 1440 * 100vw);
+		position: relative;
 		display: flex;
 		flex-direction: column;	
 		gap: 20px;
@@ -447,11 +447,6 @@ header {
 		background: #FFF;
 		/* card shadow bg */
 		box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
-	}
-
-	&_fake-block {
-		position: relative;
-		height: 30px;
 	}
 }
 
@@ -471,6 +466,25 @@ header {
 	.h1-wrap {
 		margin: 138px 0 0 0;
 	}
+}
+
+/* Медиа-запрос для изменения порядка отображения на ширине 1137px и ниже */
+@media (max-width: 1137px) {
+	.block-whith-social-links {
+		display: flex;
+
+		&__outer {
+			width: auto;
+		}
+
+		&__small-block {
+			width: calc(534 / 1440 * 100vw);
+		}
+
+		&__big-block {	
+		width: calc(534 / 1440 * 100vw);
+		}
+
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 838px и ниже */
@@ -606,4 +620,4 @@ header {
 			font-size: calc(20 / 374 * 100vw);
 		}
 	}
-}
+}}
