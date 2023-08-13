@@ -463,9 +463,9 @@ header {
 	content: "";
 	position: absolute;
 	// padding: 60px 730px 310px var(--ANTIpadding-left-and-right);
-	margin: 60px 0 250px -80px;
-	top: 0;
-	left: 0;
+	// margin: 60px 0 0 -80px;
+	top: 13.7%;
+	left: var(--ANTIpadding-left-and-right);
 	// width: 49.3%;
 	width: 710px;
 	height: 72.7%;
