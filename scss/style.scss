@@ -374,12 +374,11 @@ header {
 	padding: calc(40 / 1440 * 100vw) var(--padding-left-and-right) calc(250 / 1440 * 100vw) var(--padding-left-and-right);
 
 	&__stack-of-coins {
-		margin: 0 calc(630 / 1440 * 100vw) calc(74 / 1440 * 100vw) 0;
 		position: absolute;
 		width: calc(295 / 1440 * 100vw);
 		height: calc(276 / 1440 * 100vw);
-		bottom: 0;
-		right: 0;
+		top: calc(72 / 1440 * 100vw);
+		right: calc(516 / 1440 * 100vw);
 		background: url(../img/SVG/stack-of-coins.svg);		
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -388,12 +387,11 @@ header {
 	}
 
 		&__funnel-whith-money-and-arrow {
-		margin: 0 var(--padding-left-and-right) 30px 0;
 		position: absolute;
 		width: calc(472 / 1440 * 100vw);
 		height: calc(362 / 1440 * 100vw);
-		bottom: 0;
-		right: 0;
+		top: calc(30 / 1440 * 100vw);
+		right: calc(-30 / 1440 * 100vw);
 		background: url(../img/SVG/funnel-whith-money-and-arrow.svg);		
 		background-repeat: no-repeat;
 		background-size: contain;

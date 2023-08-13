@@ -349,12 +349,11 @@ header {
   padding: 2.7777777778vw var(--padding-left-and-right) 17.3611111111vw var(--padding-left-and-right);
 }
 .block-whith-social-links__stack-of-coins {
-  margin: 0 43.75vw 5.1388888889vw 0;
   position: absolute;
   width: 20.4861111111vw;
   height: 19.1666666667vw;
-  bottom: 0;
-  right: 0;
+  top: 5vw;
+  right: 35.8333333333vw;
   background: url(../img/SVG/stack-of-coins.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -362,12 +361,11 @@ header {
   z-index: 10;
 }
 .block-whith-social-links__funnel-whith-money-and-arrow {
-  margin: 0 var(--padding-left-and-right) 30px 0;
   position: absolute;
   width: 32.7777777778vw;
   height: 25.1388888889vw;
-  bottom: 0;
-  right: 0;
+  top: 2.0833333333vw;
+  right: -2.0833333333vw;
   background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
