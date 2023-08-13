@@ -411,8 +411,8 @@ header {
 	}
 
 	&__small-block {
+		flex: 1;
 		width: 422px;
-		height: 50%;
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
@@ -459,15 +459,16 @@ header {
 	}
 }
 
-.block-whith-social-links::before {
+.block-whith-social-links__outer::before {
 	content: "";
 	position: absolute;
 	// padding: 60px 730px 310px var(--ANTIpadding-left-and-right);
-	top: 100px;
+	margin: 60px 0 250px -80px;
+	top: 0;
 	left: 0;
 	// width: 49.3%;
 	width: 710px;
-	height: 43.9%;
+	height: 72.7%;
 	z-index: 1;
 	background-color: #ffbf1c;
 }
