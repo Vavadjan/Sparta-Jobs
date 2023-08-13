@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --padding-left-and-right: 5.55555555555556vw; /*   var(--padding-left-and-right)   */
+  --ANTIpadding-left-and-right: -5.55555555555556vw; /*   var(--ANTIpadding-left-and-right)   */
 }
 
 body {
@@ -458,6 +459,7 @@ header {
   z-index: 10;
 }
 .block-whith-social-links__outer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,6 +468,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
+  z-index: 2;
 }
 .block-whith-social-links__small-block {
   width: 422px;
@@ -483,6 +486,7 @@ header {
   /* card shadow bg */
   -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
+  z-index: 2;
 }
 .block-whith-social-links__title {
   display: -webkit-box;
@@ -523,6 +527,18 @@ header {
   /* card shadow bg */
   -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
+  z-index: 2;
+}
+
+.block-whith-social-links::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 49.3%;
+  height: 43.9%;
+  z-index: 1;
+  background-color: #FFBF1C;
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
