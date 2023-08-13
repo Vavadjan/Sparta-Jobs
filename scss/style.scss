@@ -377,8 +377,8 @@ header {
 		position: absolute;
 		width: calc(300 / 1440 * 100vw);
 		height: calc(276 / 1440 * 100vw);
-		bottom: calc(-176 / 1440 * 100vw);
-		right: calc(546 / 1440 * 100vw);
+		bottom: calc(75 / 1440 * 100vw);
+		right: calc(626 / 1440 * 100vw);
 		background: url(../img/SVG/stack-of-coins.svg);		
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -390,8 +390,8 @@ header {
 		position: absolute;
 		width: calc(472 / 1440 * 100vw);
 		height: calc(362 / 1440 * 100vw);
-		bottom: calc(-219 / 1440 * 100vw);
-		right: 0;
+		bottom: calc(31 / 1440 * 100vw);
+		right: var(--padding-left-and-right);
 		background: url(../img/SVG/funnel-whith-money-and-arrow.svg);		
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -428,6 +428,7 @@ header {
 	}
 
 	&__text {
+		position: relative;
 		display: flex;
 		color: #1C1C1C;
 		font-family: Montserrat;
@@ -442,7 +443,7 @@ header {
 		display: flex;
 		flex-direction: column;	
 		gap: 20px;
-		padding: 30px 30px 0 30px;
+		padding: 30px 30px 30px 30px;
 		border-radius: 30px;
 		background: #FFF;
 		/* card shadow bg */
