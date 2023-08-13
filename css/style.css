@@ -437,7 +437,7 @@ header {
   position: absolute;
   width: 20.8333333333vw;
   height: 19.1666666667vw;
-  top: 5vw;
+  top: 5.2083333333vw;
   right: 35.8333333333vw;
   background: url(../img/SVG/stack-of-coins.svg);
   background-repeat: no-repeat;
@@ -449,7 +449,7 @@ header {
   position: absolute;
   width: 32.7777777778vw;
   height: 25.1388888889vw;
-  top: 2.0833333333vw;
+  top: 2.2222222222vw;
   right: -2.0833333333vw;
   background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
   background-repeat: no-repeat;
