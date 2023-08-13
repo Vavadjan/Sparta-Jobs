@@ -431,15 +431,15 @@ header {
   display: -ms-flexbox;
   display: flex;
   gap: 4.1666666667vw;
-  background-color: #EAEAEA;
-  padding: 2.7777777778vw var(--padding-left-and-right) 17.3611111111vw var(--padding-left-and-right);
+  background-color: #eaeaea;
+  padding: 2.7777777778vw var(--padding-left-and-right) calc(600px - 24.3055555556vw) var(--padding-left-and-right);
 }
 .block-whith-social-links__stack-of-coins {
   position: absolute;
-  width: 20.8333333333vw;
-  height: 19.1666666667vw;
+  width: 300px;
+  height: 276px;
   bottom: 5.2083333333vw;
-  right: 43.4722222222vw;
+  right: 626px;
   background: url(../img/SVG/stack-of-coins.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -448,8 +448,8 @@ header {
 }
 .block-whith-social-links__funnel-whith-money-and-arrow {
   position: absolute;
-  width: 32.7777777778vw;
-  height: 25.1388888889vw;
+  width: 472px;
+  height: 362px;
   bottom: 2.1527777778vw;
   right: var(--padding-left-and-right);
   background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
@@ -482,7 +482,7 @@ header {
   gap: 20px;
   padding: 30px;
   border-radius: 30px;
-  background: #FFF;
+  background: #fff;
   /* card shadow bg */
   -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
@@ -492,7 +492,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #1C1C1C;
+  color: #1c1c1c;
   font-family: Unbounded;
   font-size: 30px;
   font-style: normal;
@@ -504,7 +504,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #1C1C1C;
+  color: #1c1c1c;
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -523,7 +523,7 @@ header {
   gap: 20px;
   padding: 30px 30px 30px 30px;
   border-radius: 30px;
-  background: #FFF;
+  background: #fff;
   /* card shadow bg */
   -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
@@ -535,10 +535,10 @@ header {
   position: absolute;
   top: 100px;
   left: 0;
-  width: 49.3%;
+  width: 710px;
   height: 43.9%;
   z-index: 1;
-  background-color: #FFBF1C;
+  background-color: #ffbf1c;
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
@@ -575,12 +575,55 @@ header {
   .block-whith-social-links__big-block {
     width: 37.0833333333vw;
   }
-  /* Медиа-запрос для изменения порядка отображения на ширине 838px и ниже */
-  /* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
-  /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
-  /* Медиа-запрос для изменения порядка отображения на ширине 400px и ниже */
 }
-@media (max-width: 1137px) and (max-width: 838px) {
+/* Медиа-запрос для изменения порядка отображения на ширине 980px и ниже */
+@media (max-width: 980px) {
+  .block-whith-social-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+    padding: 2.7777777778vw var(--padding-left-and-right) calc(700px - 31.25vw) var(--padding-left-and-right);
+  }
+  .block-whith-social-links__outer {
+    margin: 0 var(--padding-left-and-right) 0 0;
+    width: 100%;
+  }
+  .block-whith-social-links__small-block {
+    width: auto;
+  }
+  .block-whith-social-links__big-block {
+    width: auto;
+  }
+  .block-whith-social-links__stack-of-coins {
+    display: none;
+  }
+  .block-whith-social-links__funnel-whith-money-and-arrow {
+    position: absolute;
+    width: 472px;
+    height: 362px;
+    bottom: 2.1527777778vw;
+    right: var(--padding-left-and-right);
+    background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    z-index: 10;
+  }
+  .block-whith-social-links::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 88%;
+    height: 50%;
+    z-index: 1;
+    background-color: #ffbf1c;
+  }
+}
+/* Медиа-запрос для изменения порядка отображения на ширине 838px и ниже */
+@media (max-width: 838px) {
   .h1-wrap {
     padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
     display: -webkit-box;
@@ -646,13 +689,37 @@ header {
   .block-whith-social-links__big-block {
     width: auto;
   }
+  .block-whith-social-links__funnel-whith-money-and-arrow {
+    position: absolute;
+    width: 472px;
+    height: 362px;
+    bottom: 2.1527777778vw;
+    right: var(--padding-left-and-right);
+    background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    z-index: 10;
+  }
+  .block-whith-social-links::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 88%;
+    height: 50%;
+    z-index: 1;
+    background-color: #ffbf1c;
+  }
 }
-@media (max-width: 1137px) and (max-width: 800px) {
+/* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
+@media (max-width: 800px) {
   .header-menu .header-menu__link {
     font-size: calc(-0.5px + 2.25vw);
   }
 }
-@media (max-width: 1137px) and (max-width: 639px) {
+/* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
+@media (max-width: 639px) {
   .header-menu {
     display: none;
   }
@@ -714,7 +781,8 @@ header {
     line-height: normal;
   }
 }
-@media (max-width: 1137px) and (max-width: 400px) {
+/* Медиа-запрос для изменения порядка отображения на ширине 400px и ниже */
+@media (max-width: 400px) {
   .h2-wrap {
     display: -webkit-box;
     display: -ms-flexbox;

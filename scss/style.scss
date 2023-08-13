@@ -1,6 +1,7 @@
 :root {
 	--padding-left-and-right: 5.55555555555556vw; /*   var(--padding-left-and-right)   */
 	--ANTIpadding-left-and-right: -5.55555555555556vw; /*   var(--ANTIpadding-left-and-right)   */
+	// calc(-30px + 70 * (100vw / 1365))
 }
 
 body {
@@ -371,36 +372,37 @@ header {
 	display: flex;
 	// justify-content: space-between;
 	gap: calc(60 / 1440 * 100vw);
-	background-color: #EAEAEA;
-	padding: calc(40 / 1440 * 100vw) var(--padding-left-and-right) calc(250 / 1440 * 100vw) var(--padding-left-and-right);
+	background-color: #eaeaea;
+	padding: calc(40 / 1440 * 100vw) var(--padding-left-and-right) calc(600px + -350 * (100vw / 1440))
+		var(--padding-left-and-right);
 
 	&__stack-of-coins {
 		position: absolute;
-		width: calc(300 / 1440 * 100vw);
-		height: calc(276 / 1440 * 100vw);
+		width: 300px;
+		height: 276px;
 		bottom: calc(75 / 1440 * 100vw);
-		right: calc(626 / 1440 * 100vw);
-		background: url(../img/SVG/stack-of-coins.svg);		
+		right: 626px;
+		background: url(../img/SVG/stack-of-coins.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: 100% 100%;
 		z-index: 10;
 	}
 
-		&__funnel-whith-money-and-arrow {
+	&__funnel-whith-money-and-arrow {
 		position: absolute;
-		width: calc(472 / 1440 * 100vw);
-		height: calc(362 / 1440 * 100vw);
+		width: 472px;
+		height: 362px;
 		bottom: calc(31 / 1440 * 100vw);
 		right: var(--padding-left-and-right);
-		background: url(../img/SVG/funnel-whith-money-and-arrow.svg);		
+		background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: 100% 100%;
 		z-index: 10;
 	}
 
-	&__outer {	
+	&__outer {
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -408,14 +410,14 @@ header {
 		z-index: 2;
 	}
 
-	&__small-block {			
-		width: 422px;	
+	&__small-block {
+		width: 422px;
 		display: flex;
-		flex-direction: column;	
+		flex-direction: column;
 		gap: 20px;
 		padding: 30px;
 		border-radius: 30px;
-		background: #FFF;
+		background: #fff;
 		/* card shadow bg */
 		box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
 		z-index: 2;
@@ -423,7 +425,7 @@ header {
 
 	&__title {
 		display: flex;
-		color: #1C1C1C;
+		color: #1c1c1c;
 		font-family: Unbounded;
 		font-size: 30px;
 		font-style: normal;
@@ -434,7 +436,7 @@ header {
 	&__text {
 		position: relative;
 		display: flex;
-		color: #1C1C1C;
+		color: #1c1c1c;
 		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;
@@ -442,32 +444,32 @@ header {
 		line-height: 150%; /* 30px */
 	}
 
-	&__big-block {	
+	&__big-block {
 		position: relative;
 		display: flex;
-		flex-direction: column;	
+		flex-direction: column;
 		gap: 20px;
 		padding: 30px 30px 30px 30px;
 		border-radius: 30px;
-		background: #FFF;
+		background: #fff;
 		/* card shadow bg */
 		box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
 		z-index: 2;
 	}
 }
 
-.block-whith-social-links::before {	
+.block-whith-social-links::before {
 	content: "";
 	position: absolute;
 	// padding: 60px 730px 310px var(--ANTIpadding-left-and-right);
 	top: 100px;
 	left: 0;
-	width: 49.3%;
+	// width: 49.3%;
+	width: 710px;
 	height: 43.9%;
 	z-index: 1;
-	background-color: #FFBF1C;
+	background-color: #ffbf1c;
 }
-
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
 @media (max-width: 1365px) {
@@ -499,11 +501,72 @@ header {
 			width: calc(534 / 1440 * 100vw);
 		}
 
-		&__big-block {	
-		width: calc(534 / 1440 * 100vw);
+		&__big-block {
+			width: calc(534 / 1440 * 100vw);
+		}
+	}
+}
+
+
+
+
+/* Медиа-запрос для изменения порядка отображения на ширине 980px и ниже */
+@media (max-width: 980px) {
+	.block-whith-social-links {
+		flex-direction: column;
+		gap: 40px;
+		padding: calc(40 / 1440 * 100vw) var(--padding-left-and-right) calc(700px + -450 * (100vw / 1440))
+		var(--padding-left-and-right);
+
+
+		&__outer {
+			margin: 0 var(--padding-left-and-right) 0 0;
+			width: 100%;
 		}
 
+		&__small-block {
+			width: auto;
+		}
+
+		&__big-block {
+			width: auto;
+		}
+
+		&__stack-of-coins {
+			display: none;
+		}
+
+		&__funnel-whith-money-and-arrow {
+			position: absolute;
+			width: 472px;
+			height: 362px;
+			bottom: calc(31 / 1440 * 100vw);
+			right: var(--padding-left-and-right);
+			background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 100% 100%;
+			z-index: 10;
+		}
+	}
+	.block-whith-social-links::before {
+		content: "";
+		position: absolute;
+		// padding: 60px 730px 310px var(--ANTIpadding-left-and-right);
+		top: 100px;
+		left: 0;
+		width: 88%;
+		height: 50%;
+		z-index: 1;
+		background-color: #ffbf1c;
+	}
 }
+
+
+
+
+
+
 
 /* Медиа-запрос для изменения порядка отображения на ширине 838px и ниже */
 @media (max-width: 838px) {
@@ -538,28 +601,51 @@ header {
 	.h2-wrap__img-block {
 		width: 100%;
 		height: calc(120px + 304 * (100vw / 838));
-		order: 1;		
+		order: 1;
 		background-position: 100% 100%;
-		
 	}
 
 	.block-whith-social-links {
 		flex-direction: column;
 		gap: 40px;
 
-		&__outer {	
-		margin: 0 var(--padding-left-and-right) 0 0;	
-		width: 100%;
-	}
-
-		&__small-block {
-		width: auto;
+		&__outer {
+			margin: 0 var(--padding-left-and-right) 0 0;
+			width: 100%;
 		}
 
-		&__big-block {	
-		width: auto;
+		&__small-block {
+			width: auto;
+		}
+
+		&__big-block {
+			width: auto;
+		}
+
+		&__funnel-whith-money-and-arrow {
+			position: absolute;
+			width: 472px;
+			height: 362px;
+			bottom: calc(31 / 1440 * 100vw);
+			right: var(--padding-left-and-right);
+			background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 100% 100%;
+			z-index: 10;
+		}
 	}
-}
+	.block-whith-social-links::before {
+		content: "";
+		position: absolute;
+		// padding: 60px 730px 310px var(--ANTIpadding-left-and-right);
+		top: 100px;
+		left: 0;
+		width: 88%;
+		height: 50%;
+		z-index: 1;
+		background-color: #ffbf1c;
+	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
@@ -638,4 +724,4 @@ header {
 			font-size: calc(20 / 374 * 100vw);
 		}
 	}
-}}
+}
