@@ -591,7 +591,7 @@ header {
 
 		&__telegram-link {
 			position: absolute;
-			right: calc(($social-links-margin-right) + 137.5px);		
+			right: calc(($social-links-margin-right) + 187.5px);		
 			bottom: calc(($social-links-margin-bottom) + 203.5px);
 			background: url(../img/SVG/telegram-ico.svg), #fff;
 			background-repeat: no-repeat;
@@ -601,7 +601,7 @@ header {
 	
 		&__linkedin-link {
 			position: absolute;		
-			right: calc(($social-links-margin-right) + 80px);
+			right: calc(($social-links-margin-right) + 130px);
 			bottom: calc(($social-links-margin-bottom) + 185px);
 			background: url(../img/SVG/linkedin-ico.svg), #fff;
 			background-repeat: no-repeat;
@@ -611,7 +611,7 @@ header {
 	
 		&__signal-link {
 			position: absolute;
-			right: calc(($social-links-margin-right) + 130px);		
+			right: calc(($social-links-margin-right) + 180px);		
 			bottom: calc(($social-links-margin-bottom) + 124px);
 			background: url(../img/SVG/signal-ico.svg), #fff;
 			background-repeat: no-repeat;
@@ -621,7 +621,7 @@ header {
 	
 		&__whatsapp-link {
 			position: absolute;		
-			right: calc(($social-links-margin-right) + 29px);
+			right: calc(($social-links-margin-right) + 79px);
 			bottom: calc(($social-links-margin-bottom) + 121px);
 			background: url(../img/SVG/whatsapp-ico.svg), #fff;
 			background-repeat: no-repeat;
@@ -631,7 +631,7 @@ header {
 	
 		&__facebook-link {
 			position: absolute;		
-			right: calc(($social-links-margin-right) + 82px);
+			right: calc(($social-links-margin-right) + 132px);
 			bottom: calc(($social-links-margin-bottom) + 75px);
 			background: url(../img/SVG/facebook-ico.svg), #fff;
 			background-repeat: no-repeat;
@@ -641,7 +641,7 @@ header {
 	
 		&__google-link {
 			position: absolute;		
-			right: $social-links-margin-right;
+			right: $social-links-margin-right + 50px;
 			bottom: $social-links-margin-bottom + 50px;
 			background: url(../img/SVG/google-ico.svg), #fff;
 			background-repeat: no-repeat;
@@ -650,7 +650,7 @@ header {
 		}
 
 		&__stack-of-coins {
-			right: 726px;
+			right: 776px;
 		}
 	}
 
@@ -804,7 +804,7 @@ header {
 	.block-whith-social-links {
 		flex-direction: column;
 		gap: 40px;
-		padding-bottom: calc(130px + 140 * (100vw / 838));
+		padding-bottom: calc(160px + 110 * (100vw / 838));
 
 		&__outer {
 			margin: 0 $padding-left-and-right 0 0;
