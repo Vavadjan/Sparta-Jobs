@@ -648,6 +648,76 @@ header {
   background-color: #ffbf1c;
 }
 
+/* Медиа-запрос для изменения порядка отображения на ширине 1441px и выше */
+@media (min-width: 1441px) {
+  .block-whith-social-links {
+    padding: 2.7777777778vw 5.5555555556vw 300px 5.5555555556vw;
+  }
+  .block-whith-social-links__small-block {
+    width: 29.3055555556vw;
+  }
+  .block-whith-social-links__telegram-link {
+    position: absolute;
+    right: 499.5px;
+    bottom: 287.5px;
+    background: url(../img/SVG/telegram-ico.svg), #fff;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center center;
+  }
+  .block-whith-social-links__linkedin-link {
+    position: absolute;
+    right: 442px;
+    bottom: 269px;
+    background: url(../img/SVG/linkedin-ico.svg), #fff;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center center;
+  }
+  .block-whith-social-links__signal-link {
+    position: absolute;
+    right: 492px;
+    bottom: 208px;
+    background: url(../img/SVG/signal-ico.svg), #fff;
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: center center;
+  }
+  .block-whith-social-links__whatsapp-link {
+    position: absolute;
+    right: 391px;
+    bottom: 205px;
+    background: url(../img/SVG/whatsapp-ico.svg), #fff;
+    background-repeat: no-repeat;
+    background-size: 36px;
+    background-position: center center;
+  }
+  .block-whith-social-links__facebook-link {
+    position: absolute;
+    right: 444px;
+    bottom: 159px;
+    background: url(../img/SVG/facebook-ico.svg), #fff;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center center;
+  }
+  .block-whith-social-links__google-link {
+    position: absolute;
+    right: 362px;
+    bottom: 134px;
+    background: url(../img/SVG/google-ico.svg), #fff;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center center;
+  }
+  .block-whith-social-links__stack-of-coins {
+    right: 726px;
+  }
+  .block-whith-social-links__outer::before {
+    content: "";
+    width: 49.3055555556vw;
+  }
+}
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
 @media (max-width: 1365px) {
   .header-menu {
@@ -897,6 +967,17 @@ header {
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
 @media (max-width: 639px) {
+  .header-menu {
+    display: none;
+  }
+  .header-button {
+    display: none;
+  }
+  .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .h1-wrap {
     padding: 0 5.5555555556vw 0 5.5555555556vw;
     display: -webkit-box;
