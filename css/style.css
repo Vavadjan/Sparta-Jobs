@@ -105,10 +105,15 @@ header {
   font-weight: 500;
   line-height: 24px;
 }
-.header-menu .header-m.header-menu__link:hover {
+.header-menu .header-menu__link:hover {
   color: #006ceb;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+.header-menu .header-menu__link:not(:hover) {
+  color: #1c1c1c;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .header-button {
@@ -135,12 +140,20 @@ header {
 }
 
 .header-button:hover {
-  border-radius: 60px;
   background: #006ceb;
   -webkit-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.header-button:not(:hover) {
+  border-radius: 60px;
+  background: #1c1c1c;
+  -webkit-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /* Гамбургер иконка */
@@ -212,7 +225,7 @@ header {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  z-index: 2;
+  z-index: 20;
 }
 .menu nav {
   margin: 0 5.5555555556vw;
@@ -229,9 +242,14 @@ header {
   line-height: 48px;
 }
 .menu a:hover {
-  color: var(--blue, #006ceb);
+  color: #006ceb;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+.menu a:not(:hover) {
+  color: #1c1c1c;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .menu.active {
@@ -303,6 +321,11 @@ header {
   background: #1c1c1c;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+.h1-wrap .h1-wrap__text-wrap .h1-wrap__button-body:not(:hover) {
+  background: #006ceb;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .h1-wrap .h1-wrap__img-wrap {
   display: -webkit-box;
@@ -411,6 +434,11 @@ header {
   background: #1c1c1c;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+.h2-wrap .h2-wrap__button-body:not(:hover) {
+  background: #006ceb;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .h2-wrap__img-block {
   width: 42.1527777778vw;
@@ -595,8 +623,8 @@ header {
 
 .block-whith-social-links__social-link:hover { /* поведение при наведении на social link */
   background-position: center center;
-  -webkit-filter: drop-shadow(0px 0px 26px #006CEB);
-          filter: drop-shadow(0px 0px 26px #006CEB);
+  -webkit-filter: drop-shadow(0px 0px 15px #006CEB);
+          filter: drop-shadow(0px 0px 15px #006CEB);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -605,8 +633,8 @@ header {
   background-position: center center;
   -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .block-whith-social-links__outer::before {

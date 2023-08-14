@@ -85,9 +85,14 @@ header {
 		line-height: 24px;
 	}
 
-	.header-m.header-menu__link:hover {
+	.header-menu__link:hover {
 		color: #006ceb;
 		transition: 0.4s;
+	}
+
+	.header-menu__link:not(:hover) {
+		color: #1c1c1c;
+		transition: 1s;
 	}
 }
 
@@ -114,10 +119,16 @@ header {
 }
 
 .header-button:hover {
-	border-radius: 60px;
 	background: #006ceb;
 	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
 	transition: 0.4s;
+}
+
+.header-button:not(:hover) {
+	border-radius: 60px;
+	background: #1c1c1c;
+	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+	transition: 1s;
 }
 
 /* Гамбургер иконка */
@@ -173,7 +184,7 @@ header {
 	backdrop-filter: blur(10px); /* Применение размытия */
 	transform: translateY(-100%);
 	transition: transform 0.5s;
-	z-index: 2;
+	z-index: 20;
 
 	nav {
 		margin: 0 $padding-left-and-right;
@@ -193,8 +204,13 @@ header {
 	}
 
 	a:hover {
-		color: var(--blue, #006ceb);
+		color: #006ceb;
 		transition: 0.4s;
+	}
+
+	a:not(:hover) {
+		color: #1c1c1c;
+		transition: 1s;
 	}
 }
 
@@ -257,6 +273,11 @@ header {
 		.h1-wrap__button-body:hover {
 			background: #1c1c1c;
 			transition: 0.4s;
+		}
+
+		.h1-wrap__button-body:not(:hover) {
+			background: #006ceb;
+			transition: 1s;
 		}
 	}
 	.h1-wrap__img-wrap {
@@ -357,6 +378,11 @@ header {
 	.h2-wrap__button-body:hover {
 		background: #1c1c1c;
 		transition: 0.4s;
+	}
+
+	.h2-wrap__button-body:not(:hover) {
+		background: #006ceb;
+		transition: 1s;
 	}
 
 	&__img-block {
@@ -532,14 +558,14 @@ header {
 
 .block-whith-social-links__social-link:hover { /* поведение при наведении на social link */
 	background-position: center center;
-	filter: drop-shadow(0px 0px 26px #006CEB);
+	filter: drop-shadow(0px 0px 15px #006CEB);
 	transition: 0.4s;
 }
 
 .block-whith-social-links__social-link:not(:hover) { /* поведение при отведении с social link */
 	background-position: center center;
 	box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
-	transition: 1s;
+	transition: 1s ease;
 }
 
 .block-whith-social-links__outer::before {
