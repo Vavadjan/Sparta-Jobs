@@ -431,7 +431,7 @@ header {
 
 	&__social-link {
 		position: absolute;
-		margin: 0 $padding-left-and-right 0 0;
+		margin: 0 $padding-left-and-right 0 $padding-left-and-right;
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;	
@@ -659,7 +659,6 @@ header {
 	.block-whith-social-links::before {
 		content: "";
 		position: absolute;
-		// padding: 60px 730px 310px $ANTIpadding-left-and-right;
 		top: 100px;
 		left: 0;
 		width: 88%;
@@ -714,6 +713,7 @@ header {
 	.block-whith-social-links {
 		flex-direction: column;
 		gap: 40px;
+		padding-bottom: calc(130px + 140 * (100vw / 838));
 
 		&__outer {
 			margin: 0 $padding-left-and-right 0 0;
@@ -730,15 +730,75 @@ header {
 
 		&__funnel-whith-money-and-arrow {
 			position: absolute;
-			width: 472px;
-			height: 362px;
-			bottom: calc(31 / 1440 * 100vw);
+			width: calc(472 / 838 * 100vw);
+			height: calc(270 / 838 * 100vw);
+			bottom: 30px;
 			right: $padding-left-and-right;
 			background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: 100% 100%;
 			z-index: 10;
+		}
+
+		&__telegram-link {
+			position: absolute;
+			left: 0;		
+			bottom: 183.5px;
+			background: url(../img/SVG/telegram-ico.svg), #fff;
+			background-repeat: no-repeat;
+			background-size: 30px;
+			background-position: center center;		
+		}
+	
+		&__linkedin-link {
+			position: absolute;		
+			left: 57px;
+			bottom: 165px;
+			background: url(../img/SVG/linkedin-ico.svg), #fff;
+			background-repeat: no-repeat;
+			background-size: 24px;
+			background-position: center center;		
+		}
+	
+		&__signal-link {
+			position: absolute;
+			left: 7px;		
+			bottom: 104px;
+			background: url(../img/SVG/signal-ico.svg), #fff;
+			background-repeat: no-repeat;
+			background-size: 26px;
+			background-position: center center;		
+		}
+	
+		&__whatsapp-link {
+			position: absolute;		
+			left: 108px;
+			bottom: 101px;
+			background: url(../img/SVG/whatsapp-ico.svg), #fff;
+			background-repeat: no-repeat;
+			background-size: 36px;
+			background-position: center center;		
+		}
+	
+		&__facebook-link {
+			position: absolute;		
+			left: 55px;
+			bottom: 55px;
+			background: url(../img/SVG/facebook-ico.svg), #fff;
+			background-repeat: no-repeat;
+			background-size: 30px;
+			background-position: center center;		
+		}
+	
+		&__google-link {
+			position: absolute;		
+			left: 137px;
+			bottom: 30px;
+			background: url(../img/SVG/google-ico.svg), #fff;
+			background-repeat: no-repeat;
+			background-size: 30px;
+			background-position: center center;		
 		}
 	}
 	.block-whith-social-links::before {
@@ -815,6 +875,10 @@ header {
 			}
 		}
 	}
+}
+
+/* Медиа-запрос для изменения порядка отображения на ширине 607px и ниже */
+@media (max-width: 607px) {
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 400px и ниже */
