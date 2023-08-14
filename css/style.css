@@ -454,28 +454,23 @@ header {
   background-position: 100% 100%;
   z-index: 10;
 }
-.block-whith-social-links__telegram-link {
+.block-whith-social-links__social-link {
   position: absolute;
-  bottom: 237.5px;
-  right: 579.5px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: url(../img/SVG/telegram-ico.svg), #fff;
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center center;
   -webkit-filter: drop-shadow(0px 0px 26px rgba(0, 0, 0, 0.16));
           filter: drop-shadow(0px 0px 26px rgba(0, 0, 0, 0.16));
   z-index: 10;
 }
-.block-whith-social-links__telegram-link:hover {
-  background-size: 34px;
+.block-whith-social-links__telegram-link {
+  position: absolute;
+  bottom: 237.5px;
+  right: 579.5px;
+  background: url(../img/SVG/telegram-ico.svg), #fff;
+  background-repeat: no-repeat;
+  background-size: 30px;
   background-position: center center;
-  -webkit-filter: drop-shadow(0px 0px 26px #006CEB);
-          filter: drop-shadow(0px 0px 26px #006CEB);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .block-whith-social-links__outer {
   position: relative;
@@ -550,6 +545,15 @@ header {
   -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
   z-index: 2;
+}
+
+.block-whith-social-links__social-link:hover { /* поведение при наведении на social link */
+  background-size: 34px;
+  background-position: center center;
+  -webkit-filter: drop-shadow(0px 0px 26px #006CEB);
+          filter: drop-shadow(0px 0px 26px #006CEB);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .block-whith-social-links__outer::before {
