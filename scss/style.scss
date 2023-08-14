@@ -1,8 +1,10 @@
-:root {
-	--padding-left-and-right: 5.55555555555556vw; /*   var(--padding-left-and-right)   */
-	--ANTIpadding-left-and-right: -5.55555555555556vw; /*   var(--ANTIpadding-left-and-right)   */
-	// calc(-30px + 70 * (100vw / 1365))
-}
+$padding-left-and-right: 5.55555555555556vw;
+$ANTIpadding-left-and-right: -5.55555555555556vw;
+
+$social-links-margin-right: 362px; /* это без учёта margin */
+$social-links-margin-bottom: 84px;
+
+// calc(-30px + 70 * (100vw / 1365))
 
 body {
 	margin: 0;
@@ -24,7 +26,7 @@ header {
 	padding: 16px 0 16px 0;
 	min-height: 90px;
 	max-height: 138px;
-	padding: 0 var(--padding-left-and-right);
+	padding: 0 $padding-left-and-right;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -174,7 +176,7 @@ header {
 	z-index: 2;
 
 	nav {
-		margin: 0 var(--padding-left-and-right);
+		margin: 0 $padding-left-and-right;
 	}
 
 	li {
@@ -205,7 +207,7 @@ header {
 }
 
 .h1-wrap {
-	padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
+	padding: 0 $padding-left-and-right 0 $padding-left-and-right;
 	display: flex;
 	justify-content: space-between;
 	margin: 90px 0 0 0;
@@ -269,7 +271,7 @@ header {
 }
 
 .h2-wrap {
-	padding: calc(80 / 1440 * 100vw) var(--padding-left-and-right) 0 var(--padding-left-and-right);
+	padding: calc(80 / 1440 * 100vw) $padding-left-and-right 0 $padding-left-and-right;
 	display: flex;
 	justify-content: space-between;
 
@@ -373,8 +375,7 @@ header {
 	// justify-content: space-between;
 	gap: calc(60 / 1440 * 100vw);
 	background-color: #eaeaea;
-	padding: calc(40 / 1440 * 100vw) var(--padding-left-and-right) calc(600px + -350 * (100vw / 1440))
-		var(--padding-left-and-right);
+	padding: calc(40 / 1440 * 100vw) $padding-left-and-right calc(600px + -350 * (100vw / 1440)) $padding-left-and-right;
 
 	&__stack-of-coins {
 		position: absolute;
@@ -392,14 +393,36 @@ header {
 	&__funnel-whith-money-and-arrow {
 		position: absolute;
 		width: 472px;
-		height: 362px;
+		height: 409px;
 		bottom: calc(31 / 1440 * 100vw);
-		right: var(--padding-left-and-right);
+		right: $padding-left-and-right;
 		background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 		background-position: 100% 100%;
 		z-index: 10;
+	}
+
+	&__telegram-link {
+		position: absolute;
+		bottom: calc(($social-links-margin-bottom) + 153.5px);
+		right: calc(($social-links-margin-right) + 217.5px);
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: url(../img/SVG/telegram-ico.svg), #fff;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		background-position: center center;
+		filter: drop-shadow(0px 0px 26px rgba(0, 0, 0, 0.16));
+		z-index: 10;
+	}
+
+	&__telegram-link:hover {
+		background-size: 34px;
+		background-position: center center;
+		filter: drop-shadow(0px 0px 26px #006CEB);
+		transition: 0.3s;
 	}
 
 	&__outer {
@@ -462,10 +485,10 @@ header {
 .block-whith-social-links__outer::before {
 	content: "";
 	position: absolute;
-	// padding: 60px 730px 310px var(--ANTIpadding-left-and-right);
+	// padding: 60px 730px 310px $ANTIpadding-left-and-right;
 	// margin: 60px 0 0 -80px;
 	top: 13.7%;
-	left: var(--ANTIpadding-left-and-right);
+	left: $ANTIpadding-left-and-right;
 	// width: 49.3%;
 	width: 710px;
 	height: 72.7%;
@@ -509,20 +532,16 @@ header {
 	}
 }
 
-
-
-
 /* Медиа-запрос для изменения порядка отображения на ширине 980px и ниже */
 @media (max-width: 980px) {
 	.block-whith-social-links {
 		flex-direction: column;
 		gap: 40px;
-		padding: calc(40 / 1440 * 100vw) var(--padding-left-and-right) calc(700px + -450 * (100vw / 1440))
-		var(--padding-left-and-right);
-
+		padding: calc(40 / 1440 * 100vw) $padding-left-and-right calc(520px + -270 * (100vw / 1440))
+			$padding-left-and-right;
 
 		&__outer {
-			margin: 0 var(--padding-left-and-right) 0 0;
+			margin: 0 $padding-left-and-right 0 0;
 			width: 100%;
 		}
 
@@ -543,7 +562,7 @@ header {
 			width: 472px;
 			height: 362px;
 			bottom: calc(31 / 1440 * 100vw);
-			right: var(--padding-left-and-right);
+			right: $padding-left-and-right;
 			background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -554,7 +573,7 @@ header {
 	.block-whith-social-links::before {
 		content: "";
 		position: absolute;
-		// padding: 60px 730px 310px var(--ANTIpadding-left-and-right);
+		// padding: 60px 730px 310px $ANTIpadding-left-and-right;
 		top: 100px;
 		left: 0;
 		width: 88%;
@@ -569,16 +588,10 @@ header {
 	}
 }
 
-
-
-
-
-
-
 /* Медиа-запрос для изменения порядка отображения на ширине 838px и ниже */
 @media (max-width: 838px) {
 	.h1-wrap {
-		padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
+		padding: 0 $padding-left-and-right 0 $padding-left-and-right;
 		display: flex;
 		justify-content: space-between;
 		margin: 138px 0 0 0;
@@ -617,7 +630,7 @@ header {
 		gap: 40px;
 
 		&__outer {
-			margin: 0 var(--padding-left-and-right) 0 0;
+			margin: 0 $padding-left-and-right 0 0;
 			width: 100%;
 		}
 
@@ -634,7 +647,7 @@ header {
 			width: 472px;
 			height: 362px;
 			bottom: calc(31 / 1440 * 100vw);
-			right: var(--padding-left-and-right);
+			right: $padding-left-and-right;
 			background: url(../img/SVG/funnel-whith-money-and-arrow.svg);
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -645,7 +658,7 @@ header {
 	.block-whith-social-links::before {
 		content: "";
 		position: absolute;
-		// padding: 60px 730px 310px var(--ANTIpadding-left-and-right);
+		// padding: 60px 730px 310px $ANTIpadding-left-and-right;
 		top: 100px;
 		left: 0;
 		width: 88%;
@@ -679,7 +692,7 @@ header {
 	}
 
 	.h1-wrap {
-		padding: 0 var(--padding-left-and-right) 0 var(--padding-left-and-right);
+		padding: 0 $padding-left-and-right 0 $padding-left-and-right;
 		display: flex;
 		justify-content: space-between;
 		margin: 90px 0 0 0;
