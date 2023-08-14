@@ -665,6 +665,17 @@ header {
   .h1-wrap {
     margin: 138px 0 0 0;
   }
+  .header-menu {
+    display: none;
+  }
+  .header-button {
+    display: none;
+  }
+  .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 1137px и ниже */
 @media (max-width: 1137px) {
@@ -886,17 +897,6 @@ header {
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
 @media (max-width: 639px) {
-  .header-menu {
-    display: none;
-  }
-  .header-button {
-    display: none;
-  }
-  .menu-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .h1-wrap {
     padding: 0 5.5555555556vw 0 5.5555555556vw;
     display: -webkit-box;

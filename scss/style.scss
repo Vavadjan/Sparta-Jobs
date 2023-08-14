@@ -597,6 +597,18 @@ header {
 	.h1-wrap {
 		margin: 138px 0 0 0;
 	}
+
+	.header-menu {
+		display: none;
+	}
+
+	.header-button {
+		display: none;
+	}
+
+	.menu-btn {
+		display: flex;
+	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1137px и ниже */
@@ -825,17 +837,7 @@ header {
 
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
 @media (max-width: 639px) {
-	.header-menu {
-		display: none;
-	}
 
-	.header-button {
-		display: none;
-	}
-
-	.menu-btn {
-		display: flex;
-	}
 
 	.h1-wrap {
 		padding: 0 $padding-left-and-right 0 $padding-left-and-right;
