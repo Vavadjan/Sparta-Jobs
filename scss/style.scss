@@ -405,6 +405,7 @@ header {
 
 	&__social-link {
 		position: absolute;
+		margin: 0 $padding-left-and-right 0 0;
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;	
@@ -414,8 +415,8 @@ header {
 
 	&__telegram-link {
 		position: absolute;
+		right: calc(($social-links-margin-right) + 137.5px);		
 		bottom: calc(($social-links-margin-bottom) + 153.5px);
-		right: calc(($social-links-margin-right) + 217.5px);
 		background: url(../img/SVG/telegram-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 30px;
@@ -423,9 +424,9 @@ header {
 	}
 
 	&__linkedin-link {
-		position: absolute;
+		position: absolute;		
+		right: calc(($social-links-margin-right) + 80px);
 		bottom: calc(($social-links-margin-bottom) + 135px);
-		right: calc(($social-links-margin-right) + 160px);
 		background: url(../img/SVG/linkedin-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 24px;
@@ -434,8 +435,8 @@ header {
 
 	&__signal-link {
 		position: absolute;
+		right: calc(($social-links-margin-right) + 130px);		
 		bottom: calc(($social-links-margin-bottom) + 74px);
-		right: calc(($social-links-margin-right) + 210px);
 		background: url(../img/SVG/signal-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 26px;
@@ -443,9 +444,9 @@ header {
 	}
 
 	&__whatsapp-link {
-		position: absolute;
+		position: absolute;		
+		right: calc(($social-links-margin-right) + 29px);
 		bottom: calc(($social-links-margin-bottom) + 71px);
-		right: calc(($social-links-margin-right) + 109px);
 		background: url(../img/SVG/whatsapp-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 36px;
@@ -453,9 +454,9 @@ header {
 	}
 
 	&__facebook-link {
-		position: absolute;
+		position: absolute;		
+		right: calc(($social-links-margin-right) + 82px);
 		bottom: calc(($social-links-margin-bottom) + 25px);
-		right: calc(($social-links-margin-right) + 162px);
 		background: url(../img/SVG/facebook-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 30px;
@@ -463,9 +464,9 @@ header {
 	}
 
 	&__google-link {
-		position: absolute;
-		bottom: calc(($social-links-margin-bottom) + 0px);
-		right: calc(($social-links-margin-right) + 80px);
+		position: absolute;		
+		right: $social-links-margin-right;
+		bottom: $social-links-margin-bottom;
 		background: url(../img/SVG/google-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 30px;

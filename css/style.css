@@ -456,6 +456,7 @@ header {
 }
 .block-whith-social-links__social-link {
   position: absolute;
+  margin: 0 5.5555555556vw 0 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -465,8 +466,8 @@ header {
 }
 .block-whith-social-links__telegram-link {
   position: absolute;
+  right: 499.5px;
   bottom: 237.5px;
-  right: 579.5px;
   background: url(../img/SVG/telegram-ico.svg), #fff;
   background-repeat: no-repeat;
   background-size: 30px;
@@ -474,8 +475,8 @@ header {
 }
 .block-whith-social-links__linkedin-link {
   position: absolute;
+  right: 442px;
   bottom: 219px;
-  right: 522px;
   background: url(../img/SVG/linkedin-ico.svg), #fff;
   background-repeat: no-repeat;
   background-size: 24px;
@@ -483,8 +484,8 @@ header {
 }
 .block-whith-social-links__signal-link {
   position: absolute;
+  right: 492px;
   bottom: 158px;
-  right: 572px;
   background: url(../img/SVG/signal-ico.svg), #fff;
   background-repeat: no-repeat;
   background-size: 26px;
@@ -492,8 +493,8 @@ header {
 }
 .block-whith-social-links__whatsapp-link {
   position: absolute;
+  right: 391px;
   bottom: 155px;
-  right: 471px;
   background: url(../img/SVG/whatsapp-ico.svg), #fff;
   background-repeat: no-repeat;
   background-size: 36px;
@@ -501,8 +502,8 @@ header {
 }
 .block-whith-social-links__facebook-link {
   position: absolute;
+  right: 444px;
   bottom: 109px;
-  right: 524px;
   background: url(../img/SVG/facebook-ico.svg), #fff;
   background-repeat: no-repeat;
   background-size: 30px;
@@ -510,8 +511,8 @@ header {
 }
 .block-whith-social-links__google-link {
   position: absolute;
+  right: 362px;
   bottom: 84px;
-  right: 442px;
   background: url(../img/SVG/google-ico.svg), #fff;
   background-repeat: no-repeat;
   background-size: 30px;
