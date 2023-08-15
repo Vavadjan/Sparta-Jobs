@@ -590,9 +590,10 @@ header {
 
 	&__title {
 		display: flex;
+		justify-content: center;
+		text-align: center;
 		width: 57%;
 		color: #1C1C1C;
-		text-align: center;
 		font-family: Unbounded;
 		font-size: 44px;
 		font-style: normal;
@@ -667,7 +668,7 @@ header {
 	top: 0;
 	// left: 29.375%;
 	width: 66.1%;
-	height: 80%;
+	height: 90%;
 	background: #EAEAEA;
 	z-index: -1;
 }
@@ -811,6 +812,17 @@ header {
 		&__big-block {
 			width: calc(534 / 1440 * 100vw);
 		}
+	}
+
+	.features::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		// left: 29.375%;
+		width: 95%;
+		height: 90%;
+		background: #EAEAEA;
+		z-index: -1;
 	}
 }
 
@@ -1078,16 +1090,21 @@ header {
 		padding: calc(40 / 639 * 100vw) 0 0 0;
 	
 		&__title {
-			width: 100%;
+			width: 90%;
 			font-size: calc(10px + 34 * (100vw / 639));
 		}
 
 		&__subtitle-block {
-			width: auto;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 5px;
+			width: 90%;
 			flex: 1;
 		}
 
 		&__subtitle {
+			display: flex;
 			font-size: calc(10px + 20 * (100vw / 639));
 			text-align: center;
 		}

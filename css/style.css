@@ -667,9 +667,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   width: 57%;
   color: #1C1C1C;
-  text-align: center;
   font-family: Unbounded;
   font-size: 44px;
   font-style: normal;
@@ -755,7 +758,7 @@ header {
   position: absolute;
   top: 0;
   width: 66.1%;
-  height: 80%;
+  height: 90%;
   background: #EAEAEA;
   z-index: -1;
 }
@@ -886,6 +889,15 @@ header {
   }
   .block-whith-social-links__big-block {
     width: 37.0833333333vw;
+  }
+  .features::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 95%;
+    height: 90%;
+    background: #EAEAEA;
+    z-index: -1;
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 980px и ниже */
@@ -1159,16 +1171,28 @@ header {
     padding: 6.2597809077vw 0 0 0;
   }
   .features__title {
-    width: 100%;
+    width: 90%;
     font-size: calc(10px + 5.3208137715vw);
   }
   .features__subtitle-block {
-    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 5px;
+    width: 90%;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
   .features__subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-size: calc(10px + 3.1298904538vw);
     text-align: center;
   }
