@@ -34,13 +34,13 @@ header {
 	gap: 19.5px;
 }
 
-.header__logo-wrap {
+.logo-wrap {
 	margin: 0;
 	padding: 0 0 0 0;
 	display: flex;
 	z-index: 10000;
 
-	.header__logo-first-word {
+	.logo-first-word {
 		display: flex;
 		font-family: Unbounded;
 		font-size: 30px;
@@ -49,7 +49,7 @@ header {
 		line-height: normal;
 	}
 
-	.header__logo-second-word {
+	.logo-second-word {
 		display: flex;
 		font-family: Unbounded;
 		font-size: 30px;
@@ -92,7 +92,7 @@ header {
 	}
 }
 
-.header-button {
+.get-consultation-button {
 	display: inline-block;
 	order: 3;
 	margin: 18px 0;
@@ -102,7 +102,7 @@ header {
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
 	cursor: pointer; /* Изменение вида курсора на палец при наведении */
 
-	.header-button__link {
+	.get-consultation-button__link {
 		font-family: Unbounded;
 		font-size: 18px;
 		font-style: normal;
@@ -111,13 +111,13 @@ header {
 	}
 }
 
-.header-button:hover {
+.get-consultation-button:hover {
 	background: #006ceb;
 	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
 	transition: 0.4s;
 }
 
-.header-button:not(:hover) {
+.get-consultation-button:not(:hover) {
 	border-radius: 60px;
 	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
 	transition: 1s;
@@ -688,11 +688,11 @@ header {
 }
 
 .yello-background {
-	background: #FFBF1C;
+	background: #ffbf1c;
 }
 
 .black-text {
-	color: #1C1C1C;
+	color: #1c1c1c;
 }
 
 .blue-text {
@@ -700,22 +700,21 @@ header {
 }
 
 .white-text {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 .yello-text {
-	color: #FFBF1C;
+	color: #ffbf1c;
 }
 
 .footer {
 	margin: $padding-left-and-right 0 0 0;
-	display: flex;	
-	background-color: #1C1C1C;
-
+	display: flex;
+	background-color: #1c1c1c;
 
 	&__wrap {
 		width: 100%;
-		display: flex;	
+		display: flex;
 		flex-direction: column;
 	}
 
@@ -723,7 +722,6 @@ header {
 		position: relative;
 		padding: 0 $padding-left-and-right 0 $padding-left-and-right;
 		min-height: 90px;
-		max-height: 138px;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -744,9 +742,9 @@ header {
 	}
 
 	&__privacy-item {
-		color: #FFF;
+		color: #fff;
 		font-variant-numeric: lining-nums proportional-nums;
-		font-feature-settings: 'liga' off;
+		font-feature-settings: "liga" off;
 		font-family: Montserrat;
 		font-size: 16px;
 		font-style: normal;
@@ -761,11 +759,11 @@ header {
 		justify-content: center;
 		align-items: center;
 		min-height: 30px;
-		background-color: #FFBF1C;
+		background-color: #ffbf1c;
 	}
 
 	&__bottom-block-text {
-		color: #1C1C1C;
+		color: #1c1c1c;
 		text-align: center;
 		font-family: Montserrat;
 		font-size: 16px;
@@ -774,8 +772,11 @@ header {
 		line-height: normal;
 		letter-spacing: 0.16px;
 	}
-}
 
+	&__header-menu {
+		display: flex;
+	}
+}
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1441px и выше */
 @media (min-width: 1441px) {
@@ -873,7 +874,7 @@ header {
 		padding-right: calc(-30px + 70 * (100vw / 1365));
 	}
 
-	.header-button {
+	.get-consultation-button {
 		order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
 	}
 
@@ -881,12 +882,13 @@ header {
 		margin: 90px 0 0 0;
 	}
 
-	.header-menu {
-		display: none;
-	}
-
-	.header-button {
-		display: none;
+	header {
+		.header-menu {
+			display: none;
+		}
+		.get-consultation-button {
+			display: none;
+		}
 	}
 
 	.menu-btn {
@@ -1135,8 +1137,19 @@ header {
 		display: none;
 	}
 
-	.header-button {
-		display: none;
+	.footer {
+		margin: $padding-left-and-right 0 0 0;
+		display: flex;
+		background-color: #1c1c1c;
+
+		&__wrap {
+			padding: 12px 0 0 0;
+		}
+
+		&__top-block {
+			flex-flow: column nowrap;
+			gap: 0;
+		}
 	}
 
 	.menu-btn {
@@ -1217,10 +1230,6 @@ header {
 	}
 }
 
-/* Медиа-запрос для изменения порядка отображения на ширине 607px и ниже */
-@media (max-width: 607px) {
-}
-
 /* Медиа-запрос для изменения порядка отображения на ширине 400px и ниже */
 @media (max-width: 400px) {
 	.h2-wrap {
@@ -1231,7 +1240,12 @@ header {
 		}
 
 		.h2-wrap__link {
-			font-size: calc(20 / 374 * 100vw);
+			font-size: calc(20 / 400 * 100vw);
+		}
+	}
+	.footer {
+		&__privacy-item {
+			font-size: calc(16 / 400 * 100vw);
 		}
 	}
 }
