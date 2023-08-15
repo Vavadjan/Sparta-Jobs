@@ -42,7 +42,6 @@ header {
 
 	.header__logo-first-word {
 		display: flex;
-		color: #006ceb;
 		font-family: Unbounded;
 		font-size: 30px;
 		font-style: normal;
@@ -52,7 +51,6 @@ header {
 
 	.header__logo-second-word {
 		display: flex;
-		color: #1c1c1c;
 		font-family: Unbounded;
 		font-size: 30px;
 		font-style: normal;
@@ -77,7 +75,6 @@ header {
 	}
 
 	.header-menu__link {
-		color: #1c1c1c;
 		font-family: Montserrat;
 		font-size: 18px;
 		font-style: normal;
@@ -91,7 +88,6 @@ header {
 	}
 
 	.header-menu__link:not(:hover) {
-		color: #1c1c1c;
 		transition: 1s;
 	}
 }
@@ -101,15 +97,12 @@ header {
 	order: 3;
 	margin: 18px 0;
 	padding: 16px 32px;
-	// width: 195px;
 	height: 22px;
 	border-radius: 60px;
-	background: #1c1c1c;
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
 	cursor: pointer; /* Изменение вида курсора на палец при наведении */
 
 	.header-button__link {
-		color: #fff;
 		font-family: Unbounded;
 		font-size: 18px;
 		font-style: normal;
@@ -126,7 +119,6 @@ header {
 
 .header-button:not(:hover) {
 	border-radius: 60px;
-	background: #1c1c1c;
 	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
 	transition: 1s;
 }
@@ -687,31 +679,100 @@ header {
 	z-index: 2;
 }
 
+.black-background {
+	background: black;
+}
+
+.white-background {
+	background: white;
+}
+
+.yello-background {
+	background: #FFBF1C;
+}
+
+.black-text {
+	color: #1C1C1C;
+}
+
 .blue-text {
 	color: #006ceb;
 }
 
+.white-text {
+	color: #FFFFFF;
+}
+
+.yello-text {
+	color: #FFBF1C;
+}
+
 .footer {
+	margin: $padding-left-and-right 0 0 0;
+	display: flex;	
+	background-color: #1C1C1C;
+
 
 	&__wrap {
+		width: 100%;
+		display: flex;	
+		flex-direction: column;
 	}
 
 	&__top-block {
+		position: relative;
+		padding: 0 $padding-left-and-right 0 $padding-left-and-right;
+		min-height: 90px;
+		max-height: 138px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 19.5px;
 	}
 
 	&__center-block {
+		padding: 0 $padding-left-and-right 30px $padding-left-and-right;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__privacy-list {
+		display: flex;
+		gap: 24px;
 	}
 
 	&__privacy-item {
+		color: #FFF;
+		font-variant-numeric: lining-nums proportional-nums;
+		font-feature-settings: 'liga' off;
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.16px;
 	}
 
 	&__bottom-block {
+		padding: 0 $padding-left-and-right 0 $padding-left-and-right;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 30px;
+		background-color: #FFBF1C;
 	}
 
 	&__bottom-block-text {
+		color: #1C1C1C;
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.16px;
 	}
 }
 
