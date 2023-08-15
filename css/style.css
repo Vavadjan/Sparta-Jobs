@@ -745,6 +745,7 @@ header {
   gap: 12px;
 }
 .features__small-block-item {
+  position: relative;
   color: #1C1C1C;
   font-family: Montserrat;
   font-size: 18px;
@@ -761,6 +762,18 @@ header {
   height: 90%;
   background: #EAEAEA;
   z-index: -1;
+}
+
+.features__small-block-item::before {
+  content: "";
+  position: absolute;
+  top: 1ex;
+  left: -16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #006CEB;
+  z-index: 2;
 }
 
 .blue-text {
@@ -1175,9 +1188,7 @@ header {
     font-size: calc(10px + 5.3208137715vw);
   }
   .features__subtitle-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin: 4.6948356808vw 0 7.8247261346vw 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

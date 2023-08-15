@@ -653,6 +653,7 @@ header {
 	}
 
 	&__small-block-item {
+		position: relative;
 		color: #1C1C1C;
 		font-family: Montserrat;
 		font-size: 18px;
@@ -666,11 +667,22 @@ header {
 	content: "";
 	position: absolute;
 	top: 0;
-	// left: 29.375%;
 	width: 66.1%;
 	height: 90%;
 	background: #EAEAEA;
 	z-index: -1;
+}
+
+.features__small-block-item::before {
+	content: "";
+	position: absolute;
+	top: 1ex;
+	left: -16px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #006CEB;
+	z-index: 2;
 }
 
 .blue-text {
@@ -1095,7 +1107,7 @@ header {
 		}
 
 		&__subtitle-block {
-			display: flex;
+			margin: calc(30 / 639 * 100vw) 0 calc(50 / 639 * 100vw) 0;
 			justify-content: center;
 			flex-wrap: wrap;
 			gap: 5px;
