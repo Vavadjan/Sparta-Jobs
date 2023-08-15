@@ -434,69 +434,69 @@ header {
 		margin: 0 $padding-left-and-right 0 $padding-left-and-right;
 		width: 40px;
 		height: 40px;
-		border-radius: 50%;	
+		border-radius: 50%;
 		z-index: 10;
 		filter: drop-shadow(0px 0px 26px rgba(0, 0, 0, 0.16));
 	}
 
 	&__telegram-link {
 		position: absolute;
-		right: calc(($social-links-margin-right) + 137.5px);		
+		right: calc(($social-links-margin-right) + 137.5px);
 		bottom: calc(($social-links-margin-bottom) + 153.5px);
 		background: url(../img/SVG/telegram-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 30px;
-		background-position: center center;		
+		background-position: center center;
 	}
 
 	&__linkedin-link {
-		position: absolute;		
+		position: absolute;
 		right: calc(($social-links-margin-right) + 80px);
 		bottom: calc(($social-links-margin-bottom) + 135px);
 		background: url(../img/SVG/linkedin-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 24px;
-		background-position: center center;		
+		background-position: center center;
 	}
 
 	&__signal-link {
 		position: absolute;
-		right: calc(($social-links-margin-right) + 130px);		
+		right: calc(($social-links-margin-right) + 130px);
 		bottom: calc(($social-links-margin-bottom) + 74px);
 		background: url(../img/SVG/signal-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 26px;
-		background-position: center center;		
+		background-position: center center;
 	}
 
 	&__whatsapp-link {
-		position: absolute;		
+		position: absolute;
 		right: calc(($social-links-margin-right) + 29px);
 		bottom: calc(($social-links-margin-bottom) + 71px);
 		background: url(../img/SVG/whatsapp-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 36px;
-		background-position: center center;		
+		background-position: center center;
 	}
 
 	&__facebook-link {
-		position: absolute;		
+		position: absolute;
 		right: calc(($social-links-margin-right) + 82px);
 		bottom: calc(($social-links-margin-bottom) + 25px);
 		background: url(../img/SVG/facebook-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 30px;
-		background-position: center center;		
+		background-position: center center;
 	}
 
 	&__google-link {
-		position: absolute;		
+		position: absolute;
 		right: $social-links-margin-right;
 		bottom: $social-links-margin-bottom;
 		background: url(../img/SVG/google-ico.svg), #fff;
 		background-repeat: no-repeat;
 		background-size: 30px;
-		background-position: center center;		
+		background-position: center center;
 	}
 
 	&__outer {
@@ -556,13 +556,15 @@ header {
 	}
 }
 
-.block-whith-social-links__social-link:hover { /* поведение при наведении на social link */
+.block-whith-social-links__social-link:hover {
+	/* поведение при наведении на social link */
 	background-position: center center;
-	filter: drop-shadow(0px 0px 15px #006CEB);
+	filter: drop-shadow(0px 0px 15px #006ceb);
 	transition: 0.4s;
 }
 
-.block-whith-social-links__social-link:not(:hover) { /* поведение при отведении с social link */
+.block-whith-social-links__social-link:not(:hover) {
+	/* поведение при отведении с social link */
 	background-position: center center;
 	box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
 	transition: 1s ease;
@@ -593,7 +595,7 @@ header {
 		justify-content: center;
 		text-align: center;
 		width: 57%;
-		color: #1C1C1C;
+		color: #1c1c1c;
 		font-family: Unbounded;
 		font-size: 44px;
 		font-style: normal;
@@ -609,7 +611,7 @@ header {
 
 	&__subtitle {
 		display: flex;
-		color: #1C1C1C;
+		color: #1c1c1c;
 		font-family: Unbounded;
 		font-size: 30px;
 		font-style: normal;
@@ -631,13 +633,13 @@ header {
 		flex-direction: column;
 		gap: 12px;
 		border-radius: 30px;
-		background: var(--white, #FFF);
+		background: var(--white, #fff);
 		/* card shadow bg */
 		box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
 	}
 
 	&__small-block-title {
-		color: #1C1C1C;
+		color: #1c1c1c;
 		font-family: Unbounded;
 		font-size: 30px;
 		font-style: normal;
@@ -654,7 +656,7 @@ header {
 
 	&__small-block-item {
 		position: relative;
-		color: #1C1C1C;
+		color: #1c1c1c;
 		font-family: Montserrat;
 		font-size: 18px;
 		font-style: normal;
@@ -669,7 +671,7 @@ header {
 	top: 0;
 	width: 66.1%;
 	height: 90%;
-	background: #EAEAEA;
+	background: #eaeaea;
 	z-index: -1;
 }
 
@@ -681,12 +683,36 @@ header {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background-color: #006CEB;
+	background-color: #006ceb;
 	z-index: 2;
 }
 
 .blue-text {
-	color: #006CEB;
+	color: #006ceb;
+}
+
+.footer {
+
+	&__wrap {
+	}
+
+	&__top-block {
+	}
+
+	&__center-block {
+	}
+
+	&__privacy-list {
+	}
+
+	&__privacy-item {
+	}
+
+	&__bottom-block {
+	}
+
+	&__bottom-block-text {
+	}
 }
 
 
@@ -696,67 +722,67 @@ header {
 		padding: calc(40 / 1440 * 100vw) $padding-left-and-right 300px $padding-left-and-right;
 
 		&__small-block {
-			width:calc(422 / 1440 * 100vw);
+			width: calc(422 / 1440 * 100vw);
 		}
 
 		&__telegram-link {
 			position: absolute;
-			right: calc(($social-links-margin-right) + 187.5px);		
+			right: calc(($social-links-margin-right) + 187.5px);
 			bottom: calc(($social-links-margin-bottom) + 203.5px);
 			background: url(../img/SVG/telegram-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 30px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__linkedin-link {
-			position: absolute;		
+			position: absolute;
 			right: calc(($social-links-margin-right) + 130px);
 			bottom: calc(($social-links-margin-bottom) + 185px);
 			background: url(../img/SVG/linkedin-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 24px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__signal-link {
 			position: absolute;
-			right: calc(($social-links-margin-right) + 180px);		
+			right: calc(($social-links-margin-right) + 180px);
 			bottom: calc(($social-links-margin-bottom) + 124px);
 			background: url(../img/SVG/signal-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 26px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__whatsapp-link {
-			position: absolute;		
+			position: absolute;
 			right: calc(($social-links-margin-right) + 79px);
 			bottom: calc(($social-links-margin-bottom) + 121px);
 			background: url(../img/SVG/whatsapp-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 36px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__facebook-link {
-			position: absolute;		
+			position: absolute;
 			right: calc(($social-links-margin-right) + 132px);
 			bottom: calc(($social-links-margin-bottom) + 75px);
 			background: url(../img/SVG/facebook-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 30px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__google-link {
-			position: absolute;		
+			position: absolute;
 			right: $social-links-margin-right + 50px;
 			bottom: $social-links-margin-bottom + 50px;
 			background: url(../img/SVG/google-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 30px;
-			background-position: center center;		
+			background-position: center center;
 		}
 
 		&__stack-of-coins {
@@ -769,13 +795,13 @@ header {
 		width: calc(710 / 1440 * 100vw);
 	}
 
-.features {
-	display: flex;
+	.features {
+		display: flex;
 
-&__small-block {
-		width: 350px;
-}
-}
+		&__small-block {
+			width: 350px;
+		}
+	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
@@ -807,7 +833,6 @@ header {
 	}
 }
 
-
 /* Медиа-запрос для изменения порядка отображения на ширине 1137px и ниже */
 @media (max-width: 1137px) {
 	.block-whith-social-links {
@@ -833,7 +858,7 @@ header {
 		// left: 29.375%;
 		width: 95%;
 		height: 90%;
-		background: #EAEAEA;
+		background: #eaeaea;
 		z-index: -1;
 	}
 }
@@ -963,62 +988,62 @@ header {
 
 		&__telegram-link {
 			position: absolute;
-			left: 0;		
+			left: 0;
 			bottom: 183.5px;
 			background: url(../img/SVG/telegram-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 30px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__linkedin-link {
-			position: absolute;		
+			position: absolute;
 			left: 57px;
 			bottom: 165px;
 			background: url(../img/SVG/linkedin-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 24px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__signal-link {
 			position: absolute;
-			left: 7px;		
+			left: 7px;
 			bottom: 104px;
 			background: url(../img/SVG/signal-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 26px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__whatsapp-link {
-			position: absolute;		
+			position: absolute;
 			left: 108px;
 			bottom: 101px;
 			background: url(../img/SVG/whatsapp-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 36px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__facebook-link {
-			position: absolute;		
+			position: absolute;
 			left: 55px;
 			bottom: 55px;
 			background: url(../img/SVG/facebook-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 30px;
-			background-position: center center;		
+			background-position: center center;
 		}
-	
+
 		&__google-link {
-			position: absolute;		
+			position: absolute;
 			left: 137px;
 			bottom: 30px;
 			background: url(../img/SVG/google-ico.svg), #fff;
 			background-repeat: no-repeat;
 			background-size: 30px;
-			background-position: center center;		
+			background-position: center center;
 		}
 	}
 	.block-whith-social-links::before {
@@ -1100,7 +1125,7 @@ header {
 		display: flex;
 		margin: calc(80 / 639 * 100vw) $padding-left-and-right 0 $padding-left-and-right;
 		padding: calc(40 / 639 * 100vw) 0 0 0;
-	
+
 		&__title {
 			width: 90%;
 			font-size: calc(10px + 34 * (100vw / 639));
@@ -1124,10 +1149,10 @@ header {
 		&__small-block-title {
 			font-size: calc(10px + 20 * (100vw / 639));
 		}
-	
+
 		&__small-block-item {
 			font-size: calc(10px + 8 * (100vw / 639));
-		}		
+		}
 	}
 }
 
