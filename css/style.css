@@ -702,7 +702,7 @@ header {
   gap: 20px;
 }
 .features__small-block {
-  width: 300px;
+  width: 250px;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1131,6 +1131,29 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 12.5195618153vw 5.5555555556vw 0 5.5555555556vw;
+    padding: 6.2597809077vw 0 0 0;
+  }
+  .features__title {
+    width: 100%;
+    font-size: calc(10px + 5.3208137715vw);
+  }
+  .features__subtitle-block {
+    width: auto;
+  }
+  .features__subtitle {
+    font-size: calc(10px + 3.1298904538vw);
+  }
+  .features__small-block-title {
+    font-size: calc(10px + 3.1298904538vw);
+  }
+  .features__small-block-item {
+    font-size: calc(10px + 1.2519561815vw);
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 607px и ниже */
