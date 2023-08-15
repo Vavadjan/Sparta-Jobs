@@ -651,6 +651,7 @@ header {
 .features {
   margin: 80px 5.5555555556vw 0 5.5555555556vw;
   padding: 40px 0 0 0;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -666,7 +667,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50.5%;
+  width: 57%;
   color: #1C1C1C;
   text-align: center;
   font-family: Unbounded;
@@ -747,6 +748,16 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
+}
+
+.features::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 66.1%;
+  height: 80%;
+  background: #EAEAEA;
+  z-index: -1;
 }
 
 .blue-text {
