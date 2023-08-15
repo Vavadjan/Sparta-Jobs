@@ -822,6 +822,14 @@ header {
     content: "";
     width: 49.3055555556vw;
   }
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .features__small-block {
+    width: 350px;
+  }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
 @media (max-width: 1365px) {
@@ -838,7 +846,7 @@ header {
             order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
   }
   .h1-wrap {
-    margin: 138px 0 0 0;
+    margin: 90px 0 0 0;
   }
   .header-menu {
     display: none;
@@ -1145,9 +1153,13 @@ header {
   }
   .features__subtitle-block {
     width: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .features__subtitle {
     font-size: calc(10px + 3.1298904538vw);
+    text-align: center;
   }
   .features__small-block-title {
     font-size: calc(10px + 3.1298904538vw);
