@@ -215,8 +215,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.86);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -228,8 +228,10 @@ header {
 #popup {
   display: none;
   position: fixed;
-  margin: 6.9444444444vw 13.125% 0 13.125%;
-  width: 73.75%;
+  top: 0;
+  left: 0;
+  margin: 10vh 13.125vw 0 13.125vw;
+  width: 73.75vw;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 30px;
@@ -247,8 +249,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 6.8055555556vw 6.9444444444vw;
-  gap: 40px;
+  padding: 10vh 10vw;
+  gap: 4.2vh;
 }
 
 .get-consultation-form {
@@ -259,9 +261,17 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .input-block-wrap {
+  width: 48vw;
+  height: 12.4vh;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,23 +280,21 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  gap: 2.1vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #name, #email, #message {
-  padding-left: 20px;
+  padding-left: 1.3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  height: 50px;
+  width: 22vw;
+  height: 4.7vh;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 8px;
@@ -301,11 +309,12 @@ header {
 }
 
 #message {
-  padding-top: 14px;
+  padding-top: 1.3vh;
+  width: 22vw;
 }
 
 #getConsultationSend {
-  margin: 40px auto 0 auto;
+  margin: 4.3vh auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,10 +348,9 @@ header {
 
 /* Оформление формы */
 .form-h2 {
-  margin-top: 30px;
   color: #1C1C1C;
   font-family: Unbounded;
-  font-size: 30px;
+  font-size: calc(10px + 1.3888888889vw);
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 45px */

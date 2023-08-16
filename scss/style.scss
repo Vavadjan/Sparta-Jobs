@@ -4,7 +4,7 @@ $ANTIpadding-left-and-right: -5.55555555555556vw;
 $social-links-margin-right: 362px; /* это без учёта margin */
 $social-links-margin-bottom: 84px;
 
-// calc(-30px + 70 * (100vw / 1365))
+// calc(-30px + 70 * (100vw / 1440))
 
 .black-background {
 	background: black;
@@ -181,8 +181,8 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background: rgba(0, 0, 0, 0.86);
 	backdrop-filter: blur(5px);
 	display: none;
@@ -193,8 +193,10 @@ header {
 #popup {
 	display: none;
 	position: fixed;
-	margin: calc(100 / 1440 * 100vw) 13.125% 0 13.125%;
-	width: 73.75%;
+	top: 0;
+	left: 0;
+	margin: 10vh 13.125vw 0 13.125vw;
+	width: 73.75vw;
 	flex-shrink: 0;
 	border-radius: 30px;
 	background: #FFF;
@@ -205,33 +207,34 @@ header {
 .popup-content {
 	display: flex;
 	flex-direction: column;	
-	// align-items: center;
-	padding: calc(98 / 1440 * 100vw) calc(100 / 1440 * 100vw);
-	gap: 40px;
+	padding: 10vh 10vw;
+	gap: 4.2vh;
 }
 
 .get-consultation-form {	
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .input-block-wrap {
-	// width: calc(700 / 1440 * 100vw);
-	// height: 129px;
+	width: 48vw;
+	height: 12.4vh;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
-	flex-grow: 1;
+	gap: 2.1vh;
+	// flex-grow: 1;
 	flex-wrap: wrap;
 }
 
 #name, #email, #message {
-	padding-left: 20px;	
+	padding-left: 1.3vw;	
 	display: flex;
 	flex-grow: 1;
-	// width: 340px;
-	height: 50px;
+	width: 22vw;
+	height: 4.7vh;
 	flex-shrink: 0;
 	border-radius: 8px;
 	border: 1.2px solid #838383;
@@ -246,11 +249,12 @@ header {
 }
 
 #message {
-	padding-top: 14px;
+	padding-top: 1.3vh;
+	width: 22vw;
 }
 
 #getConsultationSend {
-	margin: 40px auto 0 auto;
+	margin: 4.3vh auto 0 auto;
 	display: flex;
 	padding: 16px 32px;
 	align-items: center;
@@ -278,10 +282,9 @@ header {
 
 /* Оформление формы */
 .form-h2 {
-	margin-top: 30px;
 	color: #1C1C1C;
 	font-family: Unbounded;
-	font-size: 30px;
+	font-size: calc(10px + 20 * (100vw / 1440));
 	font-style: normal;
 	font-weight: 700;
 	line-height: 150%; /* 45px */
