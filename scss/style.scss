@@ -872,7 +872,7 @@ header {
 		padding-right: calc(-30px + 70 * (100vw / 1365));
 	}
 
-	.get-consultation-button {
+	.get-consultation-button__link {
 		order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
 	}
 
@@ -884,7 +884,7 @@ header {
 		.header-menu {
 			display: none;
 		}
-		.get-consultation-button {
+		.get-consultation-button__link {
 			display: none;
 		}
 	}
