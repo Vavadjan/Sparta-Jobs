@@ -1,5 +1,33 @@
 @charset "UTF-8";
 /* это без учёта margin */
+.black-background {
+  background: black;
+}
+
+.white-background {
+  background: white;
+}
+
+.yello-background {
+  background: #ffbf1c;
+}
+
+.black-text {
+  color: #1c1c1c;
+}
+
+.blue-text {
+  color: #006ceb;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.yello-text {
+  color: #ffbf1c;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -768,34 +796,6 @@ header {
   border-radius: 50%;
   background-color: #006ceb;
   z-index: 2;
-}
-
-.black-background {
-  background: black;
-}
-
-.white-background {
-  background: white;
-}
-
-.yello-background {
-  background: #ffbf1c;
-}
-
-.black-text {
-  color: #1c1c1c;
-}
-
-.blue-text {
-  color: #006ceb;
-}
-
-.white-text {
-  color: #ffffff;
-}
-
-.yello-text {
-  color: #ffbf1c;
 }
 
 .footer {

@@ -6,6 +6,34 @@ $social-links-margin-bottom: 84px;
 
 // calc(-30px + 70 * (100vw / 1365))
 
+.black-background {
+	background: black;
+}
+
+.white-background {
+	background: white;
+}
+
+.yello-background {
+	background: #ffbf1c;
+}
+
+.black-text {
+	color: #1c1c1c;
+}
+
+.blue-text {
+	color: #006ceb;
+}
+
+.white-text {
+	color: #ffffff;
+}
+
+.yello-text {
+	color: #ffbf1c;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -106,8 +134,7 @@ header {
 	border-radius: 60px;
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
 	cursor: pointer; /* Изменение вида курсора на палец при наведении */
-	}
-
+}
 
 .get-consultation-button__link:hover {
 	background: #006ceb;
@@ -673,34 +700,6 @@ header {
 	border-radius: 50%;
 	background-color: #006ceb;
 	z-index: 2;
-}
-
-.black-background {
-	background: black;
-}
-
-.white-background {
-	background: white;
-}
-
-.yello-background {
-	background: #ffbf1c;
-}
-
-.black-text {
-	color: #1c1c1c;
-}
-
-.blue-text {
-	color: #006ceb;
-}
-
-.white-text {
-	color: #ffffff;
-}
-
-.yello-text {
-	color: #ffbf1c;
 }
 
 .footer {
