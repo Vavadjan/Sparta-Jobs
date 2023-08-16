@@ -66,7 +66,7 @@ header {
 	margin: 0;
 	padding: 0 0 0 0;
 	display: flex;
-	z-index: 10000;
+	z-index: 10;
 
 	.logo-first-word {
 		display: flex;
@@ -120,7 +120,7 @@ header {
 	}
 }
 
-.get-consultation-button__link {
+#getConsultation {
 	font-family: Unbounded;
 	font-size: 18px;
 	font-style: normal;
@@ -130,22 +130,148 @@ header {
 	order: 3;
 	margin: 18px 0;
 	padding: 16px 32px;
-	height: 22px;
+	border: none;
 	border-radius: 60px;
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
 	cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 
-.get-consultation-button__link:hover {
+#getConsultation:hover {
 	background: #006ceb;
 	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
 	transition: 0.4s;
 }
 
-.get-consultation-button__link:not(:hover) {
+#getConsultation:not(:hover) {
 	border-radius: 60px;
 	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
 	transition: 1s;
+}
+
+/* Скрытый фон для затемнения страницы */
+#popupBg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.86);
+	backdrop-filter: blur(5px);
+	display: none;
+	z-index: 9998;
+}
+
+/* Всплывающее окно */
+#popup {
+	display: flex;
+	// justify-content: center;
+	position: fixed;
+	margin: calc(100 / 1440 * 100vw) 13.125% 0 13.125%;
+	width: 73.75%;
+	flex-shrink: 0;
+	border-radius: 30px;
+	background: #FFF;
+	box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.60);
+	z-index: 9999;
+}
+
+.popup-content {
+	display: flex;
+	flex-direction: column;	
+	// align-items: center;
+	padding: 98px 100px;
+	gap: 40px;
+}
+
+.getConsultationForm {	
+	display: flex;
+	flex-direction: column;
+}
+
+.input-block-wrap {
+	width: calc(700 / 1440 * 100vw);
+	height: 129px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+#name, #email, #message {
+	padding-left: 20px;	
+	display: flex;
+	flex-grow: 1;
+	width: 340px;
+	height: 50px;
+	flex-shrink: 0;
+	border-radius: 8px;
+	border: 1.2px solid #838383;
+	background: #FFF;
+	color: #838383;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px; /* 122.222% */
+	// text-align: center;
+}
+
+#message {
+	padding-top: 14px;
+}
+
+#getConsultationSend {
+	margin: 40px auto 0 auto;
+	display: flex;
+	padding: 16px 32px;
+	align-items: center;
+	gap: 10px;
+	border-radius: 60px;
+	background: #006CEB;
+	border: none;
+	color: #FFF;
+	font-family: Unbounded;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	cursor: pointer
+}
+
+#getConsultationSend:hover {
+	background-color: #1c1c1c;
+	transition: 0.4s;
+}
+
+#getConsultationSend:not(:hover) {
+	transition: 1s;
+}
+
+/* Оформление формы */
+.form-h2 {
+	width: calc(474 / 1440 * 100vw);
+	color: #1C1C1C;
+	font-family: Unbounded;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%; /* 45px */
+}
+
+#closeBtn {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 26px;
+	height: 26px;
+	flex-shrink: 0;
+	background: url(../img/SVG/close-icon.svg);	
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% 100%;
+	border: none;
+	cursor: pointer
 }
 
 /* Гамбургер иконка */

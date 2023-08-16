@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sparta Jobs</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/media-queries.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@700&family=Roboto:wght@500&family=Unbounded:wght@500;700&display=swap"
-      rel="stylesheet">
+      rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -33,14 +33,17 @@
               <a class="header-menu__link black-text" href="">Pricing</a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link black-text" href="">Try SJ CRM for free</a>
+              <a class="header-menu__link black-text" href=""
+                >Try SJ CRM for free</a>
             </li>
             <li class="header-menu__item">
               <a class="header-menu__link black-text" href="">Contact us</a>
             </li>
           </ul>
         </nav>
-        <a href="#" class="get-consultation-button__link white-text black-background">Get Consultation</a>
+        <button id="getConsultation" class="white-text black-background">
+          Get Consultation
+        </button>
         <div class="menu-btn">
           <span></span>
           <span></span>
@@ -48,17 +51,32 @@
         </div>
       </div>
     </header>
+    <div class="popup-bg" id="popupBg"></div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h2 class="form-h2">Contact us and you will get a response in no time</h2>
+        <form class="getConsultationForm" action="">
+          <button id="closeBtn"></button>
+          <div class="input-block-wrap">
+            <input type="text" id="name" name="name" placeholder="Enter your name"/>
+            <input type="email" id="email" name="email" placeholder="Enter your email"/>
+            <textarea id="message" name="message" placeholder="Enter your message (optional)"></textarea>
+          </div>
+          <button id="getConsultationSend">Send request</button>
+        </form>
+      </div>
+    </div>
     <main>
       <article>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">About SJ CRM</a></li>
-              <li><a href="#">How it works</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Try SJ CRM for free</a></li>
-              <li><a href="#">Contact us</a></li>
-            </ul>
-          </nav>        
+        <nav class="menu">
+          <ul>
+            <li><a href="#">About SJ CRM</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Try SJ CRM for free</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
         <section class="h1-wrap">
           <div class="h1-wrap__text-wrap">
             <h1>Customer Relationsships Management System</h1>
@@ -70,15 +88,15 @@
         </section>
         <section class="h2-wrap">
           <div class="h2-wrap__text-block">
-            <h2 class="h2-wrap__h2">What is <br>Sparta Jobs CRM?</h2>
+            <h2 class="h2-wrap__h2">What is <br />Sparta Jobs CRM?</h2>
             <span class="h2-wrap__span">
               <strong class="h2-wrap__strong">
                 Sparta jobs - the hi-end CRM for Active HR Teams.
               </strong>
-              who need to never lost a single hire opportunity and don’t lost time
-              for many managing apps, so as result increase the revenue. If you’re a
-              team who needs to scale without overpaying for enterprise and IT
-              recruitment software, we're here for you.
+              who need to never lost a single hire opportunity and don’t lost
+              time for many managing apps, so as result increase the revenue. If
+              you’re a team who needs to scale without overpaying for enterprise
+              and IT recruitment software, we're here for you.
             </span>
             <div class="h2-wrap__span-whith-link-wrap">
               <span class="h2-wrap__span">Email, call, manage — </span>
@@ -94,79 +112,136 @@
         <section class="block-whith-social-links">
           <div class="block-whith-social-links__funnel-whith-money-and-arrow"></div>
           <div class="block-whith-social-links__stack-of-coins"></div>
-          <a class="block-whith-social-links__telegram-link block-whith-social-links__social-link" href="#"></a>
-          <a class="block-whith-social-links__linkedin-link block-whith-social-links__social-link" href="#"></a>
-          <a class="block-whith-social-links__signal-link block-whith-social-links__social-link" href="#"></a>
-          <a class="block-whith-social-links__whatsapp-link block-whith-social-links__social-link" href="#"></a>
-          <a class="block-whith-social-links__facebook-link block-whith-social-links__social-link" href="#"></a>
-          <a class="block-whith-social-links__google-link block-whith-social-links__social-link" href="#"></a>
+          <a class="block-whith-social-links__telegram-link block-whith-social-links__social-link"
+            href="#"></a>
+          <a class="block-whith-social-links__linkedin-link block-whith-social-links__social-link"
+            href="#"></a>
+          <a class="block-whith-social-links__signal-link block-whith-social-links__social-link"
+            href="#"></a>
+          <a class="block-whith-social-links__whatsapp-link block-whith-social-links__social-link"
+            href="#"></a>
+          <a class="block-whith-social-links__facebook-link block-whith-social-links__social-link"
+            href="#"></a>
+          <a class="block-whith-social-links__google-link block-whith-social-links__social-link"
+            href="#"></a>
           <div class="block-whith-social-links__outer">
             <div class="block-whith-social-links__small-block">
-              <strong class="block-whith-social-links__title">Custom modules</strong>
-              <span class="block-whith-social-links__text">From SIP to Messenger automation. We can easily develop on demand solution for your company.</span>
+              <strong class="block-whith-social-links__title"
+                >Custom modules</strong>
+              <span class="block-whith-social-links__text"
+                >From SIP to Messenger automation. We can easily develop on
+                demand solution for your company.</span>
             </div>
             <div class="block-whith-social-links__small-block">
-              <strong class="block-whith-social-links__title">Hands On Experience</strong>
-              <span class="block-whith-social-links__text">Our product was created with mentorship of key specialists in recruitment.</span>
+              <strong class="block-whith-social-links__title"
+                >Hands On Experience</strong>
+              <span class="block-whith-social-links__text"
+                >Our product was created with mentorship of key specialists in
+                recruitment.</span>
             </div>
-          </div>          
+          </div>
           <div class="block-whith-social-links__big-block">
-            <strong class="block-whith-social-links__title">Never lost your leads!</strong>
-            <span class="block-whith-social-links__text">Leads that added into the CRM fall into the sales funnel: notifications about new vacancies are automatically sent to the leads in Facebook, Telegram and Viber. Also, the lead is added to the communities of the recruiting company in social networks, so you’ll never lost your leads!</span>
+            <strong class="block-whith-social-links__title"
+              >Never lost your leads!</strong>
+            <span class="block-whith-social-links__text"
+              >Leads that added into the CRM fall into the sales funnel:
+              notifications about new vacancies are automatically sent to the
+              leads in Facebook, Telegram and Viber. Also, the lead is added to
+              the communities of the recruiting company in social networks, so
+              you’ll never lost your leads!</span>
           </div>
         </section>
         <section class="features">
-          <h3 class="features__title">Great features 
-            for quality recruitment</h3>
+          <h3 class="features__title">
+            Great features for quality recruitment
+          </h3>
           <div class="features__subtitle-block">
             <strong class="features__subtitle blue-text">MAGIC</strong>
             <strong class="features__subtitle">from the first touch</strong>
           </div>
           <div class="features__wrap-whith-small-blocks">
             <div class="features__small-block">
-              <strong class="features__small-block-title blue-text">Automatic website creation</strong>
+              <strong class="features__small-block-title blue-text"
+                >Automatic website creation</strong>
               <ul class="features__small-block-list">
-                <li class="features__small-block-item">With Sparta Jobs CRM you get not only perfect CRM, but also website!</li>
-                <li class="features__small-block-item">Get the website with your vacancies in some clicks</li>
+                <li class="features__small-block-item">
+                  With Sparta Jobs CRM you get not only perfect CRM, but also
+                  website!
+                </li>
+                <li class="features__small-block-item">
+                  Get the website with your vacancies in some clicks
+                </li>
               </ul>
             </div>
             <div class="features__small-block">
-              <strong class="features__small-block-title blue-text">Messaging
-                Automation</strong>
+              <strong class="features__small-block-title blue-text"
+                >Messaging Automation</strong
+              >
               <ul class="features__small-block-list">
-                <li class="features__small-block-item">Manage your correspondence</li>
-                <li class="features__small-block-item">Set up automatic mailing in all possible means of communication</li>
+                <li class="features__small-block-item">
+                  Manage your correspondence
+                </li>
+                <li class="features__small-block-item">
+                  Set up automatic mailing in all possible means of
+                  communication
+                </li>
               </ul>
             </div>
             <div class="features__small-block">
-              <strong class="features__small-block-title blue-text">Sip calls and call tracking</strong>
+              <strong class="features__small-block-title blue-text"
+                >Sip calls and call tracking</strong
+              >
               <ul class="features__small-block-list">
-                <li class="features__small-block-item">Easy to call right from your web client</li>
+                <li class="features__small-block-item">
+                  Easy to call right from your web client
+                </li>
                 <li class="features__small-block-item">Call scheduling</li>
-                <li class="features__small-block-item">Recording of calls and smart redirection</li>
+                <li class="features__small-block-item">
+                  Recording of calls and smart redirection
+                </li>
               </ul>
             </div>
             <div class="features__small-block">
-              <strong class="features__small-block-title blue-text">Performance Monitoring</strong>
+              <strong class="features__small-block-title blue-text"
+                >Performance Monitoring</strong>
               <ul class="features__small-block-list">
-                <li class="features__small-block-item">Key metrics of lead processing</li>
-                <li class="features__small-block-item">Analytics for managers</li>
-                <li class="features__small-block-item">Monitor candidate engagement</li>
+                <li class="features__small-block-item">
+                  Key metrics of lead processing
+                </li>
+                <li class="features__small-block-item">
+                  Analytics for managers
+                </li>
+                <li class="features__small-block-item">
+                  Monitor candidate engagement
+                </li>
               </ul>
             </div>
             <div class="features__small-block">
               <strong class="features__small-block-title blue-text">Leads Pipeline</strong>
               <ul class="features__small-block-list">
-                <li class="features__small-block-item">Track the status of current leads</li>
-                <li class="features__small-block-item">Automate lead nurturing</li>
-                <li class="features__small-block-item">Qualify leads: track the interactions between recruiters and leads and determine most relevant leads</li>
+                <li class="features__small-block-item">
+                  Track the status of current leads
+                </li>
+                <li class="features__small-block-item">
+                  Automate lead nurturing
+                </li>
+                <li class="features__small-block-item">
+                  Qualify leads: track the interactions between recruiters and
+                  leads and determine most relevant leads
+                </li>
               </ul>
             </div>
             <div class="features__small-block">
-              <strong class="features__small-block-title blue-text">Task creation and management</strong>
+              <strong class="features__small-block-title blue-text"
+                >Task creation and management</strong>
               <ul class="features__small-block-list">
-                <li class="features__small-block-item">Task creation and management</li>
-                <li class="features__small-block-item">Never get lost in recruitment team tasks with task functionality of Sparta Jobs CRM</li>
+                <li class="features__small-block-item">
+                  Task creation and management
+                </li>
+                <li class="features__small-block-item">
+                  Never get lost in recruitment team tasks with task
+                  functionality of Sparta Jobs CRM
+                </li>
               </ul>
             </div>
           </div>
@@ -192,14 +267,18 @@
                 <a class="header-menu__link white-text" href="">Pricing</a>
               </li>
               <li class="header-menu__item">
-                <a class="header-menu__link white-text" href="">Try SJ CRM for free</a>
+                <a class="header-menu__link white-text" href=""
+                  >Try SJ CRM for free</a
+                >
               </li>
               <li class="header-menu__item">
                 <a class="header-menu__link white-text" href="">Contact us</a>
               </li>
             </ul>
-          </nav>          
-          <a href="#" class="get-consultation-button__link black-text yello-background">Get Consultation</a>          
+          </nav>
+          <button id="getConsultation" class="black-text yello-background">
+            Get Consultation
+          </button>
         </div>
         <div class="footer__center-block">
           <ul class="footer__privacy-list">
@@ -208,7 +287,9 @@
           </ul>
         </div>
         <div class="footer__bottom-block">
-          <h5 class="footer__bottom-block-text">Copyright ⓒ 2023 Web-you. All Rights Reserved.</h5>
+          <h5 class="footer__bottom-block-text">
+            Copyright ⓒ 2023 Web-you. All Rights Reserved.
+          </h5>
         </div>
       </div>
     </footer>
@@ -218,6 +299,22 @@
       menuBtn.addEventListener("click", function () {
         menuBtn.classList.toggle("active");
         menu.classList.toggle("active");
+      });
+    </script>
+    <script>
+      const getConsultation = document.getElementById("getConsultation");
+      const popupBg = document.getElementById("popupBg");
+      const popup = document.getElementById("popup");
+      const closeBtn = document.getElementById("closeBtn");
+
+      getConsultation.addEventListener("click", () => {
+        popupBg.style.display = "block";
+        popup.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        popupBg.style.display = "none";
+        popup.style.display = "none";
       });
     </script>
   </body>

@@ -73,7 +73,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 10000;
+  z-index: 10;
 }
 .logo-wrap .logo-first-word {
   display: -webkit-box;
@@ -140,7 +140,7 @@ header {
   transition: 1s;
 }
 
-.get-consultation-button__link {
+#getConsultation {
   font-family: Unbounded;
   font-size: 18px;
   font-style: normal;
@@ -152,14 +152,14 @@ header {
           order: 3;
   margin: 18px 0;
   padding: 16px 32px;
-  height: 22px;
+  border: none;
   border-radius: 60px;
   -webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 
-.get-consultation-button__link:hover {
+#getConsultation:hover {
   background: #006ceb;
   -webkit-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
@@ -167,12 +167,168 @@ header {
   transition: 0.4s;
 }
 
-.get-consultation-button__link:not(:hover) {
+#getConsultation:not(:hover) {
   border-radius: 60px;
   -webkit-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+/* Скрытый фон для затемнения страницы */
+#popupBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.86);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: none;
+  z-index: 9998;
+}
+
+/* Всплывающее окно */
+#popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  margin: 6.9444444444vw 13.125% 0 13.125%;
+  width: 73.75%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 30px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+.popup-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 98px 100px;
+  gap: 40px;
+}
+
+.getConsultationForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-block-wrap {
+  width: 48.6111111111vw;
+  height: 129px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#name, #email, #message {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 340px;
+  height: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 8px;
+  border: 1.2px solid #838383;
+  background: #FFF;
+  color: #838383;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 122.222% */
+}
+
+#message {
+  padding-top: 14px;
+}
+
+#getConsultationSend {
+  margin: 40px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: #006CEB;
+  border: none;
+  color: #FFF;
+  font-family: Unbounded;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+#getConsultationSend:hover {
+  background-color: #1c1c1c;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#getConsultationSend:not(:hover) {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/* Оформление формы */
+.form-h2 {
+  width: 32.9166666667vw;
+  color: #1C1C1C;
+  font-family: Unbounded;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 45px */
+}
+
+#closeBtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 26px;
+  height: 26px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: url(../img/SVG/close-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  border: none;
+  cursor: pointer;
 }
 
 /* Гамбургер иконка */
