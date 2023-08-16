@@ -112,7 +112,12 @@ header {
   transition: 1s;
 }
 
-.get-consultation-button {
+.get-consultation-button__link {
+  font-family: Unbounded;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   display: inline-block;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
@@ -125,15 +130,8 @@ header {
           box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
-.get-consultation-button .get-consultation-button__link {
-  font-family: Unbounded;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
 
-.get-consultation-button:hover {
+.get-consultation-button__link:hover {
   background: #006ceb;
   -webkit-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
@@ -141,7 +139,7 @@ header {
   transition: 0.4s;
 }
 
-.get-consultation-button:not(:hover) {
+.get-consultation-button__link:not(:hover) {
   border-radius: 60px;
   -webkit-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
