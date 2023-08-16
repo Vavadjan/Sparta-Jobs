@@ -400,6 +400,18 @@ header {
   display: flex;
 }
 .h2-wrap .h2-wrap__button-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.h2-wrap .h2-wrap__button-link {
+  color: #fff;
+  font-family: Unbounded;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap; /* Отменяет перенос слов */
   display: inline-block;
   margin: 30px 0 0 0;
   padding: 16px 32px;
@@ -410,21 +422,12 @@ header {
           box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
-.h2-wrap .h2-wrap__button-link {
-  color: #fff;
-  font-family: Unbounded;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  white-space: nowrap; /* Отменяет перенос слов */
-}
-.h2-wrap .h2-wrap__button-body:hover {
+.h2-wrap .h2-wrap__button-link:hover {
   background: #1c1c1c;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.h2-wrap .h2-wrap__button-body:not(:hover) {
+.h2-wrap .h2-wrap__button-link:not(:hover) {
   background: #006ceb;
   -webkit-transition: 1s;
   transition: 1s;

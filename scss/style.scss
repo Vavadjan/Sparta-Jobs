@@ -341,6 +341,17 @@ header {
 	}
 
 	.h2-wrap__button-body {
+		display: flex;
+	}
+
+	.h2-wrap__button-link {
+		color: #fff;
+		font-family: Unbounded;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		white-space: nowrap; /* Отменяет перенос слов */
 		display: inline-block;
 		margin: 30px 0 0 0;
 		padding: 16px 32px;
@@ -352,22 +363,12 @@ header {
 		cursor: pointer; /* Изменение вида курсора на палец при наведении */
 	}
 
-	.h2-wrap__button-link {
-		color: #fff;
-		font-family: Unbounded;
-		font-size: 18px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		white-space: nowrap; /* Отменяет перенос слов */
-	}
-
-	.h2-wrap__button-body:hover {
+	.h2-wrap__button-link:hover {
 		background: #1c1c1c;
 		transition: 0.4s;
 	}
 
-	.h2-wrap__button-body:not(:hover) {
+	.h2-wrap__button-link:not(:hover) {
 		background: #006ceb;
 		transition: 1s;
 	}
