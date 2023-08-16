@@ -417,7 +417,7 @@ header {
 
 /* Меню, которое будет появляться */
 .menu {
-  padding: 90px 0 0 0;
+  margin: 70px 0 0 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -439,7 +439,7 @@ header {
   margin: 0 5.5555555556vw;
 }
 .menu li {
-  margin: 0 auto;
+  margin: 0 5.5555555556vw;
 }
 .menu a {
   color: #1c1c1c;
