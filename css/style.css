@@ -290,6 +290,9 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2.1vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .input-right-block-wrap {
@@ -302,6 +305,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #name, #email, #message {
@@ -309,7 +315,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 22vw;
   height: 4.7vh;
   -ms-flex-negative: 1;
       flex-shrink: 1;
@@ -322,14 +327,18 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: calc(8px + 0.9722222222vw); /* 122.222% */
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #message {
   padding-top: 1.3vh;
-  width: 22vw;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 #getConsultationSend {

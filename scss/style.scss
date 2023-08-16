@@ -231,7 +231,8 @@ header {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	gap: 2.1vh;
+	gap: 2.1vh;	
+	flex: 1;
 }
 
 .input-right-block-wrap {
@@ -240,12 +241,12 @@ header {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	flex: 1;
 }
 
 #name, #email, #message {
 	padding-left: 1.3vw;	
 	display: flex;
-	width: 22vw;
 	height: 4.7vh;
 	flex-shrink: 1;
 	border-radius: 8px;
@@ -257,13 +258,15 @@ header {
 	font-style: normal;
 	font-weight: 400;
 	line-height: calc(8px + 14 * (100vw / 1440)); /* 122.222% */
-	// text-align: center;
+	flex: 1;
 }
 
 #message {
 	padding-top: 1.3vh;
-	width: 22vw;
+	// width: 22vw;
 	flex-grow: 1;
+	
+	flex: 1;
 }
 
 #getConsultationSend {
