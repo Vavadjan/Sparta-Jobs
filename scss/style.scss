@@ -120,7 +120,7 @@ header {
 	}
 }
 
-#getConsultation {
+#headerGetConsultation {
 	font-family: Unbounded;
 	font-size: 18px;
 	font-style: normal;
@@ -136,13 +136,41 @@ header {
 	cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 
-#getConsultation:hover {
+#footerGetConsultation {
+	font-family: Unbounded;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	display: inline-block;
+	order: 3;
+	margin: 18px 0;
+	padding: 16px 32px;
+	border: none;
+	border-radius: 60px;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+	cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+
+#headerGetConsultation:hover {
 	background: #006ceb;
 	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
 	transition: 0.4s;
 }
 
-#getConsultation:not(:hover) {
+#headerGetConsultation:not(:hover) {
+	border-radius: 60px;
+	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+	transition: 1s;
+}
+
+#footerGetConsultation:hover {
+	background: white;
+	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+}
+
+#footerGetConsultation:not(:hover) {
 	border-radius: 60px;
 	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
 	transition: 1s;

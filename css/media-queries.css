@@ -87,7 +87,12 @@
     margin: -15.5px auto 20px auto;
     padding-right: calc(-30px + 5.1282051282vw);
   }
-  #getConsultation {
+  #headerGetConsultation {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
+  }
+  #footerGetConsultation {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
@@ -98,7 +103,7 @@
   header .header-menu {
     display: none;
   }
-  header #getConsultation {
+  header #headerGetConsultation {
     display: none;
   }
   .menu-btn {

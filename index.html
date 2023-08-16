@@ -41,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <button id="getConsultation" class="white-text black-background">
+        <button id="headerGetConsultation" class="white-text black-background">
           Get Consultation
         </button>
         <div class="menu-btn">
@@ -276,7 +276,7 @@
               </li>
             </ul>
           </nav>
-          <button id="getConsultation" class="black-text yello-background">Get Consultation
+          <button id="footerGetConsultation" class="black-text yello-background">Get Consultation
           </button>
         </div>
         <div class="footer__center-block">
@@ -301,12 +301,18 @@
       });
     </script>
     <script>
-      const getConsultation = document.getElementById("getConsultation");
+      const headerGetConsultation = document.getElementById("headerGetConsultation");
+      const footerGetConsultation = document.getElementById("footerGetConsultation");
       const popupBg = document.getElementById("popupBg");
       const popup = document.getElementById("popup");
       const closeBtn = document.getElementById("closeBtn");
 
-      getConsultation.addEventListener("click", () => {
+      headerGetConsultation.addEventListener("click", () => {
+        popupBg.style.display = "block";
+        popup.style.display = "block";
+      });
+
+      footerGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "block";
         popup.style.display = "block";
       });
