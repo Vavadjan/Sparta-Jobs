@@ -178,23 +178,23 @@ header {
 	display: flex;
 	flex-direction: column;	
 	// align-items: center;
-	padding: 98px 100px;
+	padding: calc(98 / 1440 * 100vw) calc(100 / 1440 * 100vw);
 	gap: 40px;
 }
 
-.getConsultationForm {	
+.get-consultation-form {	
 	display: flex;
 	flex-direction: column;
 }
 
 .input-block-wrap {
-	width: calc(700 / 1440 * 100vw);
-	height: 129px;
+	// width: calc(700 / 1440 * 100vw);
+	// height: 129px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	flex: 1;
+	flex-grow: 1;
 	flex-wrap: wrap;
 }
 
@@ -202,7 +202,7 @@ header {
 	padding-left: 20px;	
 	display: flex;
 	flex-grow: 1;
-	width: 340px;
+	// width: 340px;
 	height: 50px;
 	flex-shrink: 0;
 	border-radius: 8px;
@@ -250,7 +250,7 @@ header {
 
 /* Оформление формы */
 .form-h2 {
-	width: calc(474 / 1440 * 100vw);
+	margin-top: 30px;
 	color: #1C1C1C;
 	font-family: Unbounded;
 	font-size: 30px;

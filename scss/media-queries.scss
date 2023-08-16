@@ -474,4 +474,26 @@ $social-links-margin-bottom: 84px;
 			font-size: calc(16 / 400 * 100vw);
 		}
 	}
+
+	#popup {
+		margin: calc(100 / 1440 * 100vw) 5% 0 5%;
+		width: 90%;
+	}
+
+	.input-block-wrap {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		flex-grow: 1;
+		flex-wrap: wrap;
+	}
+
+	#name, #email, #message {
+		padding-left: calc(20 / 1440 * 100vw);
+		height: 50px;
+		width: 230px;
+		font-size:  calc(10px + 8 * (100vw / 1440));
+		line-height:  calc(10px + 12 * (100vw / 1440)); /* 122.222% */
+	}
 }

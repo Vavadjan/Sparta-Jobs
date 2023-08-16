@@ -212,11 +212,11 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 98px 100px;
+  padding: 6.8055555556vw 6.9444444444vw;
   gap: 40px;
 }
 
-.getConsultationForm {
+.get-consultation-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,8 +227,6 @@ header {
 }
 
 .input-block-wrap {
-  width: 48.6111111111vw;
-  height: 129px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,8 +237,8 @@ header {
           flex-direction: column;
   gap: 20px;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -253,7 +251,6 @@ header {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 340px;
   height: 50px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -307,7 +304,7 @@ header {
 
 /* Оформление формы */
 .form-h2 {
-  width: 32.9166666667vw;
+  margin-top: 30px;
   color: #1C1C1C;
   font-family: Unbounded;
   font-size: 30px;

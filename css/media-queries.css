@@ -464,4 +464,31 @@
   .footer__privacy-item {
     font-size: 4vw;
   }
+  #popup {
+    margin: 6.9444444444vw 5% 0 5%;
+    width: 90%;
+  }
+  .input-block-wrap {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #name, #email, #message {
+    padding-left: 1.3888888889vw;
+    height: 50px;
+    width: 230px;
+    font-size: calc(10px + 0.5555555556vw);
+    line-height: calc(10px + 0.8333333333vw); /* 122.222% */
+  }
 }
