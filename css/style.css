@@ -356,7 +356,7 @@ header {
   border: none;
   color: #FFF;
   font-family: Unbounded;
-  font-size: 18px;
+  font-size: calc(10px + 0.5555555556vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;

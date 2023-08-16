@@ -226,7 +226,6 @@ header {
 }
 
 .input-left-block-wrap {
-	// width: 28vw;
 	height: 12.4vh;
 	margin: 0 auto;
 	display: flex;
@@ -236,7 +235,6 @@ header {
 }
 
 .input-right-block-wrap {
-	// width: 28vw;
 	height: 12.4vh;
 	margin: 0 auto;
 	display: flex;
@@ -263,9 +261,7 @@ header {
 
 #message {
 	padding-top: 1.3vh;
-	// width: 22vw;
-	flex-grow: 1;
-	
+	flex-grow: 1;	
 	flex: 1;
 }
 
@@ -280,7 +276,7 @@ header {
 	border: none;
 	color: #FFF;
 	font-family: Unbounded;
-	font-size: 18px;
+	font-size: calc(10px + 8 * (100vw / 1440));
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
