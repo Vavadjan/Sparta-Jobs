@@ -56,11 +56,15 @@
       <div class="popup-content">
         <h2 class="form-h2">Contact us and you will get a response in no time</h2>
         <form class="get-consultation-form" action="">
-          <button id="closeBtn"></button>
-          <div class="input-block-wrap">
-            <input type="text" id="name" name="name" placeholder="Enter your name"/>
-            <input type="email" id="email" name="email" placeholder="Enter your email"/>
-            <textarea id="message" name="message" placeholder="Enter your message (optional)"></textarea>
+          <div class="get-consultation-form-inner">
+            <button id="closeBtn"></button>
+            <div class="input-left-block-wrap">
+              <input type="text" id="name" name="name" placeholder="Enter your name"/>
+              <input type="email" id="email" name="email" placeholder="Enter your email"/>
+            </div>
+            <div class="input-right-block-wrap">
+              <textarea id="message" name="message" placeholder="Enter your message (optional)"></textarea>
+            </div>
           </div>
           <button id="getConsultationSend">Send request</button>
         </form>

@@ -269,8 +269,17 @@ header {
           align-items: center;
 }
 
-.input-block-wrap {
-  width: 48vw;
+.get-consultation-form-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50vw;
+  gap: 2.1vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.input-left-block-wrap {
   height: 12.4vh;
   margin: 0 auto;
   display: -webkit-box;
@@ -281,8 +290,18 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2.1vh;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+.input-right-block-wrap {
+  height: 12.4vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #name, #email, #message {
@@ -290,27 +309,27 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   width: 22vw;
   height: 4.7vh;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   border-radius: 8px;
   border: 1.2px solid #838383;
   background: #FFF;
   color: #838383;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: calc(8px + 0.6944444444vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 122.222% */
+  line-height: calc(8px + 0.9722222222vw); /* 122.222% */
 }
 
 #message {
   padding-top: 1.3vh;
   width: 22vw;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #getConsultationSend {
