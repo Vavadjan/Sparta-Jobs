@@ -191,9 +191,7 @@ header {
 
 /* Всплывающее окно */
 #popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   position: fixed;
   margin: 6.9444444444vw 13.125% 0 13.125%;
   width: 73.75%;
@@ -240,6 +238,9 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

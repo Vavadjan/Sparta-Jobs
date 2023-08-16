@@ -163,8 +163,7 @@ header {
 
 /* Всплывающее окно */
 #popup {
-	display: flex;
-	// justify-content: center;
+	display: none;
 	position: fixed;
 	margin: calc(100 / 1440 * 100vw) 13.125% 0 13.125%;
 	width: 73.75%;
@@ -195,6 +194,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	flex: 1;
 	flex-wrap: wrap;
 }
 

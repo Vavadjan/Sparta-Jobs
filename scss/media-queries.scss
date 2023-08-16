@@ -100,7 +100,7 @@ $social-links-margin-bottom: 84px;
 		padding-right: calc(-30px + 70 * (100vw / 1365));
 	}
 
-	.get-consultation-button__link {
+	#getConsultation {
 		order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
 	}
 
@@ -112,7 +112,7 @@ $social-links-margin-bottom: 84px;
 		.header-menu {
 			display: none;
 		}
-		.get-consultation-button__link {
+		#getConsultation {
 			display: none;
 		}
 	}
