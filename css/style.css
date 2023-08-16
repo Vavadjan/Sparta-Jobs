@@ -20,7 +20,7 @@ header {
 .header__inner {
   position: relative;
   padding: 16px 0 16px 0;
-  min-height: 90px;
+  min-height: 50px;
   max-height: 138px;
   padding: 0 5.5555555556vw;
   display: -webkit-box;
@@ -987,7 +987,7 @@ header {
             order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
   }
   .h1-wrap {
-    margin: 90px 0 0 0;
+    margin: 50px 0 0 0;
   }
   header .header-menu {
     display: none;
