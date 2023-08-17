@@ -91,6 +91,10 @@ header {
 	cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
 
+.logo-wrap:not(:hover) {
+	transition: 1s;
+}
+
 .header-menu {
 	margin: 0 auto 0 auto;
 	padding: 0;
