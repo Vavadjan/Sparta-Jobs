@@ -142,7 +142,7 @@ header {
 
 #headerGetConsultation {
   font-family: Unbounded;
-  font-size: 18px;
+  font-size: calc(10px + 0.5555555556vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -161,7 +161,7 @@ header {
 
 #footerGetConsultation {
   font-family: Unbounded;
-  font-size: 18px;
+  font-size: calc(10px + 0.5555555556vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -544,7 +544,7 @@ header {
 .h1-wrap .h1-wrap__text-wrap .h1-wrap__button-link {
   color: #fff;
   font-family: Unbounded;
-  font-size: 18px;
+  font-size: calc(10px + 0.5555555556vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -661,7 +661,7 @@ header {
 .h2-wrap .h2-wrap__button-link {
   color: #fff;
   font-family: Unbounded;
-  font-size: 18px;
+  font-size: calc(10px + 0.5555555556vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -1113,7 +1113,7 @@ header {
   color: #1c1c1c;
   text-align: center;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: calc(10px + 0.4166666667vw);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
