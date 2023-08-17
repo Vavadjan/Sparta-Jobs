@@ -87,6 +87,10 @@ header {
 	}
 }
 
+.logo-wrap:hover {
+	cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+
 .header-menu {
 	margin: 0 auto 0 auto;
 	padding: 0;
