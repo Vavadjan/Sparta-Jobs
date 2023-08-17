@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparta Jobs</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@700&family=Roboto:wght@500&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header__inner">
+        <div class="logo-wrap">
+          <p class="logo-first-word blue-text">Sparta</p>
+          <p class="logo-second-word">Jobs</p>
+        </div>
+        <nav class="header-menu">
+          <ul class="header-menu__list">
+            <li class="header-menu__item">
+              <a class="header-menu__link black-text" href="">About SJ CRM</a>
+            </li>
+            <!-- <li class="header-menu__item">
+              <a class="header-menu__link black-text" href="">How it works</a>
+            </li> -->
+            <!-- <li class="header-menu__item">
+              <a class="header-menu__link black-text" href="">Pricing</a>
+            </li> -->
+            <li class="header-menu__item">
+              <a class="header-menu__link black-text" href=""
+                >Try SJ CRM for free</a
+              >
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link black-text" href="">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="headerGetConsultation" class="white-text black-background">
+          Zamów konsultacje
+        </button>
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <div class="popup-bg" id="popupBg"></div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h2 class="form-h2">
+          Contact us and you will get a response in no time
+        </h2>
+        <form class="get-consultation-form" action="">
+          <div class="get-consultation-form-inner">
+            <button id="closeBtn"></button>
+            <div class="input-left-block-wrap">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="input-right-block-wrap">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message (optional)"
+              ></textarea>
+            </div>
+          </div>
+          <button id="getConsultationSend">Send request</button>
+        </form>
+      </div>
+    </div>
+    <main></main>
+    <footer class="footer">
+      <div class="footer__wrap">
+        <div class="footer__top-block">
+          <div class="logo-wrap">
+            <p class="logo-first-word yello-text">Sparta</p>
+            <p class="logo-second-word white-text">Jobs</p>
+          </div>
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <a class="header-menu__link white-text" href="">About SJ CRM</a>
+              </li>
+              <!-- <li class="header-menu__item">
+                <a class="header-menu__link white-text" href="">How it works</a>
+              </li> -->
+              <!-- <li class="header-menu__item">
+                <a class="header-menu__link white-text" href="">Pricing</a>
+              </li> -->
+              <li class="header-menu__item">
+                <a class="header-menu__link white-text" href=""
+                  >Try SJ CRM for free</a
+                >
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link white-text" href="">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            id="footerGetConsultation"
+            class="black-text yello-background"
+          >
+            Zamów konsultacje
+          </button>
+        </div>
+        <div class="footer__center-block">
+          <ul class="footer__privacy-list">
+            <li class="footer__privacy-item">Privacy policy</li>
+            <li class="footer__privacy-item">Terms and Conditions</li>
+          </ul>
+        </div>
+        <div class="footer__bottom-block">
+          <h5 class="footer__bottom-block-text">
+            Copyright ⓒ 2023 Web-you. All Rights Reserved.
+          </h5>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let menuBtn = document.querySelector(".menu-btn");
+      let menu = document.querySelector(".menu");
+      menuBtn.addEventListener("click", function () {
+        menuBtn.classList.toggle("active");
+        menu.classList.toggle("active");
+      });
+    </script>
+    <script>
+      const headerGetConsultation = document.getElementById(
+        "headerGetConsultation"
+      );
+      const footerGetConsultation = document.getElementById(
+        "footerGetConsultation"
+      );
+      const popupBg = document.getElementById("popupBg");
+      const popup = document.getElementById("popup");
+      const closeBtn = document.getElementById("closeBtn");
+
+      headerGetConsultation.addEventListener("click", () => {
+        popupBg.style.display = "block";
+        popup.style.display = "block";
+      });
+
+      footerGetConsultation.addEventListener("click", () => {
+        popupBg.style.display = "block";
+        popup.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        popupBg.style.display = "none";
+        popup.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
