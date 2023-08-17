@@ -425,6 +425,12 @@ $social-links-margin-bottom: 84px;
 		}
 	}
 
+	.h2-wrap__span-whith-link-wrap {
+		padding: 20px 0 0 0;
+		display: flex;
+		flex-direction: column;
+	}
+
 	.features {
 		display: flex;
 		margin: calc(80 / 639 * 100vw) $padding-left-and-right 0 $padding-left-and-right;
