@@ -94,17 +94,7 @@ $social-links-margin-bottom: 84px;
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1365px и ниже */
 @media (max-width: 1365px) {
-	.header-menu {
-		order: 2; /* При максимальной ширине 1365px и ниже второй элемент меняется на третий место */
-		margin: -15.5px auto 20px auto;
-		padding-right: calc(-30px + 70 * (100vw / 1365));
-	}
-
 	#headerGetConsultation {
-		order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
-	}
-
-	#footerGetConsultation {
 		order: 1; /* При максимальной ширине 1365px и ниже третий элемент меняется на второе место */
 	}
 
@@ -128,6 +118,18 @@ $social-links-margin-bottom: 84px;
 
 /* Медиа-запрос для изменения порядка отображения на ширине 1137px и ниже */
 @media (max-width: 1137px) {
+	.header-menu {
+		order: 2; /* При максимальной ширине 1137px и ниже второй элемент меняется на третий место */
+		margin: -15.5px auto 20px auto;
+		padding-right: calc(-30px + 70 * (100vw / 1365));
+		justify-content: center;
+		align-items: center;
+	}
+
+	#footerGetConsultation {
+		order: 1; /* При максимальной ширине 1137px и ниже третий элемент меняется на второе место */
+	}
+
 	.block-whith-social-links {
 		display: flex;
 
