@@ -583,6 +583,7 @@ header {
 	margin: calc(80 / 1440 * 100vw) 0 0 0;
 	position: relative;
 	display: flex;
+	flex: 1;
 	// justify-content: space-between;
 	gap: calc(60 / 1440 * 100vw);
 	background-color: #eaeaea;
@@ -693,7 +694,6 @@ header {
 	}
 
 	&__small-block {
-		flex: 1;
 		width: 422px;
 		display: flex;
 		flex-direction: column;
@@ -704,6 +704,7 @@ header {
 		/* card shadow bg */
 		box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
 		z-index: 2;
+		flex: 1;
 	}
 
 	&__title {
@@ -738,6 +739,7 @@ header {
 		/* card shadow bg */
 		box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
 		z-index: 2;
+		flex: 1;
 	}
 }
 

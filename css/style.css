@@ -700,6 +700,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   gap: 4.1666666667vw;
   background-color: #eaeaea;
   padding: 2.7777777778vw 5.5555555556vw calc(600px - 24.3055555556vw) 5.5555555556vw;
@@ -805,9 +808,6 @@ header {
   z-index: 2;
 }
 .block-whith-social-links__small-block {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   width: 422px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -824,6 +824,9 @@ header {
   -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
   z-index: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .block-whith-social-links__title {
   display: -webkit-box;
@@ -865,6 +868,9 @@ header {
   -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
   z-index: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .block-whith-social-links__social-link:hover {
