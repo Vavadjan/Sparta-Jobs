@@ -1,33 +1,5 @@
 @charset "UTF-8";
 /* это без учёта margin */
-.black-background {
-  background: black;
-}
-
-.white-background {
-  background: white;
-}
-
-.yello-background {
-  background: #ffbf1c;
-}
-
-.black-text {
-  color: #1c1c1c;
-}
-
-.blue-text {
-  color: #006ceb;
-}
-
-.white-text {
-  color: #ffffff;
-}
-
-.yello-text {
-  color: #ffbf1c;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -1132,4 +1104,62 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.about-section {
+  margin: calc(50px + 4.8611111111vw) 5.5555555556vw 0 5.5555555556vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: calc(10px + 0.6944444444vw);
+}
+
+.about-strong {
+  color: #1C1C1C;
+  font-family: Unbounded;
+  font-size: calc(15px + 1.0416666667vw);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 45px */
+}
+
+.about-span {
+  color: #1C1C1C;
+  font-family: Montserrat;
+  font-size: calc(10px + 0.6944444444vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
+.black-background {
+  background: black;
+}
+
+.white-background {
+  background: white;
+}
+
+.yello-background {
+  background: #ffbf1c;
+}
+
+.black-text {
+  color: #1c1c1c;
+}
+
+.blue-text {
+  color: #006ceb;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.yello-text {
+  color: #ffbf1c;
 }
