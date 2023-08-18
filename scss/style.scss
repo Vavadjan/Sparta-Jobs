@@ -978,3 +978,16 @@ header {
 .yello-text {
 	color: #ffbf1c;
 }
+
+.margin-top-40 {
+	margin-top: calc(20px + 20 * (100vw / 1440));
+}
+
+.margin-left-40 {
+	margin-left: calc(20px + 20 * (100vw / 1440));
+}
+
+.jc-center {
+	display: flex;
+	justify-content: center;
+}
