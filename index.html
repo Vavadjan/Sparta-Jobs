@@ -436,7 +436,12 @@
       const popupGetConsultation = document.getElementById("popupGetConsultation");
       const popupGetADemoSys = document.getElementById("popupGetADemoSys");
       const closeBtnGetConsultation = document.getElementById("closeBtnGetConsultation");
-      const closeBtnGetADemoSys = document.getElementById("closeBtnGetADemoSys");
+      const closeBtnGetADemoSys = document.getElementById("closeBtnGetADemoSys");  
+
+      burgerGetConsultation.addEventListener("click", () => {
+        popupBg.style.display = "block";
+        popupGetConsultation.style.display = "block";
+      });
 
       headerGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "block";

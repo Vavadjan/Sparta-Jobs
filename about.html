@@ -97,6 +97,9 @@
               <li><a href="#">Try SJ CRM for free</a></li>
               <li><a href="#">Contact us</a></li>
             </ul>
+            <button id="burgerGetConsultation" class="white-text black-background">
+              Zamów konsultacje
+            </button>
           </nav>
       <article>
         <section class="about-section">
@@ -275,6 +278,11 @@
       const popupBg = document.getElementById("popupBg");
       const popupGetConsultation = document.getElementById("popupGetConsultation");
       const closeBtnGetConsultation = document.getElementById("closeBtnGetConsultation");
+
+      burgerGetConsultation.addEventListener("click", () => {
+        popupBg.style.display = "block";
+        popupGetConsultation.style.display = "block";
+      });
 
       headerGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "block";
