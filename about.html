@@ -54,14 +54,14 @@
       </div>
     </header>
     <div class="popup-bg" id="popupBg"></div>
-    <div class="popup" id="popup">
+    <div class="popup" id="popupGetConsultation">
       <div class="popup-content">
         <h2 class="form-h2">
           Contact us and you will get a response in no time
         </h2>
         <form class="get-consultation-form" action="">
           <div class="get-consultation-form-inner">
-            <button id="closeBtn"></button>
+            <button id="closeBtnGetConsultation"></button>
             <div class="input-left-block-wrap">
               <input
                 type="text"
@@ -213,7 +213,7 @@
           <nav class="header-menu">
             <ul class="header-menu__list">
               <li class="header-menu__item">
-                <a class="header-menu__link white-text" href="">About SJ CRM</a>
+                <a class="header-menu__link white-text" href="./about.html">About SJ CRM</a>
               </li>
               <!-- <li class="header-menu__item">
                 <a class="header-menu__link white-text" href="">How it works</a>
@@ -235,7 +235,7 @@
             id="footerGetConsultation"
             class="black-text yello-background"
           >
-            Zamów konsultacje
+          Zamów konsultacje
           </button>
         </div>
         <div class="footer__center-block">
@@ -263,27 +263,33 @@
       const headerGetConsultation = document.getElementById(
         "headerGetConsultation"
       );
+      const getADemoSys = document.getElementById(
+        "getADemoSys"
+      );
+      const getADemo = document.getElementById(
+        "getADemo"
+      );
       const footerGetConsultation = document.getElementById(
         "footerGetConsultation"
       );
       const popupBg = document.getElementById("popupBg");
-      const popup = document.getElementById("popup");
-      const closeBtn = document.getElementById("closeBtn");
+      const popupGetConsultation = document.getElementById("popupGetConsultation");
+      const closeBtnGetConsultation = document.getElementById("closeBtnGetConsultation");
 
       headerGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "block";
-        popup.style.display = "block";
+        popupGetConsultation.style.display = "block";
       });
 
       footerGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "block";
-        popup.style.display = "block";
+        popupGetConsultation.style.display = "block";
       });
 
-      closeBtn.addEventListener("click", () => {
+      closeBtnGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "none";
-        popup.style.display = "none";
-      });
+        popupGetConsultation.style.display = "none";
+      }); 
     </script>
   </body>
 </html>
