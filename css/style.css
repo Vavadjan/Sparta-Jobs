@@ -123,7 +123,7 @@ header {
 
 #headerGetConsultation {
   font-family: Unbounded;
-  font-size: calc(10px + 0.5555555556vw);
+  font-size: calc(12px + 0.4166666667vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -142,7 +142,7 @@ header {
 
 #footerGetConsultation {
   font-family: Unbounded;
-  font-size: calc(10px + 0.5555555556vw);
+  font-size: calc(12px + 0.4166666667vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -304,10 +304,10 @@ header {
   background: #FFF;
   color: #838383;
   font-family: Montserrat;
-  font-size: calc(8px + 0.6944444444vw);
+  font-size: calc(12px + 0.4166666667vw);
   font-style: normal;
   font-weight: 400;
-  line-height: calc(8px + 0.9722222222vw); /* 122.222% */
+  line-height: calc(12px + 0.6944444444vw); /* 122.222% */
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -337,7 +337,7 @@ header {
   border: none;
   color: #FFF;
   font-family: Unbounded;
-  font-size: calc(10px + 0.5555555556vw);
+  font-size: calc(12px + 0.4166666667vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -359,7 +359,7 @@ header {
 .form-h2 {
   color: #1C1C1C;
   font-family: Unbounded;
-  font-size: calc(10px + 1.3888888889vw);
+  font-size: calc(12px + 1.25vw);
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 45px */
@@ -525,7 +525,7 @@ header {
 .h1-wrap .h1-wrap__text-wrap .h1-wrap__button-link {
   color: #fff;
   font-family: Unbounded;
-  font-size: calc(10px + 0.5555555556vw);
+  font-size: calc(12px + 0.4166666667vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -642,7 +642,7 @@ header {
 .h2-wrap .h2-wrap__button-link {
   color: #fff;
   font-family: Unbounded;
-  font-size: calc(10px + 0.5555555556vw);
+  font-size: calc(12px + 0.4166666667vw);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -1094,7 +1094,7 @@ header {
   color: #1c1c1c;
   text-align: center;
   font-family: Montserrat;
-  font-size: calc(10px + 0.4166666667vw);
+  font-size: calc(12px + 0.2777777778vw);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1130,7 +1130,7 @@ header {
 .about-span {
   color: #1C1C1C;
   font-family: Montserrat;
-  font-size: calc(10px + 0.6944444444vw);
+  font-size: calc(12px + 0.5555555556vw);
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 30px */
