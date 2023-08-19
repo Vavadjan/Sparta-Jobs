@@ -222,6 +222,22 @@ header {
   z-index: 9999;
 }
 
+#popupGetADemoSys {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10vh 13.125vw 0 13.125vw;
+  width: 73.75vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 30px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
 .popup-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,6 +360,28 @@ header {
   cursor: pointer;
 }
 
+#getADemoSysSend {
+  margin: 4.3vh auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: #006CEB;
+  border: none;
+  color: #FFF;
+  font-family: Unbounded;
+  font-size: calc(12px + 0.4166666667vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
 #getConsultationSend:hover {
   background-color: #1c1c1c;
   -webkit-transition: 0.4s;
@@ -351,6 +389,17 @@ header {
 }
 
 #getConsultationSend:not(:hover) {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#getADemoSysSend:hover {
+  background-color: #1c1c1c;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#getADemoSysSend:not(:hover) {
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -522,7 +571,11 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-.h1-wrap .h1-wrap__text-wrap .h1-wrap__button-link {
+.h1-wrap .h1-wrap__text-wrap #getADemoSys {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   font-family: Unbounded;
   font-size: calc(12px + 0.4166666667vw);
@@ -540,12 +593,12 @@ header {
           box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
 }
-.h1-wrap .h1-wrap__text-wrap .h1-wrap__button-link:hover {
+.h1-wrap .h1-wrap__text-wrap #getADemoSys:hover {
   background: #1c1c1c;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.h1-wrap .h1-wrap__text-wrap .h1-wrap__button-link:not(:hover) {
+.h1-wrap .h1-wrap__text-wrap #getADemoSys:not(:hover) {
   background: #006ceb;
   -webkit-transition: 1s;
   transition: 1s;

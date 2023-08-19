@@ -53,6 +53,7 @@
         </div>
       </div>
     </header>
+
     <div class="popup-bg" id="popupBg"></div>
     <div class="popup" id="popup">
       <div class="popup-content">
@@ -88,6 +89,43 @@
         </form>
       </div>
     </div>
+
+    <div class="popup-bg" id="popupBg"></div>
+    <div class="popup" id="popupGetADemoSys">
+      <div class="popup-content">
+        <h2 class="form-h2">
+          Contact us and get a demo of SpartaJobs CRM
+        </h2>
+        <form class="get-consultation-form" action="">
+          <div class="get-consultation-form-inner">
+            <button id="closeBtn"></button>
+            <div class="input-left-block-wrap">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="input-right-block-wrap">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message (optional)"
+              ></textarea>
+            </div>
+          </div>
+          <button id="getADemoSysSend">Send request</button>
+        </form>
+      </div>
+    </div>
+
     <main>
       <article>
         <nav class="menu">
@@ -103,7 +141,7 @@
           <div class="h1-wrap__text-wrap">
             <h1>CRM dla Agencji Pracy Tymczasowej</h1>
             <div class="h1-wrap__button-wrap">
-              <a class="h1-wrap__button-link" href="#">Zamów demo systemu</a>
+              <button id="getADemoSys">Zamów demo systemu</button>
             </div>
           </div>
           <div class="h1-wrap__img-wrap"></div>
@@ -382,11 +420,15 @@
       const headerGetConsultation = document.getElementById(
         "headerGetConsultation"
       );
+      const getADemoSys = document.getElementById(
+        "getADemoSys"
+      );
       const footerGetConsultation = document.getElementById(
         "footerGetConsultation"
       );
       const popupBg = document.getElementById("popupBg");
-      const popup = document.getElementById("popup");
+      const popupGetConsultation = document.getElementById("popupGetConsultation");
+      const popupGetADemoSys = document.getElementById("popupGetADemoSys");
       const closeBtn = document.getElementById("closeBtn");
 
       headerGetConsultation.addEventListener("click", () => {
@@ -394,9 +436,14 @@
         popup.style.display = "block";
       });
 
-      footerGetConsultation.addEventListener("click", () => {
+      headerGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "block";
         popup.style.display = "block";
+      });
+
+      getADemoSys.addEventListener("click", () => {
+        popupBg.style.display = "block";
+        popupGetADemoSys.style.display = "block";
       });
 
       closeBtn.addEventListener("click", () => {
