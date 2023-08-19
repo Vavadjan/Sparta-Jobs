@@ -344,7 +344,6 @@ $social-links-margin-bottom: 84px;
 	.block-whith-social-links::before {
 		content: "";
 		position: absolute;
-		// padding: 60px 730px 310px $ANTIpadding-left-and-right;
 		top: 100px;
 		left: 0;
 		width: 88%;
@@ -440,7 +439,7 @@ $social-links-margin-bottom: 84px;
 
 		&__title {
 			width: 90%;
-			font-size: calc(10px + 34 * (100vw / 639));
+			font-size: calc(12px + 32 * (100vw / 639));
 		}
 
 		&__subtitle-block {
@@ -454,16 +453,16 @@ $social-links-margin-bottom: 84px;
 
 		&__subtitle {
 			display: flex;
-			font-size: calc(10px + 20 * (100vw / 639));
+			font-size: calc(12px + 18 * (100vw / 639));
 			text-align: center;
 		}
 
 		&__small-block-title {
-			font-size: calc(10px + 20 * (100vw / 639));
+			font-size: calc(12px + 18 * (100vw / 639));
 		}
 
 		&__small-block-item {
-			font-size: calc(10px + 8 * (100vw / 639));
+			font-size: calc(12px + 6 * (100vw / 639));
 		}
 	}
 }

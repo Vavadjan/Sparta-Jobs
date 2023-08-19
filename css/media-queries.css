@@ -440,7 +440,7 @@
   }
   .features__title {
     width: 90%;
-    font-size: calc(10px + 5.3208137715vw);
+    font-size: calc(12px + 5.0078247261vw);
   }
   .features__subtitle-block {
     margin: 4.6948356808vw 0 7.8247261346vw 0;
@@ -459,14 +459,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: calc(10px + 3.1298904538vw);
+    font-size: calc(12px + 2.8169014085vw);
     text-align: center;
   }
   .features__small-block-title {
-    font-size: calc(10px + 3.1298904538vw);
+    font-size: calc(12px + 2.8169014085vw);
   }
   .features__small-block-item {
-    font-size: calc(10px + 1.2519561815vw);
+    font-size: calc(12px + 0.9389671362vw);
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 400px и ниже */
