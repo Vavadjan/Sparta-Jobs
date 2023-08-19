@@ -115,6 +115,7 @@ header {
 	border: none;
 	border-radius: 60px;
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+	background-color: #006CEB;
 	cursor: pointer; /* Изменение вида курсора на палец при наведении */
 	z-index: 20;
 }
@@ -149,6 +150,18 @@ header {
 	border-radius: 60px;
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
 	cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+
+#burgerGetConsultation:hover {
+	background: black;
+	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+}
+
+#burgerGetConsultation:not(:hover) {
+	border-radius: 60px;
+	box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+	transition: 1s;
 }
 
 #headerGetConsultation:hover {
@@ -511,10 +524,10 @@ header {
 	padding: 0 $padding-left-and-right 0 $padding-left-and-right;
 	display: flex;
 	justify-content: space-between;
-	margin: 90px 0 0 0;
+	margin: calc(20px + 70 * (100vw / 1440)) 0 0 0;
 
 	.h1-wrap__text-wrap {
-		margin: calc(94 / 1440 * 100vw) 0 0 0;
+		margin: calc(50px + 44 * (100vw / 1440)) 0 0 0;
 		width: calc(630 / 1440 * 100vw);
 		display: flex;
 		flex-direction: column;

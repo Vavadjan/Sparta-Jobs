@@ -137,6 +137,7 @@ header {
   border-radius: 60px;
   -webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+  background-color: #006CEB;
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
   z-index: 20;
 }
@@ -177,6 +178,22 @@ header {
   -webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+
+#burgerGetConsultation:hover {
+  background: black;
+  -webkit-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#burgerGetConsultation:not(:hover) {
+  border-radius: 60px;
+  -webkit-box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #headerGetConsultation:hover {
@@ -639,10 +656,10 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 90px 0 0 0;
+  margin: calc(20px + 4.8611111111vw) 0 0 0;
 }
 .h1-wrap .h1-wrap__text-wrap {
-  margin: 6.5277777778vw 0 0 0;
+  margin: calc(50px + 3.0555555556vw) 0 0 0;
   width: 43.75vw;
   display: -webkit-box;
   display: -ms-flexbox;
