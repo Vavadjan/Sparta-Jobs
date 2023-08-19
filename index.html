@@ -62,7 +62,7 @@
         </h2>
         <form class="get-consultation-form" action="">
           <div class="get-consultation-form-inner">
-            <button id="closeBtn"></button>
+            <button id="closeBtnGetConsultation"></button>
             <div class="input-left-block-wrap">
               <input
                 type="text"
@@ -98,7 +98,7 @@
         </h2>
         <form class="get-consultation-form" action="">
           <div class="get-consultation-form-inner">
-            <button id="closeBtn"></button>
+            <button id="closeBtnGetADemoSys"></button>
             <div class="input-left-block-wrap">
               <input
                 type="text"
@@ -429,7 +429,8 @@
       const popupBg = document.getElementById("popupBg");
       const popupGetConsultation = document.getElementById("popupGetConsultation");
       const popupGetADemoSys = document.getElementById("popupGetADemoSys");
-      const closeBtn = document.getElementById("closeBtn");
+      const closeBtnGetConsultation = document.getElementById("closeBtnGetConsultation");
+      const closeBtnGetADemoSys = document.getElementById("closeBtnGetADemoSys");
 
       headerGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "block";
@@ -446,9 +447,14 @@
         popupGetADemoSys.style.display = "block";
       });
 
-      closeBtn.addEventListener("click", () => {
+      closeBtnGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "none";
-        popup.style.display = "none";
+        popupGetConsultation.style.display = "none";
+      });
+
+      closeBtnGetADemoSys.addEventListener("click", () => {
+        popupBg.style.display = "none";
+        popupGetADemoSys.style.display = "none";
       });
     </script>
   </body>

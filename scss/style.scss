@@ -200,6 +200,20 @@ header {
 	z-index: 9999;
 }
 
+#popupGetADemo {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 10vh 13.125vw 0 13.125vw;
+	width: 73.75vw;
+	flex-shrink: 0;
+	border-radius: 30px;
+	background: #FFF;
+	box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.60);
+	z-index: 9999;
+}
+
 .popup-content {
 	display: flex;
 	flex-direction: column;	
@@ -297,6 +311,24 @@ header {
 	cursor: pointer
 }
 
+#getADemoSend {
+	margin: 4.3vh auto 0 auto;
+	display: flex;
+	padding: 16px 32px;
+	align-items: center;
+	gap: 10px;
+	border-radius: 60px;
+	background: #006CEB;
+	border: none;
+	color: #FFF;
+	font-family: Unbounded;
+	font-size: calc(12px + 6 * (100vw / 1440));
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	cursor: pointer
+}
+
 #getConsultationSend:hover {
 	background-color: #1c1c1c;
 	transition: 0.4s;
@@ -315,6 +347,15 @@ header {
 	transition: 1s;
 }
 
+#getADemoSend:hover {
+	background-color: #1c1c1c;
+	transition: 0.4s;
+}
+
+#getADemoSend:not(:hover) {
+	transition: 1s;
+}
+
 /* Оформление формы */
 .form-h2 {
 	color: #1C1C1C;
@@ -325,7 +366,22 @@ header {
 	line-height: 150%; /* 45px */
 }
 
-#closeBtn {
+#closeBtnGetConsultation {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 26px;
+	height: 26px;
+	flex-shrink: 0;
+	background: url(../img/SVG/close-icon.svg);	
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% 100%;
+	border: none;
+	cursor: pointer
+}
+
+#closeBtnGetADemoSys {
 	position: absolute;
 	top: 30px;
 	right: 30px;
