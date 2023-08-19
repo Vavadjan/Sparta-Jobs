@@ -55,7 +55,7 @@
     </header>
 
     <div class="popup-bg" id="popupBg"></div>
-    <div class="popup" id="popup">
+    <div class="popup" id="popupGetConsultation">
       <div class="popup-content">
         <h2 class="form-h2">
           Contact us and you will get a response in no time
@@ -166,7 +166,7 @@
               <a href="#" class="h2-wrap__link">wszystko w jedmym</a>
             </div>
             <div class="h2-wrap__button-wrap">
-              <a class="h2-wrap__button-link" href="#">Zamów demo</a>
+              <button id="getADemo">Zamów demo</button>
             </div>
           </div>
           <div class="h2-wrap__img-block"></div>
@@ -423,6 +423,9 @@
       const getADemoSys = document.getElementById(
         "getADemoSys"
       );
+      const getADemo = document.getElementById(
+        "getADemo"
+      );
       const footerGetConsultation = document.getElementById(
         "footerGetConsultation"
       );
@@ -434,17 +437,22 @@
 
       headerGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "block";
-        popup.style.display = "block";
-      });
-
-      headerGetConsultation.addEventListener("click", () => {
-        popupBg.style.display = "block";
-        popup.style.display = "block";
+        popupGetConsultation.style.display = "block";
       });
 
       getADemoSys.addEventListener("click", () => {
         popupBg.style.display = "block";
         popupGetADemoSys.style.display = "block";
+      });
+
+      getADemo.addEventListener("click", () => {
+        popupBg.style.display = "block";
+        popupGetADemoSys.style.display = "block";
+      });
+
+      footerGetConsultation.addEventListener("click", () => {
+        popupBg.style.display = "block";
+        popupGetConsultation.style.display = "block";
       });
 
       closeBtnGetConsultation.addEventListener("click", () => {

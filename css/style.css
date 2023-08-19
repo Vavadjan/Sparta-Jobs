@@ -206,7 +206,7 @@ header {
 }
 
 /* Всплывающее окно */
-#popup {
+#popupGetConsultation {
   display: none;
   position: fixed;
   top: 0;
@@ -752,12 +752,8 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-.h2-wrap .h2-wrap__button-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.h2-wrap .h2-wrap__button-link {
+.h2-wrap #getADemo {
+  border: none;
   color: #fff;
   font-family: Unbounded;
   font-size: calc(12px + 0.4166666667vw);
