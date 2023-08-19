@@ -1031,6 +1031,7 @@ header {
 	gap: calc(10px + 10 * (100vw / 1440));
 }
 .about-strong {
+	margin: calc(10px + 10 * (100vw / 1440)) 0 calc(-10px + 0 * (100vw / 1440));
 	color: #1C1C1C;
 	font-family: Unbounded;
 	font-size: calc(15px + 15 * (100vw / 1440));
