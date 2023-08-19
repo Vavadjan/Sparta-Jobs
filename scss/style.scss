@@ -474,7 +474,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 100svh;
 	background-color: rgba(255, 255, 255, 0.85); /* Задайте цвет фона заголовка */
 	backdrop-filter: blur(10px); /* Применение размытия */
 	transform: translateY(-100%);
