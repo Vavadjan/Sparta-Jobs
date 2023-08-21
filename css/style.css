@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* это без учёта margin */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -6,7 +6,9 @@ $social-links-margin-bottom: 84px;
 
 // calc(-30px + 70 * (100vw / 1440))
 
-
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	margin: 0;

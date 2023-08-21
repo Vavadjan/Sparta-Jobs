@@ -548,5 +548,28 @@
         popupGetADemoSys.style.display = "none";
       });
     </script>
+    <script>
+      // Добавьте этот скрипт только, если хотите обеспечить совместимость со старыми браузерами
+      // Например, Internet Explorer
+    
+      // Найти все якори, которые ведут на эту страницу
+      var pageAnchors = document.querySelectorAll('a[href^="#"]');
+    
+      // Обработчик для якорей
+      pageAnchors.forEach(function(anchor) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+    
+          // Получить имя якоря из ссылки
+          var target = this.getAttribute('href').substr(1);
+    
+          // Найти элемент с этим именем
+          var targetElement = document.getElementById(target);
+    
+          // Прокрутить к этому элементу с плавной анимацией
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    </script>
   </body>
 </html>
