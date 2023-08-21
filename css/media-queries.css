@@ -382,9 +382,15 @@
   }
   .form-with-contacts__contacts-title {
     text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .form-with-contacts__contacts-links-outer {
-    min-width: 310px;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    margin: 0;
   }
   .form-with-contacts__form-outer {
     padding: calc(10px + 2.0833333333vw) calc(10px + 3.4722222222vw);
@@ -519,6 +525,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 0;
+  }
+  .form-with-contacts__contacts-links-outer {
+    margin: 0 0 10px 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 400px и ниже */

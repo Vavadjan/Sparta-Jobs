@@ -384,11 +384,13 @@ $social-links-margin-bottom: 84px;
 	}
 
 	.form-with-contacts__contacts-title {
-		text-align: center;
+		text-align: center;		
+		order: 2;
 	}
 
 	.form-with-contacts__contacts-links-outer {
-		min-width: 310px;
+		min-width: fit-content;		
+		margin: 0;
 	}
 
 	.form-with-contacts__form-outer {
@@ -503,6 +505,11 @@ $social-links-margin-bottom: 84px;
 	.form-with-contacts__contacts {	
 		flex-direction: column;
 		gap: 0;
+	}
+
+	.form-with-contacts__contacts-links-outer {
+		margin: 0 0 10px 0;
+		order: 2;
 	}
 }
 
