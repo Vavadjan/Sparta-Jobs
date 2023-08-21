@@ -396,6 +396,9 @@
     padding: calc(10px + 2.0833333333vw) calc(10px + 3.4722222222vw);
     width: 88.8928571429%;
   }
+  .form-with-contacts::before {
+    width: 350px;
+  }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
 @media (max-width: 639px) {
@@ -531,6 +534,9 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .form-with-contacts::before {
+    width: 100vw;
   }
 }
 /* Медиа-запрос для изменения порядка отображения на ширине 400px и ниже */

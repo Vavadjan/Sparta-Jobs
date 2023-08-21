@@ -397,6 +397,10 @@ $social-links-margin-bottom: 84px;
 		padding: calc(10px + 30 * (100vw / 1440)) calc(10px + 50 * (100vw / 1440));
 		width: 88.89285714285714%;
 	}
+
+	.form-with-contacts::before {
+		width: 350px;
+	}
 }
 
 /* Медиа-запрос для изменения порядка отображения на ширине 639px и ниже */
@@ -510,6 +514,10 @@ $social-links-margin-bottom: 84px;
 	.form-with-contacts__contacts-links-outer {
 		margin: 0 0 10px 0;
 		order: 2;
+	}
+
+	.form-with-contacts::before {
+		width: 100vw;
 	}
 }
 

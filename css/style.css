@@ -1175,6 +1175,7 @@ header {
 }
 
 .form-with-contacts {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1185,8 +1186,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: calc(20px + 4.1666666667vw) 5.5555555556vw 0 5.5555555556vw;
-  padding: calc(15px + 1.7361111111vw) auto;
   gap: 20px;
+  z-index: 1;
 }
 .form-with-contacts__contacts {
   min-width: 310px;
@@ -1446,6 +1447,18 @@ header {
   background: #006ceb;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.form-with-contacts::before {
+  content: "";
+  position: absolute;
+  margin: 0 -5.5555555556vw;
+  top: -2.7777777778vw;
+  left: 0;
+  height: calc(100% + 5.5555555556vw);
+  width: 57vw;
+  background: #EAEAEA;
+  z-index: -1;
 }
 
 .footer {
