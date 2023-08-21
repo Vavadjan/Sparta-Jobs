@@ -1174,6 +1174,200 @@ header {
   z-index: 2;
 }
 
+.form-with-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: calc(20px + 4.1666666667vw) 5.5555555556vw 0 5.5555555556vw;
+  padding: calc(15px + 1.7361111111vw) auto;
+  gap: 20px;
+}
+.form-with-contacts__contacts {
+  min-width: 310px;
+  width: calc(310px + 10.4166666667vw);
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form-with-contacts__contacts-title {
+  margin: 15px 0 15px 0;
+  color: black;
+  text-align: start;
+  font-family: Unbounded;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 45px */
+}
+.form-with-contacts__contacts-links-outer {
+  margin: 0 0 15px 0;
+  padding: 0 0 0 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.form-with-contacts__mail-link {
+  color: var(--dark-grey, #1C1C1C);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+.form-with-contacts__telegram-link {
+  color: var(--dark-grey, #1C1C1C);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+.form-with-contacts__whatsup-link {
+  color: var(--dark-grey, #1C1C1C);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+.form-with-contacts__web-link {
+  color: var(--dark-grey, #1C1C1C);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+.form-with-contacts__form-outer {
+  padding: calc(-10px + 2.7777777778vw) calc(-10px + 3.4722222222vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48.6111111111vw;
+  border-radius: 30px;
+  background: #FFF;
+  /* card shadow bg */
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
+}
+.form-with-contacts__form-title {
+  color: var(--blue, #006CEB);
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 45px */
+}
+.form-with-contacts__form-text {
+  margin: 20px 0 30px 0;
+  color: var(--dark-grey, #1C1C1C);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+.form-with-contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.form-with-contacts__form-inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.form-with-contacts__input-left-block-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+  height: 120px;
+  min-width: 180px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.form-with-contacts__input-right-block-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 180px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.form-with-contacts #mainFormName, .form-with-contacts #mainFormEmail, .form-with-contacts #mainFormMessage {
+  height: 50px;
+  border-radius: 8px;
+  border: 1.2px solid var(--text-not-filled, #838383);
+  background: #FFF;
+  color: var(--text-not-filled, #838383);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 122.222% */
+  padding: 0 0 0 20px;
+}
+.form-with-contacts #mainFormMessage {
+  height: 120px;
+}
+
 .footer {
   margin: 5.5555555556vw 0 0 0;
   display: -webkit-box;

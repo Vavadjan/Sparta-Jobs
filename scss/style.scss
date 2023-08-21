@@ -989,6 +989,169 @@ header {
 	z-index: 2;
 }
 
+.form-with-contacts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: calc(20px + 60 * (100vw / 1440)) $padding-left-and-right 0 $padding-left-and-right;
+	padding: calc(15px + 25 * (100vw / 1440)) auto;
+	gap: 20px;
+
+
+	&__contacts {
+		min-width: 310px;
+		width: calc(310px + 150 * (100vw / 1440));
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__contacts-title {
+		margin: 15px 0 15px 0;
+		color: black;
+		text-align: start;
+		font-family: Unbounded;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 45px */
+	}
+
+	&__contacts-links-outer {
+		margin: 0 0 15px 0;
+		padding: 0 0 0 36px;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		align-items: start;		
+		flex-grow: 1;
+	}
+
+	&__mail-link {
+		color: var(--dark-grey, #1C1C1C);
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 30px */
+	}
+
+	&__telegram-link {
+		color: var(--dark-grey, #1C1C1C);
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 30px */
+	}
+
+	&__whatsup-link {
+		color: var(--dark-grey, #1C1C1C);
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 30px */
+	}
+
+	&__web-link {
+		color: var(--dark-grey, #1C1C1C);
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 30px */
+	}
+
+	&__form-outer {
+		padding: calc(-10px + 40 * (100vw / 1440)) calc(-10px + 50 * (100vw / 1440));
+		display: flex;
+		flex-direction: column;
+		width: 48.61111111111111vw;
+		border-radius: 30px;
+		background: #FFF;
+		/* card shadow bg */
+		box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.16);
+	}
+
+	&__form-title {
+		color: var(--blue, #006CEB);
+		text-align: center;
+		font-family: Unbounded;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 45px */
+	}
+
+	&__form-text {
+		margin: 20px 0 30px 0;
+		color: var(--dark-grey, #1C1C1C);
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 30px */
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+
+	&__form-inner {
+		width: 100%;
+		display: flex;
+		gap: 20px;
+		// flex-wrap: wrap;
+	}
+
+	&__input-left-block-wrap {
+		display: flex;
+		flex-direction: column; 
+		gap: 18px;	
+		height: 120px;	
+		// width: 23.61111111111111vw;	
+		min-width: 180px;	
+		flex-grow: 1;
+	}
+
+	&__input-right-block-wrap {		
+		// width: 23.61111111111111vw;
+		display: flex;		
+		flex-direction: column;
+		min-width: 180px;		
+		flex-grow: 1;
+	}
+
+	#mainFormName, #mainFormEmail, #mainFormMessage {
+		height: 50px;
+		border-radius: 8px;
+		border: 1.2px solid var(--text-not-filled, #838383);
+		background: #FFF;
+		color: var(--text-not-filled, #838383);
+		font-family: Montserrat;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 50px; /* 122.222% */
+		padding: 0 0 0 20px;
+	}
+	
+	#mainFormMessage {
+		height: 120px;
+	}
+}
+
+
 .footer {
 	margin: $padding-left-and-right 0 0 0;
 	display: flex;

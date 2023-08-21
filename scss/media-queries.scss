@@ -121,7 +121,7 @@ $social-links-margin-bottom: 84px;
 	.header-menu {
 		order: 2; /* При максимальной ширине 1137px и ниже второй элемент меняется на третий место */
 		margin: -15.5px auto 20px auto;
-		padding-right: calc(-30px + 70 * (100vw / 1365));
+		padding-right: calc(-20px + 90 * (100vw / 1365));
 		justify-content: center;
 		align-items: center;
 	}
@@ -210,6 +210,10 @@ $social-links-margin-bottom: 84px;
 	.block-whith-social-links__outer::before {
 		content: "";
 		display: none;
+	}
+
+	.form-with-contacts__form-inner {
+		flex-wrap: wrap;
 	}
 }
 
@@ -352,12 +356,44 @@ $social-links-margin-bottom: 84px;
 	}
 }
 
-/* Медиа-запрос для изменения порядка отображения на ширине 799px и ниже */
+/* Медиа-запрос для изменения порядка отображения на ширине 800px и ниже */
 @media (max-width: 800px) {
 	.header-menu {
 		.header-menu__link {
 			font-size: calc(-0.5px + 18 * (100vw / 800));
 		}
+	}
+
+	.form-with-contacts {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin: calc(20px + 60 * (100vw / 1440)) $padding-left-and-right 0 $padding-left-and-right;
+		padding: calc(15px + 25 * (100vw / 1440)) auto;
+		gap: 10px;
+	}
+
+	.form-with-contacts__contacts {	
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		flex-grow: 1;
+		gap: 20px;
+	}
+
+	.form-with-contacts__contacts-title {
+		text-align: center;
+	}
+
+	.form-with-contacts__contacts-links-outer {
+		min-width: 310px;
+	}
+
+	.form-with-contacts__form-outer {
+		padding: calc(10px + 30 * (100vw / 1440)) calc(10px + 50 * (100vw / 1440));
+		width: 88.89285714285714%;
 	}
 }
 
@@ -462,6 +498,11 @@ $social-links-margin-bottom: 84px;
 		&__small-block-item {
 			font-size: calc(12px + 6 * (100vw / 639));
 		}
+	}
+
+	.form-with-contacts__contacts {	
+		flex-direction: column;
+		gap: 0;
 	}
 }
 
