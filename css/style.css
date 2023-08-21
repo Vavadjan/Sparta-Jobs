@@ -1419,6 +1419,35 @@ header {
 .form-with-contacts #mainFormMessage {
   height: 120px;
 }
+.form-with-contacts #mainFormSend {
+  border: none;
+  color: #fff;
+  font-family: Unbounded;
+  font-size: calc(12px + 0.4166666667vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap; /* Отменяет перенос слов */
+  display: inline-block;
+  margin: 30px 0 0 0;
+  padding: 16px 32px;
+  border-radius: 60px;
+  background: #006ceb;
+  /* btn shadow 1 */
+  -webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer; /* Изменение вида курсора на палец при наведении */
+}
+.form-with-contacts #mainFormSend:hover {
+  background: #1c1c1c;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.form-with-contacts #mainFormSend:not(:hover) {
+  background: #006ceb;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
 
 .footer {
   margin: 5.5555555556vw 0 0 0;

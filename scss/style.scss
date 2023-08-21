@@ -1205,6 +1205,36 @@ header {
 	#mainFormMessage {
 		height: 120px;
 	}
+
+	#mainFormSend {
+		border: none;
+		color: #fff;
+		font-family: Unbounded;
+		font-size: calc(12px + 6 * (100vw / 1440));
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		white-space: nowrap; /* Отменяет перенос слов */
+		display: inline-block;
+		margin: 30px 0 0 0;
+		padding: 16px 32px;
+		// width: auto;
+		border-radius: 60px;
+		background: #006ceb;
+		/* btn shadow 1 */
+		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+		cursor: pointer; /* Изменение вида курсора на палец при наведении */
+	}
+
+	#mainFormSend:hover {
+		background: #1c1c1c;
+		transition: 0.4s;
+	}
+
+	#mainFormSend:not(:hover) {
+		background: #006ceb;
+		transition: 1s;
+	}
 }
 
 
