@@ -1230,25 +1230,52 @@ header {
           flex-grow: 1;
 }
 .form-with-contacts__mail-link {
-  color: var(--dark-grey, #1C1C1C);
+  position: relative;
+  color: #006CEB;
   text-align: center;
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 30px */
+}
+.form-with-contacts .form-with-contacts__mail-link::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url(../img/SVG/contactsMAIL.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  top: 0.2em;
+  left: -36px;
 }
 .form-with-contacts__telegram-link {
-  color: var(--dark-grey, #1C1C1C);
+  position: relative;
+  color: #006CEB;
   text-align: center;
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 30px */
+}
+.form-with-contacts__telegram-link::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url(../img/SVG/contactsTELEGRAM.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  top: 0.2em;
+  left: -36px;
 }
 .form-with-contacts__whatsup-link {
-  color: var(--dark-grey, #1C1C1C);
+  position: relative;
+  color: #006CEB;
   text-align: center;
   font-family: Montserrat;
   font-size: 20px;
@@ -1256,14 +1283,39 @@ header {
   font-weight: 500;
   line-height: 150%; /* 30px */
 }
+.form-with-contacts__whatsup-link::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url(../img/SVG/contactsWHATSUP.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  top: 0.2em;
+  left: -36px;
+}
 .form-with-contacts__web-link {
-  color: var(--dark-grey, #1C1C1C);
+  position: relative;
+  color: #006CEB;
   text-align: center;
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 30px */
+}
+.form-with-contacts__web-link::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url(../img/SVG/contactsWEB.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  top: 0.2em;
+  left: -36px;
 }
 .form-with-contacts__form-outer {
   padding: calc(-10px + 2.7777777778vw) calc(-10px + 3.4722222222vw);

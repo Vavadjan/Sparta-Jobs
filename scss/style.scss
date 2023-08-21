@@ -1028,27 +1028,56 @@ header {
 	}
 
 	&__mail-link {
-		color: var(--dark-grey, #1C1C1C);
+		position: relative;
+		color: #006CEB;
 		text-align: center;
 		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 150%; /* 30px */
+	}
+
+	.form-with-contacts__mail-link::before {
+		content: "";		
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background: url(../img/SVG/contactsMAIL.svg);		
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		top: 0.2em;
+		left: -36px;
 	}
 
 	&__telegram-link {
-		color: var(--dark-grey, #1C1C1C);
+		position: relative;
+		color: #006CEB;
 		text-align: center;
 		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 150%; /* 30px */
+	}
+
+	&__telegram-link::before {
+		content: "";		
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background: url(../img/SVG/contactsTELEGRAM.svg);		
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		top: 0.2em;
+		left: -36px;
 	}
 
 	&__whatsup-link {
-		color: var(--dark-grey, #1C1C1C);
+		position: relative;
+		color: #006CEB;
 		text-align: center;
 		font-family: Montserrat;
 		font-size: 20px;
@@ -1057,14 +1086,41 @@ header {
 		line-height: 150%; /* 30px */
 	}
 
+	&__whatsup-link::before {
+		content: "";		
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background: url(../img/SVG/contactsWHATSUP.svg);		
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		top: 0.2em;
+		left: -36px;
+	}
+
 	&__web-link {
-		color: var(--dark-grey, #1C1C1C);
+		position: relative;
+		color: #006CEB;
 		text-align: center;
 		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 150%; /* 30px */
+	}
+
+	&__web-link::before {
+		content: "";		
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background: url(../img/SVG/contactsWEB.svg);		
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		top: 0.2em;
+		left: -36px;
 	}
 
 	&__form-outer {
