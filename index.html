@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sparta Jobs System to kompleksowy system dla Agencji Pracy
+      Tymczasowej."
+    />
     <title>Sparta Jobs</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
@@ -25,7 +30,9 @@
         <nav class="header-menu">
           <ul class="header-menu__list">
             <li class="header-menu__item">
-              <a class="header-menu__link black-text" href="./about.html">About SJ CRM</a>
+              <a class="header-menu__link black-text" href="./about.html"
+                >About SJ CRM</a
+              >
             </li>
             <!-- <li class="header-menu__item">
               <a class="header-menu__link black-text" href="">How it works</a>
@@ -93,9 +100,7 @@
     <div class="popup-bg" id="popupBg"></div>
     <div class="popup" id="popupGetADemoSys">
       <div class="popup-content">
-        <h2 class="form-h2">
-          Contact us and get a demo of SpartaJobs CRM
-        </h2>
+        <h2 class="form-h2">Contact us and get a demo of SpartaJobs CRM</h2>
         <form class="get-consultation-form" action="">
           <div class="get-consultation-form-inner">
             <button id="closeBtnGetADemoSys"></button>
@@ -136,7 +141,10 @@
             <li><a href="#">Try SJ CRM for free</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
-          <button id="burgerGetConsultation" class="white-text black-background">
+          <button
+            id="burgerGetConsultation"
+            class="white-text black-background"
+          >
             Zamów konsultacje
           </button>
         </nav>
@@ -363,12 +371,30 @@
         </section>
         <section class="form-with-contacts">
           <address class="form-with-contacts__contacts">
-            <div class="form-with-contacts__contacts-title">Contact our agency to get more information and best offer for you!</div>
-            <div class="form-with-contacts__contacts-links-outer">  
-              <a class="form-with-contacts__mail-link" href="mailto:yuriy.kuzmin@web-you.pl">yuriy.kuzmin@web-you.pl</a>
-              <a class="form-with-contacts__telegram-link" href="https://t.me/yurak0901">+380 63 965 65 38</a>
-              <a class="form-with-contacts__whatsup-link" href="https://api.whatsapp.com/send?phone=+380639656538&text=Hi!">+380 63 965 65 38</a>
-              <a class="form-with-contacts__web-link" href="https://web-you.pl/about/">web-you.pl About us</a>
+            <div class="form-with-contacts__contacts-title">
+              Contact our agency to get more information and best offer for you!
+            </div>
+            <div class="form-with-contacts__contacts-links-outer">
+              <a
+                class="form-with-contacts__mail-link"
+                href="mailto:yuriy.kuzmin@web-you.pl"
+                >yuriy.kuzmin@web-you.pl</a
+              >
+              <a
+                class="form-with-contacts__telegram-link"
+                href="https://t.me/yurak0901"
+                >+380 63 965 65 38</a
+              >
+              <a
+                class="form-with-contacts__whatsup-link"
+                href="https://api.whatsapp.com/send?phone=+380639656538&text=Hi!"
+                >+380 63 965 65 38</a
+              >
+              <a
+                class="form-with-contacts__web-link"
+                href="https://web-you.pl/about/"
+                >web-you.pl About us</a
+              >
             </div>
           </address>
           <div class="form-with-contacts__form-outer">
@@ -418,7 +444,9 @@
           <nav class="header-menu">
             <ul class="header-menu__list">
               <li class="header-menu__item">
-                <a class="header-menu__link white-text" href="./about.html">About SJ CRM</a>
+                <a class="header-menu__link white-text" href="./about.html"
+                  >About SJ CRM</a
+                >
               </li>
               <!-- <li class="header-menu__item">
                 <a class="header-menu__link white-text" href="">How it works</a>
@@ -440,7 +468,7 @@
             id="footerGetConsultation"
             class="black-text yello-background"
           >
-          Zamów konsultacje
+            Zamów konsultacje
           </button>
         </div>
         <div class="footer__center-block">
@@ -468,20 +496,22 @@
       const headerGetConsultation = document.getElementById(
         "headerGetConsultation"
       );
-      const getADemoSys = document.getElementById(
-        "getADemoSys"
-      );
-      const getADemo = document.getElementById(
-        "getADemo"
-      );
+      const getADemoSys = document.getElementById("getADemoSys");
+      const getADemo = document.getElementById("getADemo");
       const footerGetConsultation = document.getElementById(
         "footerGetConsultation"
       );
       const popupBg = document.getElementById("popupBg");
-      const popupGetConsultation = document.getElementById("popupGetConsultation");
+      const popupGetConsultation = document.getElementById(
+        "popupGetConsultation"
+      );
       const popupGetADemoSys = document.getElementById("popupGetADemoSys");
-      const closeBtnGetConsultation = document.getElementById("closeBtnGetConsultation");
-      const closeBtnGetADemoSys = document.getElementById("closeBtnGetADemoSys");  
+      const closeBtnGetConsultation = document.getElementById(
+        "closeBtnGetConsultation"
+      );
+      const closeBtnGetADemoSys = document.getElementById(
+        "closeBtnGetADemoSys"
+      );
 
       burgerGetConsultation.addEventListener("click", () => {
         popupBg.style.display = "block";
