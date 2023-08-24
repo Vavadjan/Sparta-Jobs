@@ -67,7 +67,7 @@
         <h2 class="form-h2">
           Contact us and you will get a response in no time
         </h2>
-        <form class="get-consultation-form" action="">
+        <form class="get-consultation-form" action="process_form.php" method="post>
           <div class="get-consultation-form-inner">
             <button id="closeBtnGetConsultation"></button>
             <div class="input-left-block-wrap">
@@ -101,7 +101,7 @@
     <div class="popup" id="popupGetADemoSys">
       <div class="popup-content">
         <h2 class="form-h2">Contact us and get a demo of SpartaJobs CRM</h2>
-        <form class="get-consultation-form" action="">
+        <form class="get-consultation-form" action="sender.php" method="post">
           <div class="get-consultation-form-inner">
             <button id="closeBtnGetADemoSys"></button>
             <div class="input-left-block-wrap">
@@ -126,7 +126,7 @@
               ></textarea>
             </div>
           </div>
-          <button id="getADemoSysSend">Send request</button>
+          <button id="getADemoSysSend" type="button">Send request</button>
         </form>
       </div>
     </div>
@@ -143,7 +143,7 @@
           </ul>
           <button
             id="burgerGetConsultation"
-            class="white-text black-background"
+            class="white-text black-background" type="button"
           >
             Zamów konsultacje
           </button>
@@ -152,7 +152,7 @@
           <div class="h1-wrap__text-wrap">
             <h1>CRM dla Agencji Pracy Tymczasowej</h1>
             <div class="h1-wrap__button-wrap">
-              <button id="getADemoSys">Zamów demo systemu</button>
+              <button id="getADemoSys" type="button">Zamów demo systemu</button>
             </div>
           </div>
           <div class="h1-wrap__img-wrap"></div>
@@ -177,7 +177,7 @@
               <a href="#FormWhithContacts" class="h2-wrap__link">wszystko w jedym</a>
             </div>
             <div class="h2-wrap__button-wrap">
-              <button id="getADemo">Zamów demo</button>
+              <button id="getADemo" type="button">Zamów demo</button>
             </div>
           </div>
           <div class="h2-wrap__img-block"></div>
@@ -404,7 +404,7 @@
             <p class="form-with-contacts__form-text">
               We're ready to create a custom solution for a specific need.
             </p>
-            <form class="form-with-contacts__form" action="">
+            <form class="form-with-contacts__form" action="process_form.php">
               <div class="form-with-contacts__form-inner">
                 <div class="form-with-contacts__input-left-block-wrap">
                   <input
@@ -428,7 +428,7 @@
                   ></textarea>
                 </div>
               </div>
-              <button id="mainFormSend">Send request</button>
+              <button id="mainFormSend" action="sender.php" method="post">Send request</button>
             </form>
           </div>
         </section>
@@ -466,7 +466,7 @@
           </nav>
           <button
             id="footerGetConsultation"
-            class="black-text yello-background"
+            class="black-text yello-background" type="button"
           >
             Zamów konsultacje
           </button>
