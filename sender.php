@@ -1,25 +1,17 @@
 <?php
-    $name = $_POST['name'];
-    $surname = $_POST['surname'];
-	$phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $text = $_POST['text'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
 
-	$to = "vavadjan@gmail.com"; 
-	$date = date ("d.m.Y"); 
-	$time = date ("h:i");
-	$from = $email;
-	$subject = "Заявка c сайта SpartaJobs";
+    $to = "vavadjan@gmail.com"; // Замените на ваш email
+    $subject = "Новый запрос на консультацию от $name";
+    $headers = "From: $email";
 
-	
-	$msg="
-    Имя: $name /n
-    Фамилия: $surname /n
-    Телефон: $phone /n
-    Почта: $email /n
-    Текст: $text"; 	
-	mail($to, $subject, $msg, "From: $from ");
+    mail($to, $subject, $message, $headers);
 
+    // Отправляем ответ клиенту
+    echo "Спасибо за ваш запрос. Мы свяжемся с вами в ближайшее время!";
+}
 ?>
 
-<p>Привет, форма отправлена</p>
