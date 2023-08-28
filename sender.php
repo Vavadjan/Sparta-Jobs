@@ -31,8 +31,7 @@ $mail->Subject = 'New Contact Form Submission';
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-$mail->Body = "Новое письмо с сайта Sparta Jobs\n"
-    . "Имя: " . $name . "\n"
+$mail->Body = "Имя: " . $name . "\n"
     . "E-mail: " . $email . "\n"
     . "Сообщение: " . $message;
 
