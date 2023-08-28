@@ -1,4 +1,3 @@
-
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -27,13 +26,13 @@ $mail->setFrom('vavadjan.test@gmail.com', 'Sparta Jobs Contact Form');
 $mail->addAddress('vavadjan@gmail.com'); // Укажите адрес получателя
 
 // Тема и текст письма
-$mail->Subject = 'New Contact Form Submission';
+$mail->Subject = 'Кто-то заполнил форму обратной связи!';
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-$mail->Body = "Имя: " . $name . "\n"
-    . "E-mail: " . $email . "\n"
-    . "Сообщение: " . $message;
+$mail->Body = "Имя заполнившего форму: " . $name . "\n"
+    . "E-mail заполнившего форму: " . $email . "\n"
+    . "Сообщение которое он(она) написал(ла): " . $message;
 
 // Отправляем письмо
 if ($mail->send()) {
