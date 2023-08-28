@@ -1,55 +1,46 @@
+
 <?php
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $name = $_POST["name"];
-//     $email = $_POST["email"];
-//     $message = $_POST["message"];
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-//     $to = "vavadjan@gmail.com"; // Замените на ваш email
-//     $subject = "Новый запрос на консультацию от $name";
-//     $headers = "From: $email";
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
-//     mail($to, $subject, $message, $headers);
+// Создаем объект PHPMailer
+$mail = new PHPMailer();
 
-//     // Отправляем ответ клиенту
-//     echo "Спасибо за ваш запрос. Мы свяжемся с вами в ближайшее время!";
-// }
+// Устанавливаем параметры SMTP
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com'; // Укажите адрес вашего SMTP-сервера
+$mail->SMTPAuth = true;
+$mail->Username = 'vavadjan.test@gmail.com'; // Укажите ваше имя пользователя
+$mail->Password = 'sxcjoylhhlrgkfhb'; // Укажите ваш пароль
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
 
-// Получим данные с элементов формы
+// Устанавливаем кодировку
+$mail->CharSet = 'UTF-8';
 
+// Отправитель и получатель
+$mail->setFrom('vavadjan.test@gmail.com', 'Sparta Jobs Contact Form');
+$mail->addAddress('vavadjan@gmail.com'); // Укажите адрес получателя
+
+// Тема и текст письма
+$mail->Subject = 'New Contact Form Submission';
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
+$mail->Body = "Новое письмо с сайта Sparta Jobs\n"
+    . "Имя: " . $name . "\n"
+    . "E-mail: " . $email . "\n"
+    . "Сообщение: " . $message;
 
-
-// Обработаем полученные данные
-
-$name = htmlspecialchars($name);    //преобразование в сущности (мнемоники)
-$email = htmlspecialchars($email);
-$messasge = htmlspecialchars($message);
-
-$name = urldecode($name);   //декодирование URL
-$email = urldecode($email);
-$messasge = urldecode($message);
-
-$name = trim($name);    //удаление пробельных символов с обоих сторон
-$email = trim($email);
-$messasge = trim($message);
-
-
-//отправляем данные на почту
-
-if (mail("vavadjan@gmail.com",
-        "Новое письмо с сайта Sparta Jobs", 
-        "Имя: ".$name."\n". 
-        "E-mail: ".$email."\n". 
-        "Сообщение : ".$message, 
-        "From: vavadjan@gmail.com \r\n" )
-){
-    echo ('Письмо успешно отправлено!');
+// Отправляем письмо
+if ($mail->send()) {
+    echo 'Message sent successfully!';
+} else {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
 }
-else {
-    echo ('Есть ошибки! Проверьте вводимые данные...');
-}
-
 ?>
-
